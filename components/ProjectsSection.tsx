@@ -12,7 +12,23 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    name: 'VibeRdy.xyz',
+    name: 'FIU Surf Club',
+    descriptor: 'Web Development · Community Platform',
+    description:
+      'Live website for FIU Surf Club, promoting surf culture at Florida International University and organizing community events.',
+    link: 'https://fiusurf.com/',
+  },
+  {
+    id: 2,
+    name: 'Life Quest',
+    descriptor: 'AI · Product Development',
+    description:
+      'AI-powered product with comprehensive feature set. Strong focus on AI integration and product development. View the full demonstration on YouTube.',
+    demo: 'https://youtu.be/TXWbPKSUEoE',
+  },
+  {
+    id: 3,
+    name: 'VibeRdy',
     descriptor: 'React · Python · AWS · Automation',
     description:
       'Team-based hackathon project. Developed frontend and backend, deployed on AWS. Designed an automation server for website testing, delivering performance insights in under 3 minutes.',
@@ -20,25 +36,19 @@ const projects: Project[] = [
     demo: 'https://youtu.be/Y-FfwD_dGnc',
   },
   {
-    id: 2,
-    name: 'RunwAI',
-    descriptor: 'Python · React · UI/UX · AI Integration',
+    id: 4,
+    name: 'Friend Finder',
+    descriptor: 'Hackathon Project · 2nd Place',
     description:
-      'AI Personal Stylist - Web application for personalized outfit recommendations. Contributed to UI/UX design, frontend development, and system integration with the recommendation engine.',
+      'Hackathon project that secured 2nd place. Innovative solution for connecting people and building communities.',
+    demo: 'https://youtu.be/Rmel-JFJUEc',
   },
   {
-    id: 3,
+    id: 5,
     name: 'Castiq',
     descriptor: 'Flutter · Dart · iOS · Android',
     description:
       'Professional marketplace platform for models (In Development). Focused on cross-platform mobile development and product architecture.',
-  },
-  {
-    id: 4,
-    name: 'Smart Greenhouse',
-    descriptor: 'Arduino · Python · IoT',
-    description:
-      'Developed a system to monitor and control greenhouse temperature using real-time sensor data.',
   },
 ];
 
