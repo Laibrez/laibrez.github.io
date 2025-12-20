@@ -13,21 +13,27 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    name: 'FIU Surf Club',
-    descriptor: 'React · Tailwind · UI/UX',
-    image: '/projects/surf-club.svg',
+    name: 'VibeRdy.xyz',
+    descriptor: 'React · Python · AWS · Automation',
+    image: '/projects/viberdy.svg',
   },
   {
     id: 2,
-    name: 'Portfolio Redesign',
-    descriptor: 'Next.js · TypeScript · Animation',
-    image: '/projects/portfolio.svg',
+    name: 'RunwAI',
+    descriptor: 'Python · React · UI/UX · AI Integration',
+    image: '/projects/runwai.svg',
   },
   {
     id: 3,
-    name: 'Task Manager App',
-    descriptor: 'React Native · Firebase · Mobile',
-    image: '/projects/task-manager.svg',
+    name: 'Castiq',
+    descriptor: 'Flutter · Dart · iOS · Android',
+    image: '/projects/castiq.svg',
+  },
+  {
+    id: 4,
+    name: 'Smart Greenhouse',
+    descriptor: 'Arduino · Python · IoT',
+    image: '/projects/greenhouse.svg',
   },
 ];
 
