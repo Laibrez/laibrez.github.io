@@ -3,196 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Laisha Bravo - Portfolio">
+    <meta name="description" content="Laisha Bravo - Computer Science Student & Frontend Developer">
     <title>Laisha Bravo | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Vertical Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">LAISHA BRAVO</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="burger" aria-label="Toggle navigation menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </button>
-        </div>
+        <ul class="nav-links">
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#experience">experience</a></li>
+            <li><a href="#education">education</a></li>
+        </ul>
     </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Hello, I'm <span class="highlight">Laisha Bravo</span></h1>
-            <p class="hero-subtitle">Creative Professional & Designer</p>
-            <p class="hero-description">Bringing ideas to life through design and innovation</p>
-            <div class="hero-buttons">
-                <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll Down</span>
-            <div class="arrow-down"></div>
-        </div>
-    </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title">ABOUT ME</h2>
             <div class="about-content">
-                <div class="about-image">
-                    <img src="images/profile.jpg" alt="Professional portrait of Laisha Bravo">
-                </div>
-                <div class="about-text">
-                    <h3>Hi, I'm Laisha Bravo</h3>
-                    <p>I'm a passionate creative professional dedicated to crafting exceptional digital experiences. With a keen eye for detail and a love for innovation, I transform ideas into reality.</p>
-                    <p>My work combines creativity with technical expertise to deliver projects that not only look beautiful but also function seamlessly.</p>
-                    <div class="skills">
-                        <div class="skill-item">
-                            <h4>Design</h4>
-                            <p>Creating visually stunning and user-friendly interfaces</p>
-                        </div>
-                        <div class="skill-item">
-                            <h4>Development</h4>
-                            <p>Building responsive and dynamic web applications</p>
-                        </div>
-                        <div class="skill-item">
-                            <h4>Strategy</h4>
-                            <p>Planning and executing creative solutions</p>
-                        </div>
+                <p>I'm a Computer Science student at Florida International University with a strong focus on frontend development, UI/UX, and product-driven engineering.</p>
+                
+                <p>I have hands-on experience building and scaling real-world products — from React-based web platforms to business-critical websites with measurable growth in traffic and sales.</p>
+                
+                <p>Beyond code, I bring a project management and entrepreneurial background, having co-founded and managed clinical laboratories in Mexico, where I led teams, handled legal processes, and drove digital growth through SEO and automation.</p>
+                
+                <p>I enjoy working at the intersection of design, technology, and strategy, building user-centered products that are both technically solid and visually intentional.</p>
+                
+                <p class="languages">Fluent in English & Spanish · Intermediate French</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="projects-gallery">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <h3>FIU Surf Club Website</h3>
+                    <p class="tech-stack">React · Tailwind CSS · UI/UX · Deployment</p>
+                    <p class="project-description">Built and deployed the official FIU Surf Club website with a mobile-first UX, interactive calendar, merchandise shop, and live social media integrations. Scaled to support 1,000+ concurrent users.</p>
+                    <div class="project-links">
+                        <a href="https://fiusurf.com/" target="_blank" rel="noopener noreferrer">🔗 fiusurf.com</a>
                     </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <h3>VibeRdy.xyz</h3>
+                    <p class="tech-stack">React · Python · AWS · Automation</p>
+                    <p class="project-description">Team-based hackathon project. Developed frontend and backend, deployed on AWS. Designed an automation server for website testing, delivering performance insights in under 3 minutes.</p>
+                    <div class="project-links">
+                        <a href="https://viberdy.xyz/" target="_blank" rel="noopener noreferrer">🔗 viberdy.xyz</a>
+                        <a href="https://youtu.be/Y-FfwD_dGnc" target="_blank" rel="noopener noreferrer">🎥 Demo</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <h3>RunwAI — AI Personal Stylist</h3>
+                    <p class="tech-stack">Python · React · UI/UX · AI Integration</p>
+                    <p class="project-description">Web application for personalized outfit recommendations. Contributed to UI/UX design, frontend development, and system integration with the recommendation engine.</p>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card">
+                    <h3>Kestra</h3>
+                    <p class="tech-stack">UI/UX · Frontend Logic</p>
+                    <p class="project-description">Collaborated on an open-source project, improving UI/UX and assisting with frontend logic and usability enhancements.</p>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="project-card">
+                    <h3>ALPFA FIU – Tech Contributions</h3>
+                    <p class="tech-stack">Web Support · Integrations</p>
+                    <p class="project-description">Provided technical support for event pages, membership content, and sponsor integrations for the largest ALPFA student chapter in the U.S. (600+ members).</p>
+                    <div class="project-links">
+                        <a href="https://alpfafiu.org" target="_blank" rel="noopener noreferrer">🔗 alpfafiu.org</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="project-card">
+                    <h3>Smart Greenhouse</h3>
+                    <p class="tech-stack">Arduino · Python · IoT</p>
+                    <p class="project-description">Developed a system to monitor and control greenhouse temperature using real-time sensor data.</p>
+                </div>
+
+                <!-- Project Card 7 -->
+                <div class="project-card">
+                    <h3>Castiq</h3>
+                    <p class="tech-stack">Flutter · Dart · iOS · Android</p>
+                    <p class="project-description">Developing a professional marketplace platform for models. Focused on cross-platform mobile development and product architecture.</p>
+                    <p class="project-status">(In Development)</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">My Work</h2>
-            <p class="section-subtitle">Here are some of my recent projects</p>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="images/project1.jpg" alt="Screenshot of Project 1 showcasing design and functionality">
-                        <div class="portfolio-overlay">
-                            <h3>Project Title 1</h3>
-                            <p>Brief description of the project and technologies used</p>
-                            <a href="#" class="btn btn-small">View Details</a>
-                        </div>
-                    </div>
+            <h2 class="section-title">EXPERIENCE</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Mar 2025 – Dec 2025</div>
+                    <h3>Intern — Women's Center, FIU</h3>
+                    <p class="location">Miami, FL</p>
+                    <ul>
+                        <li>Organized and coordinated campus events to increase student engagement</li>
+                        <li>Proposed initiatives that improved outreach and participation</li>
+                    </ul>
                 </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="images/project2.jpg" alt="Screenshot of Project 2 showcasing design and functionality">
-                        <div class="portfolio-overlay">
-                            <h3>Project Title 2</h3>
-                            <p>Brief description of the project and technologies used</p>
-                            <a href="#" class="btn btn-small">View Details</a>
-                        </div>
-                    </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 – 2024</div>
+                    <h3>Project Manager — Laboratorio Clínico MexaLab</h3>
+                    <p class="location">Mexico City, MX</p>
+                    <ul>
+                        <li>Co-led the launch of a second clinical laboratory</li>
+                        <li>Built and managed a 15+ member team</li>
+                        <li>Handled permits, HR, and legal processes</li>
+                        <li>Developed mexalab.com using HTML, CSS, and JavaScript</li>
+                        <li>Led SEO and digital marketing strategy:
+                            <ul>
+                                <li>+177.8% website clicks</li>
+                                <li>+52.3% social profile interactions</li>
+                                <li>+22.7% increase in final sales</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="images/project3.jpg" alt="Screenshot of Project 3 showcasing design and functionality">
-                        <div class="portfolio-overlay">
-                            <h3>Project Title 3</h3>
-                            <p>Brief description of the project and technologies used</p>
-                            <a href="#" class="btn btn-small">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="images/project4.jpg" alt="Screenshot of Project 4 showcasing design and functionality">
-                        <div class="portfolio-overlay">
-                            <h3>Project Title 4</h3>
-                            <p>Brief description of the project and technologies used</p>
-                            <a href="#" class="btn btn-small">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="images/project5.jpg" alt="Screenshot of Project 5 showcasing design and functionality">
-                        <div class="portfolio-overlay">
-                            <h3>Project Title 5</h3>
-                            <p>Brief description of the project and technologies used</p>
-                            <a href="#" class="btn btn-small">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="images/project6.jpg" alt="Screenshot of Project 6 showcasing design and functionality">
-                        <div class="portfolio-overlay">
-                            <h3>Project Title 6</h3>
-                            <p>Brief description of the project and technologies used</p>
-                            <a href="#" class="btn btn-small">View Details</a>
-                        </div>
-                    </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Oct 2020 – Jul 2021</div>
+                    <h3>Co-Founder — Laboratorios D'ALFA</h3>
+                    <p class="location">Mexico City, MX</p>
+                    <ul>
+                        <li>Co-founded a medical laboratory from scratch</li>
+                        <li>Led recruitment, finances, marketing, and legal compliance</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Education Section -->
+    <section id="education" class="education">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Let's work together on your next project</p>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <div class="info-item">
-                        <h4>Email</h4>
-                        <p>laisha.bravo@email.com</p>
-                    </div>
-                    <div class="info-item">
-                        <h4>Phone</h4>
-                        <p>+1 (555) 123-4567</p>
-                    </div>
-                    <div class="info-item">
-                        <h4>Location</h4>
-                        <p>Available for remote work</p>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link">LinkedIn</a>
-                        <a href="#" class="social-link">GitHub</a>
-                        <a href="#" class="social-link">Behance</a>
+            <h2 class="section-title">EDUCATION</h2>
+            <div class="education-content">
+                <div class="education-item">
+                    <h3>Florida International University (FIU)</h3>
+                    <p class="degree">Bachelor of Arts in Computer Science</p>
+                    <p class="edu-date">Expected Fall 2025 · Miami, FL</p>
+                    <div class="coursework">
+                        <h4>Relevant Coursework:</h4>
+                        <ul>
+                            <li>Data Structures</li>
+                            <li>Software Engineering</li>
+                            <li>Computer Architecture</li>
+                            <li>Human-Computer Interaction</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <label for="name" class="sr-only">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="sr-only">Your Email</label>
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject" class="sr-only">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="sr-only">Your Message</label>
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+
+                <div class="education-item">
+                    <h3>Instituto Tecnológico de Monterrey</h3>
+                    <p class="location">Mexico City, MX</p>
+                </div>
+
+                <div class="certifications">
+                    <h4>Certifications</h4>
+                    <ul>
+                        <li>Computational Thinking — University of Pennsylvania</li>
+                        <li>Artificial Intelligence — IBM</li>
+                        <li>JavaScript — Google</li>
+                    </ul>
                 </div>
             </div>
         </div>
