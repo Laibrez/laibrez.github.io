@@ -5,29 +5,40 @@ interface Project {
   name: string;
   descriptor: string;
   description: string;
+  link?: string;
+  demo?: string;
 }
 
 const projects: Project[] = [
   {
     id: 1,
-    name: 'FIU Surf Club',
-    descriptor: 'React · Tailwind · UI/UX',
+    name: 'VibeRdy.xyz',
+    descriptor: 'React · Python · AWS · Automation',
     description:
-      'A modern web application for the FIU Surf Club, featuring event management, member profiles, and beach condition updates.',
+      'Team-based hackathon project. Developed frontend and backend, deployed on AWS. Designed an automation server for website testing, delivering performance insights in under 3 minutes.',
+    link: 'https://viberdy.xyz/',
+    demo: 'https://youtu.be/Y-FfwD_dGnc',
   },
   {
     id: 2,
-    name: 'Portfolio Redesign',
-    descriptor: 'Next.js · TypeScript · Animation',
+    name: 'RunwAI',
+    descriptor: 'Python · React · UI/UX · AI Integration',
     description:
-      'A sleek and interactive portfolio website showcasing projects with smooth animations and modern design principles.',
+      'AI Personal Stylist - Web application for personalized outfit recommendations. Contributed to UI/UX design, frontend development, and system integration with the recommendation engine.',
   },
   {
     id: 3,
-    name: 'Task Manager App',
-    descriptor: 'React Native · Firebase · Mobile',
+    name: 'Castiq',
+    descriptor: 'Flutter · Dart · iOS · Android',
     description:
-      'Cross-platform mobile application for task management with real-time synchronization and collaborative features.',
+      'Professional marketplace platform for models (In Development). Focused on cross-platform mobile development and product architecture.',
+  },
+  {
+    id: 4,
+    name: 'Smart Greenhouse',
+    descriptor: 'Arduino · Python · IoT',
+    description:
+      'Developed a system to monitor and control greenhouse temperature using real-time sensor data.',
   },
 ];
 
@@ -58,9 +69,34 @@ export default function ProjectsSection() {
                 <p className="text-sm text-gray-500 mb-4 tracking-wide">
                   {project.descriptor}
                 </p>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed mb-4">
                   {project.description}
                 </p>
+
+                {(project.link || project.demo) && (
+                  <div className="flex gap-3 pt-2">
+                    {project.link && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-blue-600 hover:text-blue-800 transition-colors flex items-center gap-1"
+                      >
+                        🔗 Visit
+                      </a>
+                    )}
+                    {project.demo && (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-blue-600 hover:text-blue-800 transition-colors flex items-center gap-1"
+                      >
+                        🎥 Demo
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
 
               <div className="absolute inset-0 border-2 border-transparent group-hover:border-gray-300 rounded-lg transition-all duration-500" />
