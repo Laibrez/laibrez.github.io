@@ -8,6 +8,9 @@ interface Project {
   name: string;
   descriptor: string;
   image: string;
+  type?: 'image' | 'video' | 'website';
+  videoId?: string;
+  websiteUrl?: string;
 }
 
 const projects: Project[] = [
@@ -16,24 +19,37 @@ const projects: Project[] = [
     name: 'VibeRdy.xyz',
     descriptor: 'React · Python · AWS · Automation',
     image: '/projects/viberdy.svg',
+    type: 'video',
+    videoId: 'Y-FfwD_dGnc',
   },
   {
     id: 2,
-    name: 'RunwAI',
-    descriptor: 'Python · React · UI/UX · AI Integration',
-    image: '/projects/runwai.svg',
+    name: 'FIU Surf',
+    descriptor: 'Community · Events · Web Development',
+    image: '/projects/surf-club.svg',
+    type: 'website',
+    websiteUrl: 'https://fiusurf.com',
   },
   {
     id: 3,
-    name: 'Castiq',
-    descriptor: 'Flutter · Dart · iOS · Android',
-    image: '/projects/castiq.svg',
+    name: 'RunwAI',
+    descriptor: 'Python · React · UI/UX · AI Integration',
+    image: '/projects/runwai.svg',
+    type: 'image',
   },
   {
     id: 4,
+    name: 'Castiq',
+    descriptor: 'Flutter · Dart · iOS · Android',
+    image: '/projects/castiq.svg',
+    type: 'image',
+  },
+  {
+    id: 5,
     name: 'Smart Greenhouse',
     descriptor: 'Arduino · Python · IoT',
     image: '/projects/greenhouse.svg',
+    type: 'image',
   },
 ];
 
@@ -179,15 +195,57 @@ export default function HeroSlideshow() {
               index === currentSlide ? 'opacity-100' : 'opacity-0'
             }`}
           >
-            {/* Background Image */}
+            {/* Background Content - Video, Website, or Image */}
             <div className="absolute inset-0 bg-black">
-              <Image
-                src={project.image}
-                alt={project.name}
-                fill
-                className="object-cover"
-                priority={index === 0}
-              />
+              {project.type === 'video' && project.videoId ? (
+                // YouTube Video Preview
+                <a
+                  href={`https://youtu.be/${project.videoId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="youtube-preview absolute inset-0 block"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <Image
+                    src={`https://img.youtube.com/vi/${project.videoId}/maxresdefault.jpg`}
+                    alt={`${project.name} demo video`}
+                    fill
+                    className="object-cover"
+                    priority={index === 0}
+                  />
+                  <span className="play-btn absolute inset-0 flex items-center justify-center text-[4rem] text-white bg-black/25 transition-all duration-300 hover:bg-black/40">
+                    ▶
+                  </span>
+                </a>
+              ) : project.type === 'website' && project.websiteUrl ? (
+                // Website Preview
+                <div className="site-preview absolute inset-0 overflow-hidden">
+                  <iframe
+                    src={project.websiteUrl}
+                    className="w-[120%] h-[120%] border-none scale-85 origin-top-left grayscale blur-[1px] pointer-events-none"
+                    loading="lazy"
+                    title={`${project.name} preview`}
+                  />
+                  <a
+                    href={project.websiteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="site-overlay absolute inset-0 flex items-end justify-end p-8 text-white text-sm no-underline bg-gradient-to-t from-black/40 to-transparent"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    View Live Site →
+                  </a>
+                </div>
+              ) : (
+                // Regular Image
+                <Image
+                  src={project.image}
+                  alt={project.name}
+                  fill
+                  className="object-cover"
+                  priority={index === 0}
+                />
+              )}
             </div>
 
             {/* Subtle dark overlay for text readability */}
