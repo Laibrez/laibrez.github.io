@@ -27,6 +27,15 @@ const experiences: Experience[] = [
     description:
       'Collaborated on an open-source project, improving UI/UX and assisting with frontend logic and usability enhancements.',
   },
+  {
+    id: 3,
+    title: 'Student Involvement',
+    organization: 'FIU Surf',
+    descriptor: 'Community · Events',
+    description:
+      'Active member of the FIU Surf Club, participating in community events and promoting surf culture at Florida International University.',
+    link: 'https://fiusurf.com',
+  },
 ];
 
 export default function ExperienceSection() {
