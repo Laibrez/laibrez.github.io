@@ -12,6 +12,15 @@ interface Experience {
 const experiences: Experience[] = [
   {
     id: 1,
+    title: 'Project Manager',
+    organization: 'Laboratorio Clínico MexaLab',
+    descriptor: '2021 – 2024 · Mexico City',
+    description:
+      'Co-led launch of second clinical laboratory. Built and managed 15+ person team. Developed https://mexalab.com. Led SEO & digital marketing: +177.8% website clicks, +52.3% social interactions, +22.7% increase in final sales.',
+    link: 'https://mexalab.com',
+  },
+  {
+    id: 2,
     title: 'Tech Contributions',
     organization: 'ALPFA FIU',
     descriptor: 'Web Support · Integrations',
@@ -20,7 +29,7 @@ const experiences: Experience[] = [
     link: 'https://alpfafiu.org',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Open Source Contribution',
     organization: 'Kestra',
     descriptor: 'UI/UX · Frontend Logic',
@@ -28,7 +37,7 @@ const experiences: Experience[] = [
       'Collaborated on an open-source project, improving UI/UX and assisting with frontend logic and usability enhancements.',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Student Involvement',
     organization: 'FIU Surf',
     descriptor: 'Community · Events',
