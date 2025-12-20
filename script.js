@@ -49,6 +49,5 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for fade-in animations
 document.querySelectorAll('.project-card, .timeline-item, .education-item').forEach(el => {
-    el.style.opacity = '0';
     observer.observe(el);
 });
