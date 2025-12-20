@@ -49,12 +49,20 @@ export default function HeroSlideshow() {
 
   // Handle scroll for profile photo animation
   useEffect(() => {
+    let ticking = false;
+    
     const handleScroll = () => {
-      const progress = Math.min(window.scrollY / 200, 1);
-      setScrollProgress(progress);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const progress = Math.min(window.scrollY / 200, 1);
+          setScrollProgress(progress);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
