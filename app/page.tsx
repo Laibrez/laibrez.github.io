@@ -1,17 +1,21 @@
-import HeroSlideshow from '@/components/HeroSlideshow';
-import ProjectsSection from '@/components/ProjectsSection';
-import ExperienceSection from '@/components/ExperienceSection';
-import AboutSection from '@/components/AboutSection';
-import VerticalNav from '@/components/VerticalNav';
+import Navigation from '@/components/Navigation';
+import HeroSection from '@/components/HeroSection';
+import ProjectsSectionNew from '@/components/ProjectsSectionNew';
+import ExperienceSectionNew from '@/components/ExperienceSectionNew';
+import EducationSection from '@/components/EducationSection';
+import AboutSectionNew from '@/components/AboutSectionNew';
+import ContactSection from '@/components/ContactSection';
 
 export default function Home() {
   return (
     <div className="w-full">
-      <VerticalNav />
-      <HeroSlideshow />
-      <ProjectsSection />
-      <ExperienceSection />
-      <AboutSection />
+      <Navigation />
+      <HeroSection />
+      <ProjectsSectionNew />
+      <ExperienceSectionNew />
+      <EducationSection />
+      <AboutSectionNew />
+      <ContactSection />
     </div>
   );
 }
