@@ -46,6 +46,22 @@ const projects: Project[] = [
     type: 'website',
     websiteUrl: 'https://outfit-ai-three.vercel.app',
   },
+  {
+    id: 5,
+    name: 'LifeQuest',
+    descriptor: 'AI · Product Development',
+    image: '/projects/lifequest.svg',
+    type: 'video',
+    videoId: 'TXWbPKSUEoE',
+  },
+  {
+    id: 6,
+    name: 'Friend Finder',
+    descriptor: 'Hackathon Project · 2nd Place',
+    image: '/projects/friendfinder.svg',
+    type: 'video',
+    videoId: 'Rmel-JFJUEc',
+  },
 ];
 
 export default function HeroSlideshow() {
@@ -140,7 +156,7 @@ export default function HeroSlideshow() {
   };
 
   return (
-    <div className="relative h-[85vh] w-full overflow-hidden">
+    <div className="relative h-[85vh] w-full overflow-hidden mt-[50px] mb-[50px]">
       {/* Profile Photo - Top Left */}
       <div
         className="absolute top-8 left-8 z-20 transition-all duration-500 ease-out"

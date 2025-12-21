@@ -51,7 +51,7 @@ export default function ExperienceSection() {
   return (
     <section id="experience" className="min-h-screen py-20 px-8 gradient-section-dark">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl font-light text-gray-900 mb-16 text-center fade-in">
+        <h2 className="text-5xl font-light text-white mb-16 text-center fade-in">
           Experience
         </h2>
 
@@ -59,14 +59,20 @@ export default function ExperienceSection() {
           {experiences.map((exp) => (
             <div
               key={exp.id}
-              className="group glass-light rounded-lg p-8 shadow-sm hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] fade-in"
+              className="group terminal shadow-sm hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] fade-in"
             >
+              <div className="terminal-header">
+                <div className="terminal-dot"></div>
+                <div className="terminal-dot"></div>
+                <div className="terminal-dot"></div>
+              </div>
+              
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-1">
+                  <h3 className="text-2xl font-semibold text-white mb-1">
                     {exp.title}
                   </h3>
-                  <p className="text-lg text-gray-700 font-medium">
+                  <p className="text-lg text-[#cccccc] font-medium">
                     {exp.organization}
                   </p>
                 </div>
@@ -75,7 +81,7 @@ export default function ExperienceSection() {
                     href={exp.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-2 md:mt-0 text-sm text-blue-600 hover:text-blue-800 transition-colors flex items-center gap-1"
+                    className="mt-2 md:mt-0 text-sm text-[#5a0000] hover:text-[#8B0000] transition-colors flex items-center gap-1"
                   >
                     Visit
                     <svg
@@ -95,11 +101,11 @@ export default function ExperienceSection() {
                 )}
               </div>
 
-              <p className="text-sm text-gray-500 mb-4 tracking-wide">
+              <p className="text-sm text-[#5a0000] mb-4 tracking-wide font-bold">
                 {exp.descriptor}
               </p>
 
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-[#cccccc] leading-relaxed">
                 {exp.description}
               </p>
             </div>
