@@ -152,7 +152,7 @@ export default function HeroSlideshow() {
         <div className="relative">
           <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-white/30 shadow-lg transition-all duration-500 hover:scale-110">
             <Image
-              src="/profile.svg"
+              src="/Meprofile.jpg"
               alt="Laisha"
               width={80}
               height={80}
