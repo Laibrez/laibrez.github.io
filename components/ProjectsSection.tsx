@@ -80,7 +80,7 @@ export default function ProjectsSection() {
   return (
     <section id="projects" className="min-h-screen py-20 px-8 gradient-section-light">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl font-light text-gray-900 mb-16 text-center fade-in">
+        <h2 className="text-5xl font-light text-white mb-16 text-center fade-in">
           Featured Projects
         </h2>
 
@@ -88,34 +88,52 @@ export default function ProjectsSection() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group relative glass-light rounded-lg overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 fade-in"
+              className="group relative terminal overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 fade-in"
             >
-              <div className="aspect-video bg-gradient-to-br from-gray-200 to-gray-300 relative">
+              <div className="terminal-header">
+                <div className="terminal-dot"></div>
+                <div className="terminal-dot"></div>
+                <div className="terminal-dot"></div>
+              </div>
+              
+              <div className="aspect-video bg-black relative mb-4">
                 {project.link ? (
                   <>
                     <iframe
                       src={project.link}
-                      className="absolute inset-0 w-full h-full pointer-events-none"
+                      className="absolute inset-0 w-full h-full pointer-events-none border border-[#5a0000]/50"
                       title={`${project.name} preview`}
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-gray-900/50 to-transparent" />
+                    <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/50 to-transparent" />
                   </>
+                ) : project.demo ? (
+                  <div className="absolute inset-0 flex items-center justify-center border border-[#5a0000]/50">
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white/70 hover:text-white transition-colors"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      🎥 Watch Demo
+                    </a>
+                  </div>
                 ) : (
-                  <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-sm">
-                    Project Image
+                  <div className="absolute inset-0 flex items-center justify-center text-white/40 text-sm border border-[#5a0000]/50">
+                    Project Preview
                   </div>
                 )}
               </div>
 
-              <div className="p-6">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+              <div>
+                <h3 className="text-2xl font-semibold text-white mb-2">
                   {project.name}
                 </h3>
-                <p className="text-sm text-gray-500 mb-4 tracking-wide">
+                <p className="text-sm text-[#5a0000] mb-4 tracking-wide font-bold">
                   {project.descriptor}
                 </p>
-                <p className="text-gray-600 leading-relaxed mb-4">
+                <p className="text-[#cccccc] leading-relaxed mb-4">
                   {project.description}
                 </p>
 
@@ -126,7 +144,7 @@ export default function ProjectsSection() {
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-blue-600 hover:text-blue-800 transition-colors flex items-center gap-1"
+                        className="text-sm text-[#5a0000] hover:text-[#8B0000] transition-colors flex items-center gap-1"
                       >
                         🔗 Visit
                       </a>
@@ -136,7 +154,7 @@ export default function ProjectsSection() {
                         href={project.demo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-blue-600 hover:text-blue-800 transition-colors flex items-center gap-1"
+                        className="text-sm text-[#5a0000] hover:text-[#8B0000] transition-colors flex items-center gap-1"
                       >
                         🎥 Demo
                       </a>
@@ -145,7 +163,7 @@ export default function ProjectsSection() {
                 )}
               </div>
 
-              <div className="absolute inset-0 border-2 border-transparent group-hover:border-gray-300 rounded-lg transition-all duration-500" />
+              <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#5a0000]/50 rounded-lg transition-all duration-500" />
             </div>
           ))}
         </div>
