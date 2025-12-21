@@ -44,7 +44,7 @@ export default function VerticalNav() {
 
   return (
     <nav className="fixed right-8 top-8 z-50 hidden md:block">
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 bg-black/20 backdrop-blur-md rounded-full px-4 py-6 border border-white/20">
         {navItems.map((item) => (
           <button
             key={item.id}
@@ -54,10 +54,10 @@ export default function VerticalNav() {
           >
             {/* Label - appears on hover */}
             <span
-              className={`text-sm font-light tracking-wide transition-all duration-300 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 ${
+              className={`text-sm font-light tracking-wide transition-all duration-300 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 whitespace-nowrap ${
                 activeSection === item.id
-                  ? 'text-gray-900'
-                  : 'text-gray-400'
+                  ? 'text-white'
+                  : 'text-white/70'
               }`}
             >
               {item.label}
@@ -67,8 +67,8 @@ export default function VerticalNav() {
             <div
               className={`transition-all duration-300 rounded-full ${
                 activeSection === item.id
-                  ? 'w-3 h-3 bg-gray-900'
-                  : 'w-2 h-2 bg-gray-300 group-hover:bg-gray-500 group-hover:w-2.5 group-hover:h-2.5'
+                  ? 'w-3 h-3 bg-white'
+                  : 'w-2 h-2 bg-white/40 group-hover:bg-white/60 group-hover:w-2.5 group-hover:h-2.5'
               }`}
             />
           </button>

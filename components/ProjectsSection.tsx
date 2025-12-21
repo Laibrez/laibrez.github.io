@@ -43,10 +43,11 @@ const projects: Project[] = [
   },
   {
     id: 5,
-    name: 'Life Quest',
+    name: 'LifeQuest',
     descriptor: 'AI · Product Development',
     description:
       'AI-powered product with comprehensive feature set. Strong focus on AI integration and product development. View the full demonstration on YouTube.',
+    link: 'https://devpost.com/software/lifequest-17u34t',
     demo: 'https://youtu.be/TXWbPKSUEoE',
   },
   {
@@ -77,9 +78,9 @@ const projects: Project[] = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="min-h-screen bg-white py-20 px-8">
+    <section id="projects" className="min-h-screen py-20 px-8" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.02), rgba(255,255,255,0.98))' }}>
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl font-light text-gray-900 mb-16 text-center">
+        <h2 className="text-5xl font-light text-gray-900 mb-16 text-center fade-in">
           Featured Projects
         </h2>
 
@@ -87,7 +88,7 @@ export default function ProjectsSection() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group relative bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
+              className="group relative glass-light rounded-lg overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 fade-in"
             >
               <div className="aspect-video bg-gradient-to-br from-gray-200 to-gray-300 relative">
                 {project.link ? (
