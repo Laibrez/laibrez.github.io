@@ -2,7 +2,7 @@
 
 export default function AboutSection() {
   return (
-    <section id="about" className="min-h-screen py-20 px-8" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.02), rgba(255,255,255,0.98))' }}>
+    <section id="about" className="min-h-screen py-20 px-8 gradient-section-light">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-5xl font-light text-gray-900 mb-16 text-center fade-in">
           About Me
