@@ -54,24 +54,9 @@ code, pre, .mono {
   font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--text-white);
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-h1 { font-size: 3.5rem; } /* 56px */
-h2 { font-size: 2.5rem; } /* 40px */
-h3 { font-size: 1.875rem; } /* 30px */
-
-p {
-  line-height: 1.7;
-}
-
-/* Code/Technical Font */
-code, pre, .mono {
-  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+/* Gradient Utilities */
+.bg-gradient-radial {
+  background: radial-gradient(circle at center, var(--accent-wine-dark) 0%, transparent 70%);
 }
 
 /* Card Styles */
