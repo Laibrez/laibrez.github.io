@@ -14,10 +14,19 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-radial from-[#5a0000]/10 via-transparent to-transparent opacity-50" />
       
       <div className="relative z-10 text-center max-w-4xl mx-auto">
-        {/* Main heading */}
-        <h1 className="text-6xl md:text-7xl font-light text-white mb-6 tracking-tight">
-          Laisha Brezovski
-        </h1>
+        {/* Profile Picture and Name Container */}
+        <div className="flex items-center justify-center gap-6 mb-6">
+          {/* Profile Picture */}
+          <img 
+            src="/Meprofile.jpg" 
+            alt="Laisha Bravo Juarez"
+            className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover border-2 border-[#5a0000]"
+          />
+          {/* Main heading */}
+          <h1 className="text-5xl md:text-6xl font-light text-white tracking-tight">
+            Laisha Bravo Juarez
+          </h1>
+        </div>
         
         {/* Subtitle */}
         <h2 className="text-2xl md:text-3xl font-light text-[#cccccc] mb-8">
