@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation';
+import VerticalNav from '@/components/VerticalNav';
 import HeroSection from '@/components/HeroSection';
 import ProjectsSectionNew from '@/components/ProjectsSectionNew';
 import ExperienceSectionNew from '@/components/ExperienceSectionNew';
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <div className="w-full">
       <Navigation />
+      <VerticalNav />
       <HeroSection />
       <ProjectsSectionNew />
       <ExperienceSectionNew />

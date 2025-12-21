@@ -10,7 +10,9 @@ interface NavItem {
 const navItems: NavItem[] = [
   { id: 'projects', label: 'Projects' },
   { id: 'experience', label: 'Experience' },
+  { id: 'education', label: 'Education' },
   { id: 'about', label: 'About Me' },
+  { id: 'contact', label: 'Contact' },
 ];
 
 export default function VerticalNav() {
