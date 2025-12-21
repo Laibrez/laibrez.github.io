@@ -16,15 +16,15 @@ const projects: Project[] = [
     descriptor: 'Web Development · Community Platform',
     description:
       'Live website for FIU Surf Club, promoting surf culture at Florida International University and organizing community events.',
-    link: 'https://fiusurf.com/',
+    link: 'https://fiusurf.com',
   },
   {
     id: 2,
-    name: 'Alfa Fiu',
+    name: 'ALPFA FIU',
     descriptor: 'Web Development · Community Platform',
     description:
-      'Community platform for Alpha Phi Omega at Florida International University, fostering leadership, friendship, and service.',
-    link: 'https://alfafiu.org/',
+      'Professional platform for ALPFA at Florida International University, the largest ALPFA student chapter in the U.S. (600+ members), fostering leadership and career development.',
+    link: 'https://alpfafiu.org',
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const projects: Project[] = [
     descriptor: 'AI · Fashion Technology',
     description:
       'AI-powered outfit recommendation platform that helps users discover and style their perfect looks using advanced machine learning.',
-    link: 'https://outfit-ai-three.vercel.app/',
+    link: 'https://outfit-ai-three.vercel.app',
   },
   {
     id: 4,
