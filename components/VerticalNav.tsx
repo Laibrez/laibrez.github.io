@@ -43,7 +43,7 @@ export default function VerticalNav() {
   };
 
   return (
-    <nav className="fixed right-8 top-8 z-50 hidden md:block">
+    <nav className="fixed left-8 top-8 z-50">
       <div className="flex flex-col gap-6">
         {navItems.map((item) => (
           <button
@@ -52,17 +52,6 @@ export default function VerticalNav() {
             className="group flex items-center gap-3 transition-all duration-300"
             aria-label={`Navigate to ${item.label}`}
           >
-            {/* Label - appears on hover */}
-            <span
-              className={`text-sm font-light tracking-wide transition-all duration-300 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 ${
-                activeSection === item.id
-                  ? 'text-gray-900'
-                  : 'text-gray-400'
-              }`}
-            >
-              {item.label}
-            </span>
-
             {/* Dot indicator */}
             <div
               className={`transition-all duration-300 rounded-full ${
@@ -71,6 +60,17 @@ export default function VerticalNav() {
                   : 'w-2 h-2 bg-gray-300 group-hover:bg-gray-500 group-hover:w-2.5 group-hover:h-2.5'
               }`}
             />
+
+            {/* Label - appears on hover */}
+            <span
+              className={`text-sm font-light tracking-wide transition-all duration-300 opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 ${
+                activeSection === item.id
+                  ? 'text-gray-900'
+                  : 'text-gray-400'
+              }`}
+            >
+              {item.label}
+            </span>
           </button>
         ))}
       </div>
