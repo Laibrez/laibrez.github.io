@@ -2,14 +2,14 @@
 
 export default function AboutSection() {
   return (
-    <section id="about" className="min-h-screen bg-white py-20 px-8">
+    <section id="about" className="min-h-screen py-20 px-8 gradient-section-light">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-5xl font-light text-gray-900 mb-16 text-center">
+        <h2 className="text-5xl font-light text-gray-900 mb-16 text-center fade-in">
           About Me
         </h2>
 
         <div className="space-y-8">
-          <div className="text-center">
+          <div className="text-center glass-light rounded-lg p-8 fade-in">
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
               Computer Science · Software Engineer
             </p>
@@ -18,7 +18,7 @@ export default function AboutSection() {
             </p>
           </div>
 
-          <div className="prose prose-lg mx-auto text-gray-600">
+          <div className="prose prose-lg mx-auto text-gray-600 glass-light rounded-lg p-8 fade-in">
             <p className="leading-relaxed">
               I&apos;m a passionate software engineer with expertise in building modern web 
               and mobile applications. My experience spans across full-stack development, 

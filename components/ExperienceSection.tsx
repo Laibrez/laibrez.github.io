@@ -49,9 +49,9 @@ const experiences: Experience[] = [
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="min-h-screen bg-gray-50 py-20 px-8">
+    <section id="experience" className="min-h-screen py-20 px-8 gradient-section-dark">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl font-light text-gray-900 mb-16 text-center">
+        <h2 className="text-5xl font-light text-gray-900 mb-16 text-center fade-in">
           Experience
         </h2>
 
@@ -59,7 +59,7 @@ export default function ExperienceSection() {
           {experiences.map((exp) => (
             <div
               key={exp.id}
-              className="group bg-white rounded-lg p-8 shadow-sm hover:shadow-xl transition-all duration-500"
+              className="group glass-light rounded-lg p-8 shadow-sm hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] fade-in"
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div>

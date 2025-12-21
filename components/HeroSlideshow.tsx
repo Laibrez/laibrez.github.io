@@ -140,7 +140,7 @@ export default function HeroSlideshow() {
   };
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-[85vh] w-full overflow-hidden">
       {/* Profile Photo - Top Left */}
       <div
         className="absolute top-8 left-8 z-20 transition-all duration-500 ease-out"
@@ -150,7 +150,7 @@ export default function HeroSlideshow() {
         }}
       >
         <div className="relative">
-          <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-white/30 shadow-lg grayscale hover:grayscale-0 transition-all duration-500">
+          <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-white/30 shadow-lg transition-all duration-500 hover:scale-110">
             <Image
               src="/profile.svg"
               alt="Laisha"
@@ -217,7 +217,7 @@ export default function HeroSlideshow() {
                 <div className="site-preview absolute inset-0 overflow-hidden">
                   <iframe
                     src={project.websiteUrl}
-                    className="w-[120%] h-[120%] border-none scale-85 origin-top-left grayscale blur-[1px] pointer-events-none"
+                    className="w-[120%] h-[120%] border-none scale-85 origin-top-left blur-[1px] pointer-events-none"
                     loading="lazy"
                     title={`${project.name} preview`}
                   />
