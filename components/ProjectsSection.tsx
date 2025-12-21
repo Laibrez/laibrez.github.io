@@ -20,6 +20,29 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    name: 'Alfa Fiu',
+    descriptor: 'Web Development · Community Platform',
+    description:
+      'Community platform for Alpha Phi Omega at Florida International University, fostering leadership, friendship, and service.',
+    link: 'https://alfafiu.org/',
+  },
+  {
+    id: 3,
+    name: 'Runwai',
+    descriptor: 'AI · Fashion Technology',
+    description:
+      'AI-powered outfit recommendation platform that helps users discover and style their perfect looks using advanced machine learning.',
+    link: 'https://outfit-ai-three.vercel.app/',
+  },
+  {
+    id: 4,
+    name: 'Kestra',
+    descriptor: 'Open Source · UI/UX Design',
+    description:
+      'Open source UI/UX project focused on creating intuitive and accessible design systems for modern web applications.',
+  },
+  {
+    id: 5,
     name: 'Life Quest',
     descriptor: 'AI · Product Development',
     description:
@@ -27,7 +50,7 @@ const projects: Project[] = [
     demo: 'https://youtu.be/TXWbPKSUEoE',
   },
   {
-    id: 3,
+    id: 6,
     name: 'VibeRdy',
     descriptor: 'React · Python · AWS · Automation',
     description:
@@ -36,7 +59,7 @@ const projects: Project[] = [
     demo: 'https://youtu.be/Y-FfwD_dGnc',
   },
   {
-    id: 4,
+    id: 7,
     name: 'Friend Finder',
     descriptor: 'Hackathon Project · 2nd Place',
     description:
@@ -44,7 +67,7 @@ const projects: Project[] = [
     demo: 'https://youtu.be/Rmel-JFJUEc',
   },
   {
-    id: 5,
+    id: 8,
     name: 'Castiq',
     descriptor: 'Flutter · Dart · iOS · Android',
     description:
@@ -67,9 +90,21 @@ export default function ProjectsSection() {
               className="group relative bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
             >
               <div className="aspect-video bg-gradient-to-br from-gray-200 to-gray-300 relative">
-                <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-sm">
-                  Project Image
-                </div>
+                {project.link ? (
+                  <>
+                    <iframe
+                      src={project.link}
+                      className="absolute inset-0 w-full h-full pointer-events-none"
+                      title={`${project.name} preview`}
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-gray-900/50 to-transparent" />
+                  </>
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-sm">
+                    Project Image
+                  </div>
+                )}
               </div>
 
               <div className="p-6">
