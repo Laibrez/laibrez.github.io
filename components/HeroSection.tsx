@@ -15,7 +15,7 @@ export default function HeroSection() {
       
       <div className="relative z-10 text-center max-w-4xl mx-auto">
         {/* Profile Picture and Name Container */}
-        <div className="flex items-center justify-center gap-6 mb-6">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-6">
           {/* Profile Picture */}
           <img 
             src="/Meprofile.jpg" 
@@ -23,7 +23,7 @@ export default function HeroSection() {
             className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover border-2 border-[#5a0000]"
           />
           {/* Main heading */}
-          <h1 className="text-5xl md:text-6xl font-light text-white tracking-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-light text-white tracking-tight">
             Laisha Bravo Juarez
           </h1>
         </div>
