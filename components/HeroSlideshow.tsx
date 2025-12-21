@@ -146,11 +146,11 @@ export default function HeroSlideshow() {
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
-      {/* Profile Photo - Top Center */}
+      {/* Profile Photo - Top Left */}
       <div
-        className="absolute top-8 left-1/2 -translate-x-1/2 z-20 transition-all duration-500 ease-out"
+        className="absolute top-8 left-8 z-20 transition-all duration-500 ease-out"
         style={{
-          transform: `translate(-50%, 0) scale(${1 - scrollProgress * 0.2})`,
+          transform: `scale(${1 - scrollProgress * 0.2})`,
           opacity: 1 - scrollProgress * 0.5,
         }}
       >
@@ -166,7 +166,7 @@ export default function HeroSlideshow() {
             />
           </div>
           {/* Microtext below profile */}
-          <div className="mt-2 text-center">
+          <div className="mt-2 text-left">
             <p className="text-xs text-white/70 font-light tracking-wide whitespace-nowrap">
               Computer Science · Software Engineer
             </p>
