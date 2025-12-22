@@ -70,7 +70,7 @@ export default function ContactSection() {
           {/* Footer */}
           <div className="border-t border-[#2a2a2a] pt-8">
             <p className="text-sm text-[#cccccc]/60">
-              © {new Date().getFullYear()} Laisha Brezovski. All rights reserved.
+              © {new Date().getFullYear()} Laisha Bravo Juarez. All rights reserved.
             </p>
           </div>
         </div>

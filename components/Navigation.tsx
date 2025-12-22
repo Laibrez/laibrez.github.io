@@ -61,7 +61,7 @@ export default function Navigation() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="text-xl font-light text-white hover:text-[#8B0000] transition-colors duration-300"
         >
-          Laisha Brezovski
+          Laisha Bravo Juarez
         </button>
 
         {/* Navigation Links */}
