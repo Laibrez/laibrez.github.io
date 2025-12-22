@@ -55,12 +55,12 @@ export default function HeroSection() {
               >
                 View Projects
               </button>
-              <a
-                href="#contact"
+              <button
+                onClick={() => scrollToSection('resume')}
                 className="btn w-full sm:w-auto px-8 py-3.5 text-base"
               >
                 Download Resume
-              </a>
+              </button>
             </div>
           </div>
         </div>
