@@ -59,7 +59,7 @@ export default function Navigation() {
         {/* Logo/Name */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="text-xl font-light text-white hover:text-[#8B0000] transition-colors duration-300"
+          className="text-xl font-light text-white hover:text-[#a1a1a1] transition-colors duration-300"
         >
           Laisha Bravo Juarez
         </button>
@@ -76,7 +76,7 @@ export default function Navigation() {
             >
               {item.label}
               <span
-                className={`absolute -bottom-1 left-0 h-[2px] bg-[#5a0000] transition-all duration-300 ${
+                className={`absolute -bottom-1 left-0 h-[2px] bg-[#4a4a4a] transition-all duration-300 ${
                   activeSection === item.id ? 'w-full' : 'w-0 group-hover:w-full'
                 }`}
               />

@@ -61,43 +61,43 @@ export default function EducationSection() {
   return (
     <section id="education" className="section">
       <div className="max-w-[1400px] mx-auto">
-        <h2 className="text-5xl font-light text-white mb-20 text-center">
+        <h2 className="text-5xl font-semibold text-white mb-16 text-center">
           Education & Certifications
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Column: Formal Education */}
           <div className="space-y-8">
-            <h3 className="text-2xl font-light text-white mb-8 border-b border-[#2a2a2a] pb-4">
+            <h3 className="text-2xl font-semibold text-white mb-8 border-b border-[var(--accent-hover)] pb-4">
               Formal Education
             </h3>
             
             {education.map((edu, index) => (
               <div key={index} className="card">
-                <h4 className="text-xl font-light text-white mb-3">
+                <h4 className="text-xl font-medium text-white mb-3">
                   {edu.institution}
                 </h4>
                 
                 {edu.degree && (
-                  <p className="text-[#cccccc] mb-2">
+                  <p className="text-[var(--text-secondary)] mb-2">
                     {edu.degree}
                   </p>
                 )}
                 
-                <div className="text-sm text-[#cccccc]/70 mb-4">
+                <div className="text-sm text-[var(--text-tertiary)] mb-4">
                   {edu.timeline && <span>{edu.timeline}</span>}
                   {edu.timeline && edu.location && <span className="mx-2">·</span>}
                   {edu.location && <span>{edu.location}</span>}
                 </div>
 
                 {edu.coursework && (
-                  <div className="mt-4 pt-4 border-t border-[#2a2a2a]">
-                    <p className="text-sm text-[#cccccc]/70 mb-2">Relevant Coursework:</p>
+                  <div className="mt-4 pt-4 border-t border-[var(--accent-hover)]">
+                    <p className="text-sm text-[var(--text-tertiary)] mb-2">Relevant Coursework:</p>
                     <div className="flex flex-wrap gap-2">
                       {edu.coursework.map((course, idx) => (
                         <span
                           key={idx}
-                          className="text-xs px-3 py-1 rounded-full bg-[#1a1a1a] border border-[#2a2a2a] text-[#cccccc]"
+                          className="text-xs px-3 py-1 rounded-full bg-[var(--bg-tertiary)] border border-[var(--accent-primary)] text-[var(--text-secondary)]"
                         >
                           {course}
                         </span>
@@ -111,7 +111,7 @@ export default function EducationSection() {
 
           {/* Right Column: Certifications */}
           <div className="space-y-8">
-            <h3 className="text-2xl font-light text-white mb-8 border-b border-[#2a2a2a] pb-4">
+            <h3 className="text-2xl font-semibold text-white mb-8 border-b border-[var(--accent-hover)] pb-4">
               Certifications
             </h3>
             
@@ -119,19 +119,19 @@ export default function EducationSection() {
               {certifications.map((cert, index) => (
                 <div
                   key={index}
-                  className="card hover:border-[#5a0000] transition-all duration-300"
+                  className="card hover:border-[var(--accent-highlight)] transition-all duration-300"
                 >
                   <div className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#5a0000]/20 flex items-center justify-center">
-                      <svg className="w-4 h-4 text-[#8B0000]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[var(--accent-hover)] flex items-center justify-center">
+                      <svg className="w-4 h-4 text-[var(--text-secondary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                       </svg>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-base font-light text-white mb-1">
+                      <h4 className="text-base font-medium text-white mb-1">
                         {cert.name}
                       </h4>
-                      <p className="text-sm text-[#cccccc]/70">
+                      <p className="text-sm text-[var(--text-tertiary)]">
                         {cert.issuer}
                       </p>
                     </div>

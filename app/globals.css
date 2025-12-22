@@ -1,20 +1,48 @@
 @import "tailwindcss";
 
 :root {
-  /* Color Palette */
-  --background-primary: #000000;
-  --background-secondary: #1a1a1a;
-  --background-dark: #0a0a0a;
-  --accent-wine-dark: #5a0000;
-  --accent-wine-light: #8B0000;
-  --text-white: #ffffff;
-  --text-gray: #cccccc;
-  --border-dark: #2a2a2a;
+  /* Primary Colors - Elegant Dark Theme */
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #141414;
+  --bg-tertiary: #1a1a1a;
+  
+  /* Text Colors */
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1a1;
+  --text-tertiary: #6b6b6b;
+  
+  /* Accent Colors - Subtle & Elegant */
+  --accent-primary: #4a4a4a;
+  --accent-hover: #2a2a2a;
+  --accent-highlight: #7c7c7c;
+  
+  /* Legacy support - map old vars to new */
+  --background-primary: var(--bg-primary);
+  --background-secondary: var(--bg-secondary);
+  --background-dark: var(--bg-primary);
+  --text-white: var(--text-primary);
+  --text-gray: var(--text-secondary);
+  --border-dark: var(--accent-hover);
+  
+  /* Typography */
+  --h1-size: 4rem;
+  --h2-size: 2.5rem;
+  --h3-size: 1.75rem;
+  --body-size: 1.125rem;
+  --small-size: 0.875rem;
+  
+  --h1-line: 1.2;
+  --h2-line: 1.3;
+  --body-line: 1.7;
+  
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
   
   /* Spacing */
   --section-padding: 120px;
-  --card-spacing: 50px;
-  --text-spacing: 28px;
+  --card-spacing: 60px;
+  --text-spacing: 24px;
   
   /* Transitions */
   --transition-smooth: 0.3s ease;
@@ -26,9 +54,12 @@
 }
 
 body {
-  background: var(--background-primary);
-  color: var(--text-gray);
-  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: var(--body-size);
+  line-height: var(--body-line);
+  letter-spacing: 0.01em;
   position: relative;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -36,17 +67,30 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  color: var(--text-white);
-  font-weight: 500;
-  line-height: 1.2;
+  color: var(--text-primary);
+  font-weight: var(--weight-semibold);
+  letter-spacing: -0.02em;
 }
 
-h1 { font-size: 3.5rem; } /* 56px */
-h2 { font-size: 2.5rem; } /* 40px */
-h3 { font-size: 1.875rem; } /* 30px */
+h1 { 
+  font-size: var(--h1-size);
+  line-height: var(--h1-line);
+}
+
+h2 { 
+  font-size: var(--h2-size);
+  line-height: var(--h2-line);
+  margin-bottom: 48px;
+}
+
+h3 { 
+  font-size: var(--h3-size);
+  line-height: 1.3;
+}
 
 p {
-  line-height: 1.7;
+  line-height: var(--body-line);
+  margin-bottom: var(--text-spacing);
 }
 
 /* Code/Technical Font */
@@ -54,72 +98,109 @@ code, pre, .mono {
   font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
 }
 
-/* Gradient Utilities */
+/* Gradient Utilities - Subtle, No Red */
 .bg-gradient-radial {
-  background: radial-gradient(circle at center, var(--accent-wine-dark) 0%, transparent 70%);
+  background: radial-gradient(circle at center, var(--accent-hover) 0%, transparent 70%);
 }
 
 /* Card Styles */
 .card {
-  background: var(--background-secondary);
-  border: 1px solid var(--border-dark);
-  border-radius: 8px;
-  padding: 2rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--accent-primary);
+  border-radius: 12px;
+  padding: 40px;
   transition: all var(--transition-smooth);
 }
 
 .card:hover {
-  border-color: var(--accent-wine-dark);
-  box-shadow: 0 8px 32px rgba(90, 0, 0, 0.3);
+  border-color: var(--accent-highlight);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   transform: translateY(-4px);
 }
 
-/* Button Styles */
+/* Button Styles - Elegant, Not Flashy */
 .btn {
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
+  padding: 14px 32px;
+  border-radius: 8px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: var(--weight-medium);
   transition: all var(--transition-smooth);
   cursor: pointer;
-  border: 1px solid var(--accent-wine-dark);
+  border: 1px solid var(--accent-primary);
   background: transparent;
-  color: var(--text-white);
+  color: var(--text-secondary);
 }
 
 .btn:hover {
-  background: var(--accent-wine-dark);
-  transform: scale(1.05);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--accent-highlight);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .btn-primary {
-  background: var(--accent-wine-dark);
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  border-color: var(--accent-primary);
 }
 
 .btn-primary:hover {
-  background: var(--accent-wine-light);
+  background: var(--bg-secondary);
+  border-color: var(--accent-highlight);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Link Styles */
 a {
-  color: var(--text-gray);
+  color: var(--text-secondary);
   text-decoration: none;
   transition: all var(--transition-smooth);
+  border-bottom: 1px solid transparent;
 }
 
 a:hover {
-  color: var(--text-white);
-  border-bottom: 2px solid var(--accent-wine-dark);
+  color: var(--text-primary);
+  border-bottom-color: var(--accent-primary);
 }
 
 /* Section Styles */
 .section {
-  padding: var(--section-padding) 2rem;
+  padding: var(--section-padding) 80px;
   max-width: 1400px;
   margin: 0 auto;
 }
 
 .section-alt {
-  background: var(--background-dark);
+  background: var(--bg-primary);
+}
+
+/* Animations - Subtle & Elegant */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  :root {
+    --h1-size: 2.5rem;
+    --h2-size: 1.75rem;
+  }
+  
+  .section {
+    padding: 60px 24px;
+  }
+  
+  .card {
+    padding: 32px 24px;
+  }
 }
 
