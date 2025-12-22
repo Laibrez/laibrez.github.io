@@ -23,7 +23,7 @@ export default function HeroSection() {
               <img 
                 src="/Meprofile.jpg" 
                 alt="Laisha Alexandra Bravo Juarez"
-                className="w-48 h-60 sm:w-56 sm:h-72 lg:w-64 lg:h-80 rounded-2xl object-cover border-2 border-[#5a0000] transition-transform duration-300 group-hover:scale-[1.02]"
+                className="w-48 h-70 sm:w-56 sm:h-72 lg:w-64 lg:h-80 rounded-2xl object-cover border-2 border-[#5a0000] transition-transform duration-300 group-hover:scale-[1.02]"
               />
               {/* Subtle glow effect on hover */}
               <div className="absolute inset-0 rounded-2xl bg-[#5a0000]/0 group-hover:bg-[#5a0000]/5 transition-all duration-300" />
@@ -34,7 +34,7 @@ export default function HeroSection() {
           <div className="flex-1 text-center lg:text-left max-w-2xl">
             {/* Main heading */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-white tracking-tight mb-6 leading-tight">
-              Laisha Bravo Juarez
+              Laisha Alexandra Bravo Juarez
             </h1>
             
             {/* Subtitle - Improved Typography */}
@@ -44,7 +44,7 @@ export default function HeroSection() {
             
             {/* Tagline - More Prominent */}
             <p className="text-base sm:text-lg lg:text-xl text-[#cccccc]/90 mb-10 leading-relaxed">
-              Building elegant digital experiences with modern technologies
+              I try to solve complex problems by combining algorithms, creativity, and thoughtful system design. 
             </p>
             
             {/* CTA Buttons */}
