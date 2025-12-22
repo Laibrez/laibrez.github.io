@@ -84,67 +84,71 @@ export default function ExperienceSectionNew() {
 
         {/* Timeline layout */}
         <div className="relative max-w-5xl mx-auto">
-          {/* Vertical timeline line */}
-          <div className="absolute left-0 md:left-8 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#5a0000] via-[#8B0000] to-[#5a0000]" />
+          {/* Vertical timeline line - centered */}
+          <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#5a0000] via-[#8B0000] to-[#5a0000] hidden md:block" />
 
           <div className="space-y-12">
-            {experiences.map((exp, index) => (
-              <div
-                key={exp.id}
-                className="relative pl-8 md:pl-20"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                {/* Timeline dot */}
-                <div className="absolute left-[-6px] md:left-[26px] top-2 w-4 h-4 rounded-full bg-[#5a0000] border-4 border-black" />
+            {experiences.map((exp, index) => {
+              const isLeft = index % 2 === 0;
+              
+              return (
+                <div
+                  key={exp.id}
+                  className={`relative md:w-[calc(50%-2rem)] ${isLeft ? 'md:mr-auto md:pr-12' : 'md:ml-auto md:pl-12'}`}
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  {/* Timeline dot - centered */}
+                  <div className={`absolute top-2 w-4 h-4 rounded-full bg-[#5a0000] border-4 border-black hidden md:block ${isLeft ? 'right-[-10px]' : 'left-[-10px]'}`} />
 
-                {/* Experience card */}
-                <div className="card">
-                  <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-light text-white mb-2">
-                        {exp.position}
-                      </h3>
-                      <h4 className="text-xl text-[#8B0000] mb-2">
-                        {exp.company}
-                      </h4>
-                      <div className="text-sm text-[#cccccc]/70 flex flex-wrap gap-3">
-                        {exp.dateRange && <span>{exp.dateRange}</span>}
-                        {exp.location && (
-                          <>
-                            <span>·</span>
-                            <span>{exp.location}</span>
-                          </>
-                        )}
+                  {/* Experience card */}
+                  <div className="card">
+                    <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-light text-white mb-2">
+                          {exp.position}
+                        </h3>
+                        <h4 className="text-xl text-[#8B0000] mb-2">
+                          {exp.company}
+                        </h4>
+                        <div className="text-sm text-[#cccccc]/70 flex flex-wrap gap-3">
+                          {exp.dateRange && <span>{exp.dateRange}</span>}
+                          {exp.location && (
+                            <>
+                              <span>·</span>
+                              <span>{exp.location}</span>
+                            </>
+                          )}
+                        </div>
                       </div>
+
+                      {exp.link && (
+                        <a
+                          href={exp.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-4 md:mt-0 inline-flex items-center gap-2 text-sm text-[#8B0000] hover:text-white transition-colors duration-300"
+                        >
+                          Visit
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                          </svg>
+                        </a>
+                      )}
                     </div>
 
-                    {exp.link && (
-                      <a
-                        href={exp.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-4 md:mt-0 inline-flex items-center gap-2 text-sm text-[#8B0000] hover:text-white transition-colors duration-300"
-                      >
-                        Visit
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                      </a>
-                    )}
+                    {/* Description bullets */}
+                    <ul className="space-y-2 text-[#cccccc]">
+                      {exp.description.map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-3">
+                          <span className="text-[#5a0000] mt-1.5 text-xs">▸</span>
+                          <span className="flex-1 leading-relaxed">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-
-                  {/* Description bullets */}
-                  <ul className="space-y-2 text-[#cccccc]">
-                    {exp.description.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-3">
-                        <span className="text-[#5a0000] mt-1.5 text-xs">▸</span>
-                        <span className="flex-1 leading-relaxed">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
