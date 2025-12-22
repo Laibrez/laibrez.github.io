@@ -20,7 +20,7 @@ export default function HeroSection() {
           <img 
             src="/Meprofile.jpg" 
             alt="Laisha Bravo Juarez"
-            className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover border-2 border-[#5a0000]"
+            className="w-40 h-40 md:w-48 md:h-48 rounded-2xl object-cover border-2 border-[#5a0000]"
           />
           {/* Main heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-light text-white tracking-tight">
