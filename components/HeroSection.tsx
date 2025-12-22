@@ -22,8 +22,8 @@ export default function HeroSection() {
             <div className="relative group">
               <img 
                 src="/Meprofile.jpg" 
-                alt="Laisha Bravo Juarez"
-                className="w-64 h-80 sm:w-72 sm:h-96 lg:w-80 lg:h-[28rem] rounded-2xl object-cover border-2 border-[#5a0000] transition-transform duration-300 group-hover:scale-[1.02]"
+                alt="Laisha Alexandra Bravo Juarez"
+                className="w-48 h-60 sm:w-56 sm:h-72 lg:w-64 lg:h-80 rounded-2xl object-cover border-2 border-[#5a0000] transition-transform duration-300 group-hover:scale-[1.02]"
               />
               {/* Subtle glow effect on hover */}
               <div className="absolute inset-0 rounded-2xl bg-[#5a0000]/0 group-hover:bg-[#5a0000]/5 transition-all duration-300" />
@@ -39,7 +39,7 @@ export default function HeroSection() {
             
             {/* Subtitle - Improved Typography */}
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-light text-[#cccccc] mb-6 leading-relaxed">
-              Computer Science Student <span className="text-white/40">·</span> Software Engineer
+              Computer Science <span className="text-white/40">·</span> Software Engineer
             </h2>
             
             {/* Tagline - More Prominent */}
@@ -66,9 +66,9 @@ export default function HeroSection() {
         </div>
         
         {/* Additional Info - Optional Accent */}
-        <div className="text-center lg:text-left lg:pl-96 mt-8">
+        <div className="text-center lg:text-left lg:pl-80 mt-8">
           <p className="text-sm text-[#cccccc]/50 font-light">
-            Based in Miami, FL · Expected Graduation Fall 2025
+            Based in Miami, FL and Mexico City, Mexico · Graduation Fall 2025
           </p>
         </div>
       </div>
