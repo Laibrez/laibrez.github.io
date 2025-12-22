@@ -78,7 +78,7 @@ export default function ExperienceSectionNew() {
   return (
     <section id="experience" className="section section-alt">
       <div className="max-w-[1400px] mx-auto">
-        <h2 className="text-5xl font-light text-white mb-20 text-center">
+        <h2 className="text-5xl font-light text-white mb-12 text-center">
           Professional Experience
         </h2>
 
@@ -87,7 +87,7 @@ export default function ExperienceSectionNew() {
           {/* Vertical timeline line - centered */}
           <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#5a0000] via-[#8B0000] to-[#5a0000] hidden md:block" />
 
-          <div className="space-y-12">
+          <div className="space-y-8">
             {experiences.map((exp, index) => {
               const isLeft = index % 2 === 0;
               
