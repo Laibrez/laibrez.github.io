@@ -1,0 +1,117 @@
+'use client';
+
+interface Experience {
+  id: number;
+  title: string;
+  organization: string;
+  descriptor: string;
+  description: string;
+  link?: string;
+}
+
+const experiences: Experience[] = [
+  {
+    id: 1,
+    title: 'Project Manager',
+    organization: 'Laboratorio Clínico MexaLab',
+    descriptor: '2021 – 2024 · Mexico City',
+    description:
+      'Co-led launch of second clinical laboratory. Built and managed 15+ person team. Developed https://mexalab.com. Led SEO & digital marketing: +177.8% website clicks, +52.3% social interactions, +22.7% increase in final sales.',
+    link: 'https://mexalab.com',
+  },
+  {
+    id: 2,
+    title: 'Tech Contributions',
+    organization: 'ALPFA FIU',
+    descriptor: 'Web Support · Integrations',
+    description:
+      'Provided technical support for event pages, membership content, and sponsor integrations for the largest ALPFA student chapter in the U.S. (600+ members).',
+    link: 'https://alpfafiu.org',
+  },
+  {
+    id: 3,
+    title: 'Open Source Contribution',
+    organization: 'Kestra',
+    descriptor: 'UI/UX · Frontend Logic',
+    description:
+      'Collaborated on an open-source project, improving UI/UX and assisting with frontend logic and usability enhancements.',
+  },
+  {
+    id: 4,
+    title: 'Student Involvement',
+    organization: 'FIU Surf',
+    descriptor: 'Community · Events',
+    description:
+      'Active member of the FIU Surf Club, participating in community events and promoting surf culture at Florida International University.',
+    link: 'https://fiusurf.com',
+  },
+];
+
+export default function ExperienceSection() {
+  return (
+    <section id="experience" className="min-h-screen py-20 px-8 gradient-section-dark">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-5xl font-light text-white mb-16 text-center fade-in">
+          Experience
+        </h2>
+
+        <div className="space-y-8 max-w-4xl mx-auto">
+          {experiences.map((exp) => (
+            <div
+              key={exp.id}
+              className="group terminal shadow-sm hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] fade-in"
+            >
+              <div className="terminal-header">
+                <div className="terminal-dot"></div>
+                <div className="terminal-dot"></div>
+                <div className="terminal-dot"></div>
+              </div>
+              
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                <div>
+                  <h3 className="text-2xl font-semibold text-white mb-1">
+                    {exp.title}
+                  </h3>
+                  <p className="text-lg text-[#cccccc] font-medium">
+                    {exp.organization}
+                  </p>
+                </div>
+                {exp.link && (
+                  <a
+                    href={exp.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 md:mt-0 text-sm text-[#5a0000] hover:text-[#8B0000] transition-colors flex items-center gap-1"
+                  >
+                    Visit
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>
+                )}
+              </div>
+
+              <p className="text-sm text-[#5a0000] mb-4 tracking-wide font-bold">
+                {exp.descriptor}
+              </p>
+
+              <p className="text-[#cccccc] leading-relaxed">
+                {exp.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

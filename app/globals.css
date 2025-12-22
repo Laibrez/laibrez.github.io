@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+:root {
+  /* Color Palette */
+  --background-primary: #000000;
+  --background-secondary: #1a1a1a;
+  --background-dark: #0a0a0a;
+  --accent-wine-dark: #5a0000;
+  --accent-wine-light: #8B0000;
+  --text-white: #ffffff;
+  --text-gray: #cccccc;
+  --border-dark: #2a2a2a;
+  
+  /* Spacing */
+  --section-padding: 120px;
+  --card-spacing: 50px;
+  --text-spacing: 28px;
+  
+  /* Transitions */
+  --transition-smooth: 0.3s ease;
+}
+
+@theme inline {
+  --color-background: var(--background-primary);
+  --color-foreground: var(--text-gray);
+}
+
+body {
+  background: var(--background-primary);
+  color: var(--text-gray);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-white);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 { font-size: 3.5rem; } /* 56px */
+h2 { font-size: 2.5rem; } /* 40px */
+h3 { font-size: 1.875rem; } /* 30px */
+
+p {
+  line-height: 1.7;
+}
+
+/* Code/Technical Font */
+code, pre, .mono {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+}
+
+/* Gradient Utilities */
+.bg-gradient-radial {
+  background: radial-gradient(circle at center, var(--accent-wine-dark) 0%, transparent 70%);
+}
+
+/* Card Styles */
+.card {
+  background: var(--background-secondary);
+  border: 1px solid var(--border-dark);
+  border-radius: 8px;
+  padding: 2rem;
+  transition: all var(--transition-smooth);
+}
+
+.card:hover {
+  border-color: var(--accent-wine-dark);
+  box-shadow: 0 8px 32px rgba(90, 0, 0, 0.3);
+  transform: translateY(-4px);
+}
+
+/* Button Styles */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all var(--transition-smooth);
+  cursor: pointer;
+  border: 1px solid var(--accent-wine-dark);
+  background: transparent;
+  color: var(--text-white);
+}
+
+.btn:hover {
+  background: var(--accent-wine-dark);
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background: var(--accent-wine-dark);
+}
+
+.btn-primary:hover {
+  background: var(--accent-wine-light);
+}
+
+/* Link Styles */
+a {
+  color: var(--text-gray);
+  text-decoration: none;
+  transition: all var(--transition-smooth);
+}
+
+a:hover {
+  color: var(--text-white);
+  border-bottom: 2px solid var(--accent-wine-dark);
+}
+
+/* Section Styles */
+.section {
+  padding: var(--section-padding) 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-alt {
+  background: var(--background-dark);
+}
+
