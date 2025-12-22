@@ -29,11 +29,11 @@ export default function ContactSection() {
     <section id="contact" className="section">
       <div className="max-w-[1400px] mx-auto">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-5xl font-light text-white mb-8">
+          <h2 className="text-5xl font-semibold text-white mb-8">
             Let&apos;s Connect
           </h2>
           
-          <p className="text-xl text-[#cccccc] mb-12 leading-relaxed">
+          <p className="text-xl text-[var(--text-secondary)] mb-12 leading-relaxed">
             I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
           </p>
 
@@ -45,7 +45,7 @@ export default function ContactSection() {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 px-6 py-3 border border-[#5a0000] rounded text-white hover:bg-[#5a0000] transition-all duration-300"
+                className="flex items-center gap-3 px-6 py-3 border border-[var(--accent-primary)] rounded-lg text-white bg-[var(--bg-tertiary)] hover:bg-[var(--bg-secondary)] hover:border-[var(--accent-highlight)] transition-all duration-300"
               >
                 {link.icon === 'github' && (
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -68,8 +68,8 @@ export default function ContactSection() {
           </div>
 
           {/* Footer */}
-          <div className="border-t border-[#2a2a2a] pt-8">
-            <p className="text-sm text-[#cccccc]/60">
+          <div className="border-t border-[var(--accent-hover)] pt-8">
+            <p className="text-sm text-[var(--text-tertiary)]">
               © {new Date().getFullYear()} Laisha Bravo Juarez. All rights reserved.
             </p>
           </div>

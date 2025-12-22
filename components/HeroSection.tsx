@@ -9,49 +9,54 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative h-screen flex items-center justify-center px-8">
-      {/* Subtle background gradient */}
-      <div className="absolute inset-0 bg-gradient-radial from-[#5a0000]/10 via-transparent to-transparent opacity-50" />
+    <section className="relative min-h-screen flex items-center justify-center px-8 py-20">
+      {/* Subtle background gradient - NO red */}
+      <div className="absolute inset-0 bg-gradient-radial opacity-30" />
       
-      <div className="relative z-10 text-center max-w-4xl mx-auto">
-        {/* Profile Picture and Name Container */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-6">
-          {/* Profile Picture */}
-          <img 
-            src="/Meprofile.jpg" 
-            alt="Laisha Bravo Juarez"
-            className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover border-2 border-[#5a0000]"
-          />
-          {/* Main heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-light text-white tracking-tight">
-            Laisha Bravo Juarez
-          </h1>
-        </div>
-        
-        {/* Subtitle */}
-        <h2 className="text-2xl md:text-3xl font-light text-[#cccccc] mb-8">
-          Computer Science Student & Software Engineer
-        </h2>
-        
-        {/* Tagline */}
-        <p className="text-lg md:text-xl text-[#cccccc]/80 mb-12 max-w-2xl mx-auto leading-relaxed">
-          Building elegant digital experiences with modern technologies
-        </p>
-        
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button
-            onClick={() => scrollToSection('projects')}
-            className="btn btn-primary w-full sm:w-auto"
-          >
-            View Projects
-          </button>
-          <a
-            href="#contact"
-            className="btn w-full sm:w-auto"
-          >
-            Download Resume
-          </a>
+      <div className="relative z-10 max-w-[1400px] mx-auto w-full">
+        {/* Hero Container - Side by Side Layout */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-20">
+          {/* LEFT: Large Profile Picture */}
+          <div className="profile-image-wrapper relative flex-shrink-0">
+            <div className="absolute inset-[-2px] rounded-xl bg-gradient-to-br from-[#2a2a2a] to-[#4a4a4a] opacity-60 z-[-1]" />
+            <img 
+              src="/Meprofile.jpg" 
+              alt="Laisha Bravo Juarez"
+              className="w-[280px] h-[280px] md:w-[400px] md:h-[400px] rounded-xl object-cover"
+              style={{ filter: 'grayscale(20%)' }}
+            />
+          </div>
+          
+          {/* RIGHT: Text Content */}
+          <div className="hero-content flex-1 max-w-2xl text-center md:text-left" style={{ animation: 'fadeInUp 0.8s ease-out' }}>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] font-semibold text-white tracking-tight mb-4">
+              Laisha Bravo Juarez
+            </h1>
+            
+            <h2 className="text-2xl md:text-3xl font-medium text-[#a1a1a1] mb-6">
+              Computer Science Student & Software Engineer
+            </h2>
+            
+            <p className="text-lg md:text-xl text-[#a1a1a1] mb-10 leading-relaxed">
+              Building elegant digital experiences with modern technologies
+            </p>
+            
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4">
+              <button
+                onClick={() => scrollToSection('projects')}
+                className="btn btn-primary w-full sm:w-auto"
+              >
+                View Projects
+              </button>
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="btn w-full sm:w-auto"
+              >
+                Download Resume
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 

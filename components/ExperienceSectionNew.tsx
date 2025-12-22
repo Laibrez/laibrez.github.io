@@ -78,14 +78,14 @@ export default function ExperienceSectionNew() {
   return (
     <section id="experience" className="section section-alt">
       <div className="max-w-[1400px] mx-auto">
-        <h2 className="text-5xl font-light text-white mb-20 text-center">
+        <h2 className="text-5xl font-semibold text-white mb-16 text-center">
           Professional Experience
         </h2>
 
         {/* Timeline layout */}
         <div className="relative max-w-5xl mx-auto">
           {/* Vertical timeline line */}
-          <div className="absolute left-0 md:left-8 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#5a0000] via-[#8B0000] to-[#5a0000]" />
+          <div className="absolute left-0 md:left-8 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[var(--accent-primary)] via-[var(--accent-highlight)] to-[var(--accent-primary)]" />
 
           <div className="space-y-12">
             {experiences.map((exp, index) => (
@@ -95,7 +95,7 @@ export default function ExperienceSectionNew() {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Timeline dot */}
-                <div className="absolute left-[-6px] md:left-[26px] top-2 w-4 h-4 rounded-full bg-[#5a0000] border-4 border-black" />
+                <div className="absolute left-[-6px] md:left-[26px] top-2 w-4 h-4 rounded-full bg-[var(--accent-highlight)] border-4 border-[var(--bg-primary)]" />
 
                 {/* Experience card */}
                 <div className="card">
