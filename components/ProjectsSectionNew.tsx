@@ -83,7 +83,7 @@ export default function ProjectsSection() {
               className="card group"
             >
               {/* Project thumbnail/preview area */}
-              <div className="aspect-video bg-black/50 rounded-lg mb-6 overflow-hidden relative border border-[#2a2a2a]">
+              <div className="aspect-video bg-black/50 rounded-lg mb-4 overflow-hidden relative border border-[#2a2a2a]">
                 {project.liveUrl ? (
                   <>
                     <iframe
