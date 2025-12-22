@@ -9,49 +9,67 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative h-screen flex items-center justify-center px-8">
+    <section className="relative min-h-screen flex items-center justify-center px-6 py-20">
       {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-gradient-radial from-[#5a0000]/10 via-transparent to-transparent opacity-50" />
       
-      <div className="relative z-10 text-center max-w-4xl mx-auto">
-        {/* Profile Picture and Name Container */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-6">
-          {/* Profile Picture */}
-          <img 
-            src="/Meprofile.jpg" 
-            alt="Laisha Bravo Juarez"
-            className="w-48 h-48 md:w-56 md:h-56 rounded-2xl object-cover border-2 border-[#5a0000]"
-          />
-          {/* Main heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-light text-white tracking-tight">
-            Laisha Bravo Juarez
-          </h1>
+      <div className="relative z-10 max-w-6xl mx-auto w-full">
+        {/* Main Container - Side by Side Layout */}
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16 mb-8">
+          
+          {/* Profile Picture - Vertical/Portrait Format */}
+          <div className="flex-shrink-0">
+            <div className="relative group">
+              <img 
+                src="/Meprofile.jpg" 
+                alt="Laisha Bravo Juarez"
+                className="w-64 h-80 sm:w-72 sm:h-96 lg:w-80 lg:h-[28rem] rounded-2xl object-cover border-2 border-[#5a0000] transition-transform duration-300 group-hover:scale-[1.02]"
+              />
+              {/* Subtle glow effect on hover */}
+              <div className="absolute inset-0 rounded-2xl bg-[#5a0000]/0 group-hover:bg-[#5a0000]/5 transition-all duration-300" />
+            </div>
+          </div>
+
+          {/* Text Content */}
+          <div className="flex-1 text-center lg:text-left max-w-2xl">
+            {/* Main heading */}
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-white tracking-tight mb-6 leading-tight">
+              Laisha Bravo Juarez
+            </h1>
+            
+            {/* Subtitle - Improved Typography */}
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-light text-[#cccccc] mb-6 leading-relaxed">
+              Computer Science Student <span className="text-white/40">·</span> Software Engineer
+            </h2>
+            
+            {/* Tagline - More Prominent */}
+            <p className="text-base sm:text-lg lg:text-xl text-[#cccccc]/90 mb-10 leading-relaxed">
+              Building elegant digital experiences with modern technologies
+            </p>
+            
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row items-center lg:items-start lg:justify-start justify-center gap-4">
+              <button
+                onClick={() => scrollToSection('projects')}
+                className="btn btn-primary w-full sm:w-auto px-8 py-3.5 text-base"
+              >
+                View Projects
+              </button>
+              <a
+                href="#contact"
+                className="btn w-full sm:w-auto px-8 py-3.5 text-base"
+              >
+                Download Resume
+              </a>
+            </div>
+          </div>
         </div>
         
-        {/* Subtitle */}
-        <h2 className="text-2xl md:text-3xl font-light text-[#cccccc] mb-8">
-          Computer Science Student & Software Engineer
-        </h2>
-        
-        {/* Tagline */}
-        <p className="text-lg md:text-xl text-[#cccccc]/80 mb-12 max-w-2xl mx-auto leading-relaxed">
-          Building elegant digital experiences with modern technologies
-        </p>
-        
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button
-            onClick={() => scrollToSection('projects')}
-            className="btn btn-primary w-full sm:w-auto"
-          >
-            View Projects
-          </button>
-          <a
-            href="#contact"
-            className="btn w-full sm:w-auto"
-          >
-            Download Resume
-          </a>
+        {/* Additional Info - Optional Accent */}
+        <div className="text-center lg:text-left lg:pl-96 mt-8">
+          <p className="text-sm text-[#cccccc]/50 font-light">
+            Based in Miami, FL · Expected Graduation Fall 2025
+          </p>
         </div>
       </div>
 
