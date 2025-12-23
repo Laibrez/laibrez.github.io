@@ -7,6 +7,7 @@ interface Project {
   description: string;
   liveUrl?: string;
   demoUrl?: string;
+  coverImage?: string;
 }
 
 const projects: Project[] = [
@@ -17,6 +18,7 @@ const projects: Project[] = [
     description: 'Team-based hackathon project. Developed frontend and backend, deployed on AWS. Designed an automation server for website testing, delivering performance insights in under 3 minutes.',
     liveUrl: 'https://viberdy.xyz/',
     demoUrl: 'https://youtu.be/Y-FfwD_dGnc',
+    coverImage: '/VibeRdy.png',
   },
   {
     id: 2,
@@ -24,6 +26,7 @@ const projects: Project[] = [
     technologies: ['Community', 'Events', 'Web Development'],
     description: 'Live website for FIU Surf Club, promoting surf culture at Florida International University and organizing community events.',
     liveUrl: 'https://fiusurf.com',
+    coverImage: '/fiusurfss.png',
   },
   {
     id: 3,
@@ -31,6 +34,7 @@ const projects: Project[] = [
     technologies: ['Professional Development', 'Community Platform'],
     description: 'Professional platform for ALPFA at Florida International University, the largest ALPFA student chapter in the U.S. (600+ members), fostering leadership and career development.',
     liveUrl: 'https://alpfafiu.org',
+    coverImage: '/alpfass.png',
   },
   {
     id: 4,
@@ -38,6 +42,7 @@ const projects: Project[] = [
     technologies: ['Python', 'React', 'UI/UX', 'AI Integration'],
     description: 'AI-powered outfit recommendation platform that helps users discover and style their perfect looks using advanced machine learning.',
     liveUrl: 'https://outfit-ai-three.vercel.app',
+    coverImage: '/runwai.png',
   },
   {
     id: 5,
@@ -46,6 +51,7 @@ const projects: Project[] = [
     description: 'AI-powered product with comprehensive feature set. Strong focus on AI integration and product development. View the full demonstration on YouTube.',
     liveUrl: 'https://devpost.com/software/lifequest-17u34t',
     demoUrl: 'https://youtu.be/TXWbPKSUEoE',
+    coverImage: '/LifeQuest.png',
   },
   {
     id: 6,
@@ -53,18 +59,21 @@ const projects: Project[] = [
     technologies: ['Hackathon Project', '2nd Place'],
     description: 'Hackathon project that secured 2nd place. Innovative solution for connecting people and building communities.',
     demoUrl: 'https://youtu.be/Rmel-JFJUEc',
+    coverImage: '/friendfinder.png',
   },
   {
     id: 7,
     name: 'Castiq',
     technologies: ['Flutter', 'Dart', 'iOS', 'Android'],
     description: 'Professional marketplace platform for models (In Development). Focused on cross-platform mobile development and product architecture.',
+    coverImage: '/mexalab.png',
   },
   {
     id: 8,
     name: 'Kestra',
     technologies: ['Open Source', 'UI/UX Design'],
     description: 'Open source UI/UX project focused on creating intuitive and accessible design systems for modern web applications.',
+    coverImage: '/kestra.png',
   },
 ];
 
@@ -84,7 +93,16 @@ export default function ProjectsSection() {
             >
               {/* Project thumbnail/preview area */}
               <div className="aspect-video bg-black/50 rounded-lg mb-4 overflow-hidden relative border border-[#2a2a2a]">
-                {project.liveUrl ? (
+                {project.coverImage ? (
+                  <>
+                    <img
+                      src={project.coverImage}
+                      alt={`${project.name} cover`}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+                  </>
+                ) : project.liveUrl ? (
                   <>
                     <iframe
                       src={project.liveUrl}
