@@ -51,27 +51,6 @@ const experiences: Experience[] = [
       'Led recruitment, finances, marketing, and legal compliance',
     ],
   },
-  {
-    id: 4,
-    position: 'Tech Contributions',
-    company: 'ALPFA FIU',
-    dateRange: 'Web Support · Integrations',
-    location: '',
-    description: [
-      'Provided technical support for event pages, membership content, and sponsor integrations',
-    ],
-    link: 'https://alpfafiu.org',
-  },
-  {
-    id: 5,
-    position: 'Open Source Contribution',
-    company: 'Kestra',
-    dateRange: 'UI/UX · Frontend Logic',
-    location: '',
-    description: [
-      'Collaborated on improving UI/UX and frontend logic',
-    ],
-  },
 ];
 
 export default function ExperienceSectionNew() {
