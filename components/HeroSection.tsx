@@ -33,7 +33,7 @@ export default function HeroSection() {
           {/* Text Content */}
           <div className="flex-1 text-center lg:text-left max-w-2xl">
             {/* Main heading */}
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-light text-white tracking-tight mb-6 leading-tight">
+            <h1 className="text-1xl sm:text-2xl lg:text-3xl xl:text-4xl font-light text-white tracking-tight mb-6 leading-tight">
               Laisha Alexandra Bravo Juarez
             </h1>
             
