@@ -28,7 +28,7 @@ export default function ResumeSection() {
                 <a
                   href="/ResumeEng.pdf"
                   download="Laisha_Bravo_Resume_English.pdf"
-                  className="btn w-full sm:w-auto px-8 py-3.5 text-base text-sm flex items-center justify-center gap-2"
+                  className="btn w-full sm:w-auto px-8 py-3.5 flex items-center justify-center gap-2"
                   title="Download Resume"
                 >
                   <svg
@@ -61,7 +61,7 @@ export default function ResumeSection() {
                 <a
                   href="/resumeSpanish.pdf"
                   download="Laisha_Bravo_Resume_Spanish.pdf"
-                  className="btn w-full sm:w-auto px-8 py-3.5 text-base text-sm flex items-center justify-center gap-2"
+                  className="btn w-full sm:w-auto px-8 py-3.5 flex items-center justify-center gap-2"
                   title="Download Resume"
                 >
                   <svg
