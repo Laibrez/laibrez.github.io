@@ -33,17 +33,17 @@ export default function HeroSection() {
           {/* Text Content */}
           <div className="flex-1 text-center lg:text-left max-w-2xl">
             {/* Main heading */}
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-light text-white tracking-tight mb-6 leading-tight">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-light text-white tracking-tight mb-6 leading-tight">
               Laisha Alexandra Bravo Juarez
             </h1>
             
             {/* Subtitle - Improved Typography */}
-            <h2 className="text-lg sm:text-xl lg:text-2xl font-light text-[#cccccc] mb-6 leading-relaxed">
+            <h2 className="text-base sm:text-lg lg:text-xl font-light text-[#cccccc] mb-6 leading-relaxed">
               Computer Science <span className="text-white/40">·</span> Software Engineer
             </h2>
             
             {/* Tagline - More Prominent */}
-            <p className="text-sm sm:text-base lg:text-lg text-[#cccccc]/90 mb-10 leading-relaxed">
+            <p className="text-xs sm:text-sm lg:text-base text-[#cccccc]/90 mb-10 leading-relaxed">
               I try to solve complex problems by combining algorithms, creativity, and thoughtful system design. 
             </p>
             
