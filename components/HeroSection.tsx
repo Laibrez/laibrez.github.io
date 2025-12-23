@@ -40,12 +40,6 @@ export default function HeroSection() {
             {/* Subtitle - Improved Typography */}
             <h2 className="text-base sm:text-lg lg:text-xl font-light text-[#cccccc] mb-6 leading-relaxed">
               Computer Science <span className="text-white/40">·</span> Software Engineer
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-light text-white tracking-tight mb-6 leading-tight">
-            Laisha Alexandra Bravo Juarez
-            </h1>
-          
-          <h2 className="text-base sm:text-lg lg:text-xl font-light text-[#cccccc] mb-6 leading-relaxed">
-            Computer Science <span className="text-white/40">·</span> Software Engineer
             </h2>
 
             {/* Tagline - More Prominent */}
