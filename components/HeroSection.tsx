@@ -23,7 +23,7 @@ export default function HeroSection() {
               <img 
                 src="/Meprofile.jpg" 
                 alt="Laisha Alexandra Bravo Juarez"
-                className="w-48 h-70 sm:w-56 sm:h-72 lg:w-64 lg:h-80 rounded-2xl object-cover border-2 border-[#5a0000] transition-transform duration-300 group-hover:scale-[1.02]"
+                className="w-48 h-80 sm:w-56 sm:h-88 lg:w-64 lg:h-96 rounded-2xl object-cover border-2 border-[#5a0000] transition-transform duration-300 group-hover:scale-[1.02]"
               />
               {/* Subtle glow effect on hover */}
               <div className="absolute inset-0 rounded-2xl bg-[#5a0000]/0 group-hover:bg-[#5a0000]/5 transition-all duration-300" />
@@ -33,17 +33,17 @@ export default function HeroSection() {
           {/* Text Content */}
           <div className="flex-1 text-center lg:text-left max-w-2xl">
             {/* Main heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-light text-white tracking-tight mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-light text-white tracking-tight mb-6 leading-tight">
               Laisha Alexandra Bravo Juarez
             </h1>
             
             {/* Subtitle - Improved Typography */}
-            <h2 className="text-xl sm:text-2xl lg:text-3xl font-light text-[#cccccc] mb-6 leading-relaxed">
+            <h2 className="text-lg sm:text-xl lg:text-2xl font-light text-[#cccccc] mb-6 leading-relaxed">
               Computer Science <span className="text-white/40">·</span> Software Engineer
             </h2>
             
             {/* Tagline - More Prominent */}
-            <p className="text-base sm:text-lg lg:text-xl text-[#cccccc]/90 mb-10 leading-relaxed">
+            <p className="text-sm sm:text-base lg:text-lg text-[#cccccc]/90 mb-10 leading-relaxed">
               I try to solve complex problems by combining algorithms, creativity, and thoughtful system design. 
             </p>
             
@@ -55,12 +55,12 @@ export default function HeroSection() {
               >
                 View Projects
               </button>
-              <a
-                href="#contact"
+              <button
+                onClick={() => scrollToSection('resume')}
                 className="btn w-full sm:w-auto px-8 py-3.5 text-base"
               >
                 Download Resume
-              </a>
+              </button>
             </div>
           </div>
         </div>
