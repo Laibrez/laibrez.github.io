@@ -30,7 +30,7 @@ export default function ContactSection() {
       <div className="max-w-[1400px] mx-auto">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-5xl font-light text-white mb-8">
-            Let&apos;s Connect
+            See more
           </h2>
           
           <p className="text-xl text-[#cccccc] mb-12 leading-relaxed">
