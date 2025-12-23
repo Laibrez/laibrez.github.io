@@ -28,7 +28,7 @@ export default function ResumeSection() {
                 <a
                   href="/FAANGPath_Simple_Template__Copy_.pdf"
                   download="Laisha_Bravo_Resume_English.pdf"
-                  className="btn w-full sm:w-auto px-8 py-3.5 text-base text-sm"
+                  className="btn w-full sm:w-auto px-8 py-3.5 text-base text-sm border-0"
                 >
                   Download
                 </a>
@@ -47,7 +47,7 @@ export default function ResumeSection() {
                 <a
                   href="/resumeSpanish.pdf"
                   download="Laisha_Bravo_Resume_Spanish.pdf"
-                  className="btn w-full sm:w-auto px-8 py-3.5 text-base text-sm"
+                  className="btn w-full sm:w-auto px-8 py-3.5 text-base text-sm border-0"
                 >
                   Download
                 </a>
