@@ -59,7 +59,7 @@ export default function HeroSection() {
                 onClick={() => scrollToSection('resume')}
                 className="btn w-full sm:w-auto px-8 py-3.5 text-base"
               >
-                Download Resume
+                Resume
               </button>
             </div>
           </div>
