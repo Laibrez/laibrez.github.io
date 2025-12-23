@@ -33,13 +33,18 @@ export default function HeroSection() {
           {/* Text Content */}
           <div className="flex-1 text-center lg:text-left max-w-2xl">
             {/* Main heading */}
-            <h1 className="text-lg sm:text-xl lg:text-2xl font-light text-white tracking-tight leading-snug mb-2">
-              Laisha Alexandra Bravo Juarez
+            <h1 className="text-base sm:text-lg lg:text-xl font-light text-white tracking-tight leading-snug mb-1">
+              Laisha Alexandra
            </h1>
             
-           <h2 className="text-xs sm:text-sm lg:text-base font-light text-[#b3b3b3] leading-relaxed">
-              Computer Science <span className="text-white/40">·</span> Software Engineer
+            {/* Subtitle with last name */}
+            <h2 className="text-base sm:text-lg lg:text-xl font-light text-white tracking-tight leading-snug mb-3">
+              Bravo Juárez
             </h2>
+            
+           <h3 className="text-[0.65rem] sm:text-xs lg:text-sm font-light text-[#b3b3b3] leading-relaxed mb-6">
+              Computer Science <span className="text-white/40">·</span> Software Engineer
+            </h3>
             
             {/* Tagline - More Prominent */}
             <p className="text-xs sm:text-sm lg:text-base text-[#cccccc]/90 mb-10 leading-relaxed">
