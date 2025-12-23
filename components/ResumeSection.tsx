@@ -18,7 +18,7 @@ export default function ResumeSection() {
               {/* English Resume */}
               <div className="flex flex-col gap-3 w-full sm:w-auto">
                 <a
-                  href="/FAANGPath_Simple_Template__Copy_.pdf"
+                  href="/ResumeEng.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary w-full sm:w-auto px-8 py-3.5 text-base"
@@ -26,11 +26,25 @@ export default function ResumeSection() {
                   View Resume (English)
                 </a>
                 <a
-                  href="/FAANGPath_Simple_Template__Copy_.pdf"
+                  href="/ResumeEng.pdf"
                   download="Laisha_Bravo_Resume_English.pdf"
-                  className="btn w-full sm:w-auto px-8 py-3.5 text-sm border-0"
+                  className="btn w-full sm:w-auto px-8 py-3.5 flex items-center justify-center gap-2"
+                  title="Download Resume"
                 >
-                  Download
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                    />
+                  </svg>
                 </a>
               </div>
 
@@ -47,9 +61,23 @@ export default function ResumeSection() {
                 <a
                   href="/resumeSpanish.pdf"
                   download="Laisha_Bravo_Resume_Spanish.pdf"
-                  className="btn w-full sm:w-auto px-8 py-3.5 text-sm border-0"
+                  className="btn w-full sm:w-auto px-8 py-3.5 flex items-center justify-center gap-2"
+                  title="Download Resume"
                 >
-                  Download
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                    />
+                  </svg>
                 </a>
               </div>
             </div>
