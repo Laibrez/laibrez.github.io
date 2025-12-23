@@ -38,8 +38,8 @@ export default function HeroSection() {
            </h1>
             
             {/* Subtitle with last name */}
-            <h2 className="text-sm sm:text-base lg:text-lg font-light text-white tracking-tight leading-snug mb-3">
-              BRAVO <span className="text-xs sm:text-sm lg:text-base">JUÁREZ</span>
+            <h2 className="text-base sm:text-lg lg:text-xl font-light text-white tracking-tight leading-snug mb-3">
+              BRAVO <span className="text-sm sm:text-base lg:text-lg">JUÁREZ</span>
             </h2>
             
            <h3 className="text-[0.65rem] sm:text-xs lg:text-sm font-light text-[#b3b3b3] leading-relaxed mb-6">
