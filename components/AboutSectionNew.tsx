@@ -11,7 +11,7 @@ export default function AboutSectionNew() {
         <div className="max-w-[800px] mx-auto space-y-8">
           <div className="card">
             <p className="text-lg text-[#cccccc] leading-relaxed mb-6">
-              I&apos;m a passionate software engineer and Computer Science student at Florida International University, 
+              I&apos;m a passionate software engineer and Computer Science graduate from Florida International University, 
               with a unique background that bridges business leadership and technical innovation. My journey began in 
               the healthcare industry, where I co-founded and managed clinical laboratories in Mexico City, leading teams 
               of 15+ people and driving significant digital growth through strategic web development and marketing.

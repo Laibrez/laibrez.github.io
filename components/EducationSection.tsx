@@ -17,7 +17,7 @@ const education: Education[] = [
   {
     institution: 'Florida International University (FIU)',
     degree: 'Bachelor of Arts in Computer Science',
-    timeline: 'Expected Fall 2025',
+    timeline: 'Graduated Fall 2025',
     location: 'Miami, FL',
     coursework: [
       'Data Structures',

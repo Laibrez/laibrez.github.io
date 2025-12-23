@@ -68,7 +68,7 @@ export default function HeroSection() {
         {/* Additional Info - Optional Accent */}
         <div className="text-center lg:text-left lg:pl-80 mt-8">
           <p className="text-sm text-[#cccccc]/50 font-light">
-            Based in Miami, FL and Mexico City, Mexico · Graduation Fall 2025
+            Based in Miami, FL and Mexico City, Mexico · Graduated Fall 2025
           </p>
         </div>
       </div>
