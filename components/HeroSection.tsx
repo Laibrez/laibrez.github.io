@@ -33,15 +33,14 @@ export default function HeroSection() {
           {/* Text Content */}
           <div className="flex-1 text-center lg:text-left max-w-2xl">
             {/* Main heading */}
-            <h1 className="text-1xl sm:text-2xl lg:text-3xl xl:text-4xl font-light text-white tracking-tight mb-6 leading-tight">
+            <h1 className="text-lg sm:text-xl lg:text-2xl font-light text-white tracking-tight leading-snug mb-2">
               Laisha Alexandra Bravo Juarez
-            </h1>
+           </h1>
             
-           <h2 className="text-sm sm:text-base lg:text-lg font-light text-[#cccccc] mb-4 leading-relaxed">
-            Computer Science <span className="text-white/40">·</span> Software Engineer
+           <h2 className="text-xs sm:text-sm lg:text-base font-light text-[#b3b3b3] leading-relaxed">
+              Computer Science <span className="text-white/40">·</span> Software Engineer
             </h2>
-
-
+            
             {/* Tagline - More Prominent */}
             <p className="text-xs sm:text-sm lg:text-base text-[#cccccc]/90 mb-10 leading-relaxed">
               I try to solve complex problems by combining algorithms, creativity, and thoughtful system design. 
