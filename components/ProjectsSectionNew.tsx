@@ -99,6 +99,10 @@ export default function ProjectsSection() {
                       src={project.coverImage}
                       alt={`${project.name} cover`}
                       className="absolute inset-0 w-full h-full object-cover"
+                      loading="lazy"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                      }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
                   </>
