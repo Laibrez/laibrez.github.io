@@ -11,24 +11,47 @@ export default function ResumeSection() {
         <div className="max-w-[800px] mx-auto">
           <div className="card text-center">
             <p className="text-lg text-[#cccccc] leading-relaxed mb-8">
-              Download my resume in your preferred language
+              View or download my resume in your preferred language
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <a
-                href="/FAANGPath_Simple_Template__Copy_.pdf"
-                download="Laisha_Bravo_Resume_English.pdf"
-                className="btn btn-primary w-full sm:w-auto px-8 py-3.5 text-base"
-              >
-                Download Resume (English)
-              </a>
-              <a
-                href="/resumeSpanish.pdf"
-                download="Laisha_Bravo_Resume_Spanish.pdf"
-                className="btn w-full sm:w-auto px-8 py-3.5 text-base"
-              >
-                Download Resume (Spanish)
-              </a>
+              {/* English Resume */}
+              <div className="flex flex-col gap-3 w-full sm:w-auto">
+                <a
+                  href="/FAANGPath_Simple_Template__Copy_.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary w-full sm:w-auto px-8 py-3.5 text-base"
+                >
+                  View Resume (English)
+                </a>
+                <a
+                  href="/FAANGPath_Simple_Template__Copy_.pdf"
+                  download="Laisha_Bravo_Resume_English.pdf"
+                  className="btn w-full sm:w-auto px-8 py-3.5 text-base text-sm"
+                >
+                  Download
+                </a>
+              </div>
+
+              {/* Spanish Resume */}
+              <div className="flex flex-col gap-3 w-full sm:w-auto">
+                <a
+                  href="/resumeSpanish.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary w-full sm:w-auto px-8 py-3.5 text-base"
+                >
+                  View Resume (Spanish)
+                </a>
+                <a
+                  href="/resumeSpanish.pdf"
+                  download="Laisha_Bravo_Resume_Spanish.pdf"
+                  className="btn w-full sm:w-auto px-8 py-3.5 text-base text-sm"
+                >
+                  Download
+                </a>
+              </div>
             </div>
           </div>
         </div>
