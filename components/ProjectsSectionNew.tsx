@@ -66,7 +66,7 @@ const projects: Project[] = [
     name: 'Castiq',
     technologies: ['Flutter', 'Dart', 'iOS', 'Android'],
     description: 'Professional marketplace platform for models (In Development). Focused on cross-platform mobile development and product architecture.',
-    coverImage: '/mexalab.png',
+    coverImage: '/Castiq.png',
   },
   {
     id: 8,
