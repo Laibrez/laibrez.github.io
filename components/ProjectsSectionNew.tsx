@@ -76,6 +76,14 @@ const projects: Project[] = [
     description: 'Open source UI/UX project focused on creating intuitive and accessible design systems for modern web applications.',
     coverImage: '/kestra.png',
   },
+  {
+    id: 9,
+    name: 'Mexalab Project Manager',
+    technologies: ['Project Management', 'Web Development'],
+    description: 'Comprehensive project management platform designed to streamline workflows and enhance team collaboration.',
+    liveUrl: 'https://mexalab.netlify.app/',
+    coverImage: '/mexalab.png',
+  },
 ];
 
 export default function ProjectsSection() {
