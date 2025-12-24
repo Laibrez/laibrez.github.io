@@ -33,12 +33,8 @@ const experiences: Experience[] = [
       'Built and managed a 15+ member team',
       'Handled permits, HR, and legal processes',
       'Developed mexalab.com using HTML, CSS, and JavaScript',
-      'Led SEO and digital marketing strategy:',
-      '• +177.8% website clicks',
-      '• +52.3% social profile interactions',
-      '• +22.7% increase in final sales',
     ],
-    link: 'https://mexalab.com',
+    link: 'https://mexalab.netlify.app/',
   },
   {
     id: 3,
