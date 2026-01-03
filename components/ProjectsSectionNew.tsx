@@ -31,8 +31,8 @@ const projects: Project[] = [
   {
     id: 3,
     name: 'ALPFA FIU',
-    technologies: ['Professional Development', 'Community Platform'],
-    description: 'Professional platform for ALPFA at Florida International University, the largest ALPFA student chapter in the U.S. (600+ members), fostering leadership and career development.',
+    technologies: ['WordPress', 'Elementor', 'Professional Development', 'Community Platform'],
+    description: 'Professional platform for ALPFA at Florida International University, the largest ALPFA student chapter in the U.S. (600+ members), fostering leadership and career development. Developed with WordPress and Elementor.',
     liveUrl: 'https://alpfafiu.org',
     coverImage: '/alpfass.png',
   },
