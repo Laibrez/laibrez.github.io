@@ -14,12 +14,12 @@ const socialLinks: SocialLink[] = [
   },
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/laisha-brezovski/',
+    url: 'https://www.linkedin.com/in/laibrez/',
     icon: 'linkedin',
   },
   {
     name: 'Email',
-    url: 'mailto:lbrezovski@gmail.com',
+    url: 'mailto:laishabj@gmail.com',
     icon: 'email',
   },
 ];

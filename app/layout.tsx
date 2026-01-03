@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Laisha Bravo Juarez | Portfolio",
-  description: "Computer Science Graduate & Software Engineer. Building elegant digital experiences with modern technologies.",
+  description: "Computer Science Graduate & Software Engineer. Building digital experiences with modern technologies.",
 };
 
 export default function RootLayout({

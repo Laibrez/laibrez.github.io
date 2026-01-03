@@ -18,7 +18,7 @@ export default function AboutSectionNew() {
             </p>
             
             <p className="text-lg text-[#cccccc] leading-relaxed mb-6">
-              Today, I specialize in building elegant, user-centric applications using modern technologies like React, 
+              Today, I specialize in building user-centric applications using modern technologies like React, 
               Next.js, Python, and Flutter. I&apos;m particularly drawn to the intersection of AI, UI/UX design, and 
               full-stack development. Whether it&apos;s developing automation systems, designing intuitive interfaces, 
               or building cross-platform mobile apps, I focus on delivering high-quality solutions that make a 
