@@ -11,6 +11,8 @@ interface Education {
 interface Certification {
   name: string;
   issuer: string;
+  link?: string;
+  project?: string;
 }
 
 const education: Education[] = [
@@ -35,6 +37,12 @@ const education: Education[] = [
 ];
 
 const certifications: Certification[] = [
+  {
+    name: 'Google Project Management Professional Certificate',
+    issuer: 'Google',
+    link: 'https://www.coursera.org/account/accomplishments/verify/T2E52L2NYLJB',
+    project: 'Create a Project Management Tracker using Microsoft Excel',
+  },
   {
     name: 'Computational Thinking',
     issuer: 'University of Pennsylvania',
@@ -129,11 +137,30 @@ export default function EducationSection() {
                     </div>
                     <div className="flex-1">
                       <h4 className="text-base font-light text-white mb-1">
-                        {cert.name}
+                        {cert.link ? (
+                          <a
+                            href={cert.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-[#8B0000] transition-colors duration-300 inline-flex items-center gap-2"
+                          >
+                            {cert.name}
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                          </a>
+                        ) : (
+                          cert.name
+                        )}
                       </h4>
                       <p className="text-sm text-[#cccccc]/70">
                         {cert.issuer}
                       </p>
+                      {cert.project && (
+                        <p className="text-xs text-[#cccccc]/50 mt-2 italic">
+                          Project: {cert.project}
+                        </p>
+                      )}
                     </div>
                   </div>
                 </div>

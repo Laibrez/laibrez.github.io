@@ -1,5 +1,12 @@
 'use client';
 
+const skills = [
+  'Leadership',
+  'Planning',
+  'Budgeting',
+  'Agile/Scrum',
+];
+
 export default function AboutSectionNew() {
   return (
     <section id="about" className="section section-alt">
@@ -32,6 +39,23 @@ export default function AboutSectionNew() {
               in the power of technology to create positive change, and I&apos;m always excited to take on new challenges 
               that push the boundaries of what&apos;s possible.
             </p>
+          </div>
+
+          {/* Skills Section */}
+          <div className="card mt-8">
+            <h3 className="text-2xl font-light text-white mb-6 text-center border-b border-[#2a2a2a] pb-4">
+              Key Skills
+            </h3>
+            <div className="flex flex-wrap justify-center gap-3">
+              {skills.map((skill, index) => (
+                <span
+                  key={index}
+                  className="px-4 py-2 rounded-full bg-[#5a0000]/20 border border-[#5a0000] text-[#cccccc] hover:bg-[#5a0000]/30 hover:text-white transition-all duration-300"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </div>
