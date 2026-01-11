@@ -47,9 +47,9 @@ export default function AboutSectionNew() {
               Key Skills
             </h3>
             <div className="flex flex-wrap justify-center gap-3">
-              {skills.map((skill, index) => (
+              {skills.map((skill) => (
                 <span
-                  key={index}
+                  key={skill}
                   className="px-4 py-2 rounded-full bg-[#5a0000]/20 border border-[#5a0000] text-[#cccccc] hover:bg-[#5a0000]/30 hover:text-white transition-all duration-300"
                 >
                   {skill}
