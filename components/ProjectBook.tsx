@@ -156,14 +156,14 @@ export default function ProjectBook() {
 
       <div className="relative flex flex-col items-center gap-6 lg:gap-8 transition-all duration-1000">
 
-        {/* Book Container - Mobile Adjusted Height (480px) / Desktop (680px) */}
-        <div className="relative w-[340px] md:w-[400px] lg:w-[1000px] h-[480px] lg:h-[680px] [perspective:3500px] [transform-style:preserve-3d]">
+        {/* Book Container - Mobile Fixed Half-Width (170px) / Desktop (1000px) */}
+        <div className="relative w-[170px] lg:w-[1000px] h-[480px] lg:h-[680px] [perspective:3500px] [transform-style:preserve-3d] -translate-x-1/2 lg:-translate-x-1/2 left-1/2">
 
           {/* THE PAGES */}
 
           {/* 1. FRONT COVER */}
           <div
-            className={`absolute inset-y-0 right-0 w-full lg:w-[500px] origin-left transition-transform duration-[1400ms] cubic-bezier(0.19,1,0.22,1) z-[200] preserve-3d cursor-pointer leather-book ${currentPage >= 1 ? '-rotate-y-[180deg]' : '-rotate-y-[6deg] lg:-translate-x-1/2'
+            className={`absolute inset-y-0 right-0 w-full lg:w-[500px] origin-left transition-transform duration-[1400ms] cubic-bezier(0.19,1,0.22,1) z-[200] preserve-3d cursor-pointer leather-book ${currentPage >= 1 ? '-rotate-y-[180deg]' : '-rotate-y-[6deg]'
               }`}
             onClick={currentPage === 0 ? nextPage : undefined}
           >
@@ -221,7 +221,7 @@ export default function ProjectBook() {
                   {/* Dynamic Light Overlay */}
                   <div className={`page-shadow bg-gradient-to-r from-black/20 to-transparent ${currentPage > pageNum ? 'opacity-0' : 'opacity-100'}`} />
                   
-                  <div className="h-full flex flex-col p-10 lg:p-14 relative z-10">
+                  <div className="h-full flex flex-col p-6 lg:p-14 relative z-10">
                     <div className="flex justify-between items-center border-b-[1px] border-[#d4c9b8] pb-3 lg:pb-4 mb-4 lg:mb-6">
                       <span className="vogue-label text-[0.6rem] lg:text-[0.7rem] text-[#6B0F1A] font-black">{proj.role}</span>
                       <span className="font-cinzel text-lg lg:text-xl font-black text-[#6B0F1A] opacity-30">{proj.num}</span>
@@ -267,14 +267,14 @@ export default function ProjectBook() {
               } ${currentPage === 0 ? 'opacity-0 invisible pointer-events-none hidden' : 'opacity-100 visible'}`}
           >
             {/* Last Internal Surface - RIGHT SIDE */}
-            <div className="absolute inset-0 bg-[#FAF6EE] flex flex-col items-center justify-center backface-hidden border-l-[1px] border-[#d4c9b8] rounded-r-sm p-16">
+            <div className="absolute inset-0 bg-[#FAF6EE] flex flex-col items-center justify-center backface-hidden border-l-[1px] border-[#d4c9b8] rounded-r-sm p-8 lg:p-16">
               <div className="w-20 hairline-h bg-[#6B0F1A]/30 mb-8" />
               <h4 className="vogue-label text-2xl text-[#6B0F1A] mb-4">FINIS</h4>
               <span className="vogue-label text-[0.7rem] tracking-[0.6em] uppercase text-[#b5a898]">END OF VOLUME I</span>
             </div>
 
             {/* External Back Cover (Shown on LEFT) */}
-            <div className="absolute inset-0 bg-[#3d1b10] rotate-y-180 backface-hidden shadow-5xl flex flex-col items-center justify-center rounded-l-md p-16">
+            <div className="absolute inset-0 bg-[#3d1b10] rotate-y-180 backface-hidden shadow-5xl flex flex-col items-center justify-center rounded-l-md p-8 lg:p-16">
               <div className="leather-texture absolute inset-0 opacity-50" />
               <h4 className="font-great-vibes text-[7rem] lg:text-[9rem] text-[#BAFF39] leading-none mb-4 drop-shadow-[0_0_50px_rgba(186,255,57,0.4)]">
                 Thank You
