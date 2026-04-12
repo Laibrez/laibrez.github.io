@@ -163,7 +163,7 @@ export default function ProjectBook() {
 
           {/* 1. FRONT COVER */}
           <div
-            className={`absolute inset-y-0 right-0 w-full lg:w-[500px] origin-left transition-transform duration-[1400ms] cubic-bezier(0.19,1,0.22,1) z-[200] preserve-3d cursor-pointer leather-book ${currentPage >= 1 ? '-rotate-y-[180deg]' : '-rotate-y-[6deg] lg:-translate-x-1/2'
+            className={`absolute inset-y-0 right-0 w-full lg:w-[500px] origin-left transition-transform duration-0 lg:duration-[1400ms] cubic-bezier(0.19,1,0.22,1) z-[200] preserve-3d cursor-pointer leather-book ${currentPage >= 1 ? '-rotate-y-[180deg]' : '-rotate-y-[6deg] lg:-translate-x-1/2'
               }`}
             onClick={currentPage === 0 ? nextPage : undefined}
           >
@@ -203,14 +203,14 @@ export default function ProjectBook() {
             return (
               <div
                 key={idx}
-                className={`absolute inset-y-0 right-0 w-full lg:w-[500px] origin-left transition-all duration-[800ms] shadow-2xl preserve-3d ${
+                className={`absolute inset-y-0 right-0 w-full lg:w-[500px] origin-left transition-all duration-0 lg:duration-[800ms] shadow-2xl preserve-3d ${
                   currentPage > pageNum 
                     ? '-rotate-y-[180deg]' 
                     : 'rotate-y-0'
                 } ${isHidden ? 'opacity-0 invisible pointer-events-none hidden' : 'opacity-100 visible flex'}`}
                 style={{
                   zIndex: 120 - pageNum,
-                  transitionDelay: `${currentPage > pageNum ? idx * 20 : 0}ms`,
+                  transitionDelay: `${currentPage > pageNum ? (typeof window !== 'undefined' && window.innerWidth < 1024 ? 0 : idx * 20) : 0}ms`,
                 }}
               >
                 {/* Front Side of Leaf (Project Page on the Right) */}
