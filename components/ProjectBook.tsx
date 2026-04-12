@@ -154,7 +154,7 @@ export default function ProjectBook() {
         </h2>
       </div>
 
-      <div className="relative flex flex-col items-center gap-24 transition-all duration-1000">
+      <div className="relative flex flex-col items-center gap-12 lg:gap-16 transition-all duration-1000">
 
         {/* Book Container - Mobile Adjusted Height (480px) / Desktop (680px) */}
         <div className="relative w-[340px] md:w-[400px] lg:w-[1000px] h-[480px] lg:h-[680px] [perspective:3500px] [transform-style:preserve-3d]">
@@ -292,7 +292,7 @@ export default function ProjectBook() {
         </div>
         
         {/* NAVIGATION CONTROLS */}
-        <div className="flex flex-col items-center gap-8 mt-6 mb-16">
+        <div className="flex flex-col items-center gap-6 mt-2 mb-16">
           {currentPage > 0 && (
             <div className="flex items-center gap-10 z-[300]">
               <button
