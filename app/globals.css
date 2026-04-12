@@ -1,125 +1,153 @@
 @import "tailwindcss";
 
 :root {
-  /* Color Palette */
-  --background-primary: #000000;
-  --background-secondary: #1a1a1a;
-  --background-dark: #0a0a0a;
-  --accent-wine-dark: #5a0000;
-  --accent-wine-light: #8B0000;
-  --text-white: #ffffff;
-  --text-gray: #cccccc;
-  --border-dark: #2a2a2a;
-  
-  /* Spacing */
-  --section-padding: 120px;
-  --card-spacing: 50px;
-  --text-spacing: 28px;
-  
-  /* Transitions */
-  --transition-smooth: 0.3s ease;
+  /* Editorial Palette */
+  --wine: #6B0F1A;
+  --wine-dark: #4A0812;
+  --wine-deep: #3A0610;
+  --lime: #BAFF39;
+  --lime-dim: #9EE020;
+  --white: #F8F4EE;
+  --offwhite: #E8E2D8;
+  --cream: #D4C9B8;
+  --paper: #FAF6EE;
+  --paper-dark: #EDE6D9;
+  --brown: #5C3D1E;
+  --brown-dark: #3D2508;
+  --brown-light: #8B6340;
+
+  /* Font Aliases */
+  --font-montserrat: var(--font-montserrat, 'Montserrat', sans-serif);
+  --font-cormorant: var(--font-cormorant, 'Cormorant Garamond', serif);
+  --font-cinzel: var(--font-cinzel, 'Cinzel', serif);
+  --font-great-vibes: var(--font-great-vibes, 'Great Vibes', cursive);
 }
 
 @theme inline {
-  --color-background: var(--background-primary);
-  --color-foreground: var(--text-gray);
+  --color-wine: var(--wine);
+  --color-wine-dark: var(--wine-dark);
+  --color-wine-deep: var(--wine-deep);
+  --color-lime: var(--lime);
+  --color-lime-dim: var(--lime-dim);
+  --color-paper: var(--paper);
+  --color-paper-dark: var(--paper-dark);
+  --color-brown: var(--brown);
+  --color-brown-dark: var(--brown-dark);
+  --color-brown-light: var(--brown-light);
+  --font-montserrat: var(--font-montserrat);
+  --font-cormorant: var(--font-cormorant);
+  --font-cinzel: var(--font-cinzel);
+  --font-great-vibes: var(--font-great-vibes);
 }
 
 body {
-  background: var(--background-primary);
-  color: var(--text-gray);
-  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Helvetica Neue', Arial, sans-serif;
-  position: relative;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+  background: var(--wine-dark);
+  color: var(--white);
+  font-family: var(--font-montserrat);
+  font-size: 19px; /* Slightly larger for editorial feel */
+  font-weight: 500; /* Medium base for better legibility on dark bgs */
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--text-white);
-  font-weight: 500;
-  line-height: 1.2;
+/* Animations from the Editorial Design */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-h1 { font-size: 3.5rem; } /* 56px */
-h2 { font-size: 2.5rem; } /* 40px */
-h3 { font-size: 1.875rem; } /* 30px */
+@keyframes expandWidth {
+  from { width: 0; }
+  to { width: 120px; }
+}
 
-p {
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+.animate-fade-up {
+  animation: fadeSlideUp 1s cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+
+.animate-expand {
+  animation: expandWidth 1.5s cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+/* Typography Enhancements - Vogue Bold Style */
+h1, h2, h3, h4 {
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+p, span, li {
   line-height: 1.7;
-}
-
-/* Code/Technical Font */
-code, pre, .mono {
-  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
-}
-
-/* Gradient Utilities */
-.bg-gradient-radial {
-  background: radial-gradient(circle at center, var(--accent-wine-dark) 0%, transparent 70%);
-}
-
-/* Card Styles */
-.card {
-  background: var(--background-secondary);
-  border: 1px solid var(--border-dark);
-  border-radius: 8px;
-  padding: 2rem;
-  transition: all var(--transition-smooth);
-}
-
-.card:hover {
-  border-color: var(--accent-wine-dark);
-  box-shadow: 0 8px 32px rgba(90, 0, 0, 0.3);
-  transform: translateY(-4px);
-}
-
-/* Button Styles */
-.btn {
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  font-size: 1rem;
   font-weight: 500;
-  transition: all var(--transition-smooth);
-  cursor: pointer;
-  border: 1px solid var(--accent-wine-dark);
-  background: transparent;
-  color: var(--text-white);
 }
 
-.btn:hover {
-  background: var(--accent-wine-dark);
-  transform: scale(1.05);
+/* Vogue Editorial Utility Classes */
+.vogue-label {
+  font-family: var(--font-cinzel);
+  font-variant: small-caps;
+  font-weight: 700;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
 }
 
-.btn-primary {
-  background: var(--accent-wine-dark);
+.hairline-v {
+  width: 0.5px;
+  background: rgba(186, 255, 57, 0.25);
 }
 
-.btn-primary:hover {
-  background: var(--accent-wine-light);
+.hairline-h {
+  height: 0.5px;
+  background: rgba(186, 255, 57, 0.25);
 }
 
-/* Link Styles */
-a {
-  color: var(--text-gray);
-  text-decoration: none;
-  transition: all var(--transition-smooth);
+.leather-texture {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),
+    linear-gradient(135deg, rgba(0,0,0,0.2), transparent);
+  background-blend-mode: overlay;
+  opacity: 0.25;
 }
 
-a:hover {
-  color: var(--text-white);
-  border-bottom: 2px solid var(--accent-wine-dark);
+.brass-corner {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #d4af37 0%, #f9f295 45%, #b8860b 70%, #f9f295 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 4.5%, 4.5% 4.5%, 4.5% 100%, 0 100%);
+  z-index: 60;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
 }
 
-/* Section Styles */
-.section {
-  padding: var(--section-padding) 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
+.paper-edge {
+  background: repeating-linear-gradient(90deg, #f0ece6 0px, #f0ece6 2px, #d4c9b8 2px, #d4c9b8 4px);
 }
 
-.section-alt {
-  background: var(--background-dark);
+/* Custom Selection */
+::selection {
+  background: var(--lime);
+  color: var(--wine-dark);
 }
 
+/* Scrollbar Style */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--wine-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--lime);
+  border: 2px solid var(--wine-deep);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--white);
+}
