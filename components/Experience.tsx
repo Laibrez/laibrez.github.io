@@ -112,9 +112,10 @@ export default function Experience() {
                       <h3 className="font-cinzel text-xl md:text-2xl font-black text-[#3d2508] mb-2 uppercase tracking-tight">
                         {exp.position}
                       </h3>
-                      <h4 className="vogue-label text-[#6B0F1A] text-[0.85rem] tracking-[0.3em] font-black underline decoration-[#BAFF39]/80 underline-offset-8">
+                      <h4 className="vogue-label text-[#6B0F1A] text-[0.85rem] tracking-[0.3em] font-black uppercase">
                         {exp.company}
                       </h4>
+                      <div className="w-12 h-[2px] bg-[#BAFF39] mt-3" />
                     </div>
 
                     <div className="vogue-label text-[0.65rem] text-[#9a8e7e] mb-8 flex flex-wrap gap-4 uppercase tracking-[0.2em]">
