@@ -140,7 +140,7 @@ export default function ProjectBook() {
   };
 
   return (
-    <section id="featured-book" className="bg-[#3A0610] py-40 px-8 min-h-screen flex flex-col items-center overflow-hidden relative">
+    <section id="featured-book" className="min-h-screen bg-[#3A0610] pt-16 pb-32 px-6 md:px-14 relative transition-all duration-1000 overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-[0.5px] bg-[#BAFF39]/10" />
 
       <div className="text-center mb-24 animate-fade-up">
@@ -154,7 +154,7 @@ export default function ProjectBook() {
         </h2>
       </div>
 
-      <div className="relative flex flex-col items-center gap-12 lg:gap-16 transition-all duration-1000">
+      <div className="relative flex flex-col items-center gap-6 lg:gap-8 transition-all duration-1000">
 
         {/* Book Container - Mobile Adjusted Height (480px) / Desktop (680px) */}
         <div className="relative w-[340px] md:w-[400px] lg:w-[1000px] h-[480px] lg:h-[680px] [perspective:3500px] [transform-style:preserve-3d]">
