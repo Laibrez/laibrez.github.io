@@ -156,8 +156,8 @@ export default function ProjectBook() {
 
       <div className="relative flex flex-col items-center gap-24 transition-all duration-1000">
 
-        {/* Book Container - ENLARGED SIZE (1000x680) */}
-        <div className="relative w-[360px] lg:w-[1000px] h-[680px] [perspective:3500px] [transform-style:preserve-3d]">
+        {/* Book Container - Mobile Adjusted Height (480px) / Desktop (680px) */}
+        <div className="relative w-[340px] md:w-[400px] lg:w-[1000px] h-[480px] lg:h-[680px] [perspective:3500px] [transform-style:preserve-3d]">
 
           {/* THE PAGES */}
 
@@ -179,12 +179,12 @@ export default function ProjectBook() {
               <div className="brass-corner bottom-0 left-0 -rotate-90 z-30" />
               <div className="brass-corner bottom-0 right-0 rotate-180 z-30" />
 
-              <div className="flex flex-col items-center z-10 scale-90 lg:scale-100">
+              <div className="flex flex-col items-center z-10 scale-[0.7] md:scale-90 lg:scale-100">
                 <span className="vogue-label text-[0.8rem] text-[#3d1b10]/60 tracking-[0.6em] mb-4">EDITION MMXXVI</span>
-                <h2 className="engraved-text font-cinzel text-6xl lg:text-7xl font-black tracking-[0.2em] text-center leading-tight select-none">
+                <h2 className="engraved-text font-cinzel text-5xl lg:text-7xl font-black tracking-[0.2em] text-center leading-tight select-none">
                   PROJECTS
                 </h2>
-                <div className="w-16 h-[1.5px] bg-[#3d1b10]/20 my-6" />
+                <div className="w-16 h-[1.5px] bg-[#3d1b10]/20 my-4 lg:my-6" />
                 <span className="vogue-label text-[0.7rem] text-[#3d1b10]/50 tracking-[0.8em] uppercase">Archive Collection</span>
               </div>
             </div>
@@ -222,14 +222,14 @@ export default function ProjectBook() {
                   <div className={`page-shadow bg-gradient-to-r from-black/20 to-transparent ${currentPage > pageNum ? 'opacity-0' : 'opacity-100'}`} />
                   
                   <div className="h-full flex flex-col p-10 lg:p-14 relative z-10">
-                    <div className="flex justify-between items-center border-b-[1px] border-[#d4c9b8] pb-4 mb-6">
-                      <span className="vogue-label text-[0.7rem] text-[#6B0F1A] font-black">{proj.role}</span>
-                      <span className="font-cinzel text-xl font-black text-[#6B0F1A] opacity-30">{proj.num}</span>
+                    <div className="flex justify-between items-center border-b-[1px] border-[#d4c9b8] pb-3 lg:pb-4 mb-4 lg:mb-6">
+                      <span className="vogue-label text-[0.6rem] lg:text-[0.7rem] text-[#6B0F1A] font-black">{proj.role}</span>
+                      <span className="font-cinzel text-lg lg:text-xl font-black text-[#6B0F1A] opacity-30">{proj.num}</span>
                     </div>
 
-                    <h3 className="font-cinzel text-3xl lg:text-4xl font-black text-[#1a0405] mb-6 leading-none tracking-tighter uppercase">{proj.name}</h3>
+                    <h3 className="font-cinzel text-2xl lg:text-4xl font-black text-[#1a0405] mb-4 lg:mb-6 leading-none tracking-tighter uppercase">{proj.name}</h3>
 
-                    <div className="relative aspect-[16/11] w-full mb-8 border-[1px] border-[#d4c9b8] shadow-2xl group overflow-hidden bg-white">
+                    <div className="relative aspect-[16/10] w-full mb-4 lg:mb-8 border-[1px] border-[#d4c9b8] shadow-2xl group overflow-hidden bg-white">
                       <Image 
                         src={proj.thumb} 
                         alt={proj.name} 
@@ -239,7 +239,9 @@ export default function ProjectBook() {
                       />
                     </div>
 
-                    <p className="font-cormorant text-lg lg:text-xl font-bold leading-tight text-[#3d2508] mb-8 italic border-l-[4px] border-[#6B0F1A]/10 pl-8 line-clamp-3 overflow-hidden">{proj.desc}</p>
+                    <p className="font-cormorant text-[1rem] lg:text-[1.2rem] font-bold leading-tight text-[#3d2508] mb-6 lg:mb-8 italic border-l-[3px] border-[#6B0F1A]/10 pl-6 lg:pl-8 line-clamp-2 md:line-clamp-3 overflow-hidden">
+                      {proj.desc}
+                    </p>
 
                     <div className="mt-auto flex flex-wrap gap-10 border-t-[1.3px] border-[#d4c9b8] pt-8">
                       {proj.links.map(l => (
