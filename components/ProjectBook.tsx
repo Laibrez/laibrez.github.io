@@ -292,27 +292,27 @@ export default function ProjectBook() {
         </div>
         
         {/* NAVIGATION CONTROLS */}
-        <div className="flex flex-col items-center gap-12 mt-12 mb-16">
+        <div className="flex flex-col items-center gap-8 mt-6 mb-16">
           {currentPage > 0 && (
-            <div className="flex items-center gap-12 z-[300]">
+            <div className="flex items-center gap-10 z-[300]">
               <button
                 onClick={prevPage}
                 className={`flex flex-col items-center group transition-all duration-500 ${currentPage < 1 ? 'opacity-0 scale-50 pointer-events-none' : 'hover:scale-110 active:scale-90'}`}
               >
-                <div className="w-20 h-20 rounded-full border-[1.5px] border-[#FFD700]/30 flex items-center justify-center text-[#FFD700] group-hover:bg-[#FFD700] group-hover:text-[#1a0405] backdrop-blur-lg shadow-2xl transition-all duration-700">
-                  <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
-                </div>
-                <span className="mt-4 vogue-label text-[0.7rem] text-[#FFD700] hidden lg:block tracking-[0.5em] font-black">REVERSE</span>
+                  <div className="w-14 h-14 rounded-full border-[1.5px] border-[#FFD700]/30 flex items-center justify-center text-[#FFD700] group-hover:bg-[#FFD700] group-hover:text-[#1a0405] backdrop-blur-lg shadow-2xl transition-all duration-700">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
+                  </div>
+                  <span className="mt-2 vogue-label text-[0.7rem] text-[#FFD700] hidden lg:block tracking-[0.5em] font-black">REVERSE</span>
               </button>
 
               <button
                 onClick={nextPage}
                 className={`flex flex-col items-center group transition-all duration-500 ${currentPage > projects.length ? 'opacity-0 scale-50 pointer-events-none' : 'hover:scale-110 active:scale-90'}`}
               >
-                <div className="w-20 h-20 rounded-full border-[1.5px] border-[#FFD700]/30 flex items-center justify-center text-[#FFD700] group-hover:bg-[#FFD700] group-hover:text-[#1a0405] backdrop-blur-lg shadow-2xl transition-all duration-700">
-                  <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                <div className="w-14 h-14 rounded-full border-[1.5px] border-[#FFD700]/30 flex items-center justify-center text-[#FFD700] group-hover:bg-[#FFD700] group-hover:text-[#1a0405] backdrop-blur-lg shadow-2xl transition-all duration-700">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                 </div>
-                <span className="mt-4 vogue-label text-[0.7rem] text-[#FFD700] hidden lg:block tracking-[0.5em] font-black">ADVANCE</span>
+                <span className="mt-2 vogue-label text-[0.7rem] text-[#FFD700] hidden lg:block tracking-[0.5em] font-black">ADVANCE</span>
               </button>
             </div>
           )}
