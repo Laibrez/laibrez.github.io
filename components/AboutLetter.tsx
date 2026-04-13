@@ -82,8 +82,8 @@ export default function AboutLetter() {
                  <div className="flex flex-col lg:flex-row gap-8 lg:gap-14">
                     
                     {/* Portrait Side */}
-                    <div className="lg:w-[38%] shrink-0 order-2 lg:order-1">
-                       <div className="relative aspect-[3/4.5] w-full border border-[#d4c9b8]/80 shadow-md group overflow-hidden">
+                    <div className="w-full lg:w-[300px] shrink-0 order-1">
+                       <div className="relative h-[400px] lg:h-[450px] w-full border border-[#d4c9b8]/80 shadow-md group overflow-hidden">
                           <Image 
                              src="/Laisha_2.jpg" 
                              alt="Laisha Alexandra Portrait" 
@@ -93,13 +93,13 @@ export default function AboutLetter() {
                           />
                           <div className="absolute inset-0 bg-[#6B0F1A]/5 opacity-0 group-hover:opacity-100 transition-opacity" />
                        </div>
-                       <div className="mt-4 opacity-30 text-[0.45rem] vogue-label tracking-widest text-center lg:text-left">
+                       <div className="mt-4 opacity-30 text-[0.45rem] vogue-label tracking-widest text-center">
                           Archival Plate // 02-B
                        </div>
                     </div>
 
                     {/* Narrative Side */}
-                    <div className="flex-1 space-y-10 order-1 lg:order-2">
+                    <div className="flex-1 space-y-10 order-2">
                        <div className="space-y-10">
                           <p className="font-cormorant text-xl md:text-2xl font-bold italic text-[#6B0F1A] leading-relaxed border-l-2 border-[#6B0F1A]/20 pl-8">
                             "Architecting digital experiences with clinical precision and a designer&apos;s intent."
