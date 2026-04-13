@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef } from 'react';
+import Image from 'next/image';
 
 export default function AboutLetter() {
   const [isOpen, setIsOpen] = useState(false);
@@ -77,11 +78,32 @@ export default function AboutLetter() {
                    </h2>
                 </div>
 
-                {/* Narrative Grid */}
-                <div className="space-y-12">
-                   <p className="font-cormorant text-xl md:text-2xl font-bold italic text-[#6B0F1A] leading-relaxed border-l-2 border-[#6B0F1A]/20 pl-8">
-                     "Architecting digital experiences with clinical precision and a designer&apos;s intent."
-                   </p>
+                 {/* Article Content: Two-Column Spread */}
+                 <div className="flex flex-col lg:flex-row gap-8 lg:gap-14">
+                    
+                    {/* Portrait Side */}
+                    <div className="lg:w-[38%] shrink-0 order-2 lg:order-1">
+                       <div className="relative aspect-[3/4.5] w-full border border-[#d4c9b8]/80 shadow-md group overflow-hidden">
+                          <Image 
+                             src="/Laisha_2.jpg" 
+                             alt="Laisha Alexandra Portrait" 
+                             fill 
+                             className="object-cover grayscale-[0.1] group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-[1.03]"
+                             priority
+                          />
+                          <div className="absolute inset-0 bg-[#6B0F1A]/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                       </div>
+                       <div className="mt-4 opacity-30 text-[0.45rem] vogue-label tracking-widest text-center lg:text-left">
+                          Archival Plate // 02-B
+                       </div>
+                    </div>
+
+                    {/* Narrative Side */}
+                    <div className="flex-1 space-y-10 order-1 lg:order-2">
+                       <div className="space-y-10">
+                          <p className="font-cormorant text-xl md:text-2xl font-bold italic text-[#6B0F1A] leading-relaxed border-l-2 border-[#6B0F1A]/20 pl-8">
+                            "Architecting digital experiences with clinical precision and a designer&apos;s intent."
+                          </p>
 
                    <div className="font-cormorant text-lg text-[#3D2508] leading-relaxed font-bold space-y-6">
                       <p className="first-letter:float-left first-letter:text-7xl first-letter:font-black first-letter:font-cinzel first-letter:text-[#6B0F1A] first-letter:leading-[0.8] first-letter:mr-4 first-letter:mt-1 first-letter:drop-shadow-[3px_3px_0_rgba(186,255,57,0.3)]">
@@ -95,15 +117,17 @@ export default function AboutLetter() {
                       </p>
                    </div>
 
-                   {/* Compact Specifications Box */}
-                   <div className="border border-[#d4c9b8]/60 p-8 bg-[#FAF6EE]/30 relative">
-                      <span className="vogue-label text-[0.5rem] text-[#6B0F1A] block mb-4 tracking-widest uppercase">Specifications</span>
-                      <div className="flex flex-wrap gap-2">
-                         {skills.map(skill => (
-                           <span key={skill} className="vogue-label text-[0.5rem] text-[#6B0F1A] px-3 py-1 border border-[#6B0F1A]/10 bg-white/50">{skill}</span>
-                         ))}
-                      </div>
-                   </div>
+                          <div className="border border-[#d4c9b8]/60 p-8 bg-[#FAF6EE]/30 relative">
+                             <span className="vogue-label text-[0.5rem] text-[#6B0F1A] block mb-4 tracking-widest uppercase">Specifications</span>
+                             <div className="flex flex-wrap gap-2">
+                                {skills.map(skill => (
+                                  <span key={skill} className="vogue-label text-[0.5rem] text-[#6B0F1A] px-3 py-1 border border-[#6B0F1A]/10 bg-white/50">{skill}</span>
+                                ))}
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
 
                    <div className="flex justify-between items-end pt-12 border-t border-[#d4c9b8]/40">
                       <div className="flex flex-col gap-1">
