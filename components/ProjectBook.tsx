@@ -312,16 +312,19 @@ export default function ProjectBook() {
           )}
 
 
-          <a
-            href="/projects"
-            className="group flex flex-col items-center gap-6 mt-12 transition-all duration-700 hover:scale-102"
-          >
-            <div className="vogue-label text-[1.1rem] text-[#FFD700] group-hover:text-white transition-colors relative font-black tracking-widest">
-              EXPLORE HIGH-DENSITY GRID ARCHIVE
-              <div className="absolute -bottom-6 left-0 w-0 h-[2px] bg-[#FFD700] group-hover:w-full transition-all duration-1000" />
-            </div>
-            <p className="font-cormorant text-2xl italic text-[#FFD700]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-1000">For a pure technical overview</p>
-          </a>
+          <div className="mt-16 lg:mt-24 mb-12">
+            <a
+              href="/projects"
+              className="btn-archive-premium flex flex-col items-center group transition-all duration-700"
+            >
+              <span className="vogue-label text-[0.8rem] lg:text-[1rem] tracking-[0.4em] lg:tracking-[0.6em] font-black mb-2 transition-colors duration-500">
+                EXPLORE HIGH-DENSITY GRID ARCHIVE
+              </span>
+              <span className="font-cormorant text-lg lg:text-xl italic text-[#FFD700]/50 group-hover:text-[#FFD700] transition-colors duration-700">
+                For a pure technical overview
+              </span>
+            </a>
+          </div>
         </div>
 
       </div>
@@ -335,6 +338,41 @@ export default function ProjectBook() {
         .silk-paper {
           background-image: url('https://www.transparenttextures.com/patterns/handmade-paper.png');
           background-repeat: repeat;
+        }
+
+        .btn-archive-premium {
+          padding: 1.5rem 3rem;
+          border: 1px solid rgba(255, 215, 0, 0.3);
+          color: #FFD700;
+          position: relative;
+          overflow: hidden;
+          transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+          background: rgba(255, 215, 0, 0.03);
+          text-align: center;
+          width: fit-content;
+          max-width: 90vw;
+        }
+
+        .btn-archive-premium:hover {
+          border-color: #FFD700;
+          background: rgba(255, 215, 0, 0.1);
+          transform: translateY(-5px);
+          box-shadow: 0 20px 50px rgba(0,0,0,0.5), inset 0 0 20px rgba(255, 215, 0, 0.1);
+        }
+
+        .btn-archive-premium::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+          transition: 0.8s;
+        }
+
+        .btn-archive-premium:hover::before {
+          left: 100%;
         }
 
         .brass-corner {
