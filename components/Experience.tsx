@@ -31,7 +31,7 @@ const experiences: Experience[] = [
     dateRange: '2025 – Present',
     location: 'Miami, FL',
     description: [
-      'Contributing to web development, branding, and design for high-end creative projects',
+      'Contributing to web development and design for high-end creative projects',
       'Building and refining digital experiences for clients like bsidela.com and odd.shstesting.com',
       'Ensuring alignment between technical implementation and sophisticated creative direction'
     ],
