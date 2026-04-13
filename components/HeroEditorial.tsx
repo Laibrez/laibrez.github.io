@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function HeroEditorial() {
   return (
-    <section id="hero" className="min-h-screen bg-[#6B0F1A] flex items-center px-6 md:px-14 pt-28 md:pt-36 pb-16 md:pb-24 relative overflow-hidden transition-all duration-700">
+    <section id="hero" className="min-h-screen lg:min-h-0 lg:h-auto bg-[#6B0F1A] flex items-center px-6 md:px-14 py-20 lg:py-40 relative transition-all duration-700">
       <div className="hero-texture absolute inset-0 pointer-events-none" />
       {/* Hairline Divider */}
       <div className="absolute left-6 md:left-14 top-0 bottom-0 hairline-v opacity-30" />
@@ -14,10 +14,10 @@ export default function HeroEditorial() {
         {/* Text Block - High-Impact Typography (Order 1 on mobile, 2 on desktop) */}
         <div className="order-1 lg:order-2 flex flex-col items-center lg:items-start text-center lg:text-left pt-8 lg:pt-0 max-w-full">
           <div className="relative inline-block mb-10 md:mb-14 px-4 lg:px-0 max-w-full">
-            <h1 className="font-cinzel text-[clamp(2.4rem,10vw,8.5rem)] font-black leading-[0.85] tracking-[0.01em] text-[#F8F4EE] block z-10 animate-fade-up [animation-delay:500ms] w-full text-center lg:text-left">
+            <h1 className="font-cinzel text-[clamp(2.4rem,10vw,8rem)] font-black leading-[0.85] tracking-[0.01em] text-[#F8F4EE] block z-10 animate-fade-up [animation-delay:500ms] w-full text-center lg:text-left">
               LAISHA ALEXANDRA
             </h1>
-            <span className="font-great-vibes text-[clamp(2.8rem,11vw,8.5rem)] font-normal leading-none text-[#BAFF39] absolute -bottom-[1.1em] lg:-bottom-[0.9em] right-1/2 lg:right-0 translate-x-1/2 lg:translate-x-0 lg:-right-4 xl:-right-12 z-20 whitespace-nowrap drop-shadow-[0_0_80px_rgba(186,255,57,0.5)] animate-fade-up [animation-delay:800ms] scale-100 md:scale-110">
+            <span className="font-great-vibes text-[clamp(2.8rem,11vw,7.5rem)] font-normal leading-none text-[#BAFF39] absolute -bottom-[1em] lg:-bottom-[0.8em] right-1/2 lg:right-0 translate-x-1/2 lg:translate-x-0 lg:-right-4 xl:-right-12 z-20 whitespace-nowrap drop-shadow-[0_0_80px_rgba(186,255,57,0.5)] animate-fade-up [animation-delay:800ms] scale-100 md:scale-110">
               Bravo Juárez
             </span>
           </div>
