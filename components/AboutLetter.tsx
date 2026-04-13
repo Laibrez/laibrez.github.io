@@ -81,9 +81,9 @@ export default function AboutLetter() {
                   {/* Article Content: Magazine-Style Wrap */}
                   <div className="block relative">
                      
-                     {/* Portrait Plate - Floated for magazine wrap */}
-                     <div className="float-none lg:float-left w-full lg:w-[220px] lg:mr-12 lg:mb-8 mb-10 order-1 relative group">
-                        <div className="relative h-[320px] lg:h-[380px] w-full border border-[#d4c9b8]/80 shadow-md overflow-hidden bg-[#FAF6EE]">
+                     {/* Portrait Plate - Floated for magazine wrap (FORCED VERTICAL) */}
+                     <div className="float-left w-[150px] sm:w-[180px] lg:w-[220px] mr-8 mb-4 lg:mr-12 lg:mb-8 order-1 relative group">
+                        <div className="relative h-[210px] sm:h-[250px] lg:h-[320px] w-full border border-[#d4c9b8]/80 shadow-md overflow-hidden bg-[#FAF6EE]">
                            <Image 
                               src="/laisha_2.jpg" 
                               alt="Laisha Alexandra Portrait" 
