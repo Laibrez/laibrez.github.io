@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function ResumeSection() {
   const [showFull, setShowFull] = useState(false);
@@ -138,6 +139,15 @@ export default function ResumeSection() {
                         <div>
                           <p className="font-cinzel text-xl md:text-3xl font-black text-[#1a0405] uppercase leading-none mb-2 md:mb-3">Dean’s List Distinction</p>
                           <p className="font-cormorant text-lg md:text-xl font-bold italic text-[#8B6340]">Academic Excellence · FIU Engineering Portfolio</p>
+                          <div className="mt-6 md:mt-8 relative group/img overflow-hidden border border-[#6B0F1A]/10 shadow-lg max-w-lg">
+                            <Image 
+                              src="/FIU.JPG" 
+                              alt="Dean's List Distinction FIU" 
+                              width={800} 
+                              height={600} 
+                              className="w-full h-auto object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700"
+                            />
+                          </div>
                         </div>
                       </li>
                     </ul>
