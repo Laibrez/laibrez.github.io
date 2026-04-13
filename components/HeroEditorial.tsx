@@ -12,7 +12,7 @@ export default function HeroEditorial() {
       <div className="w-full grid grid-cols-1 lg:grid-cols-[minmax(300px,450px)_1fr] gap-12 lg:gap-24 items-center relative z-10 px-4 md:px-12 lg:px-20 max-w-[1600px] mx-auto">
 
         {/* Text Block - High-Impact Typography (Order 1 on mobile, 2 on desktop) */}
-        <div className="order-1 lg:order-2 flex flex-col items-center lg:items-start text-center lg:text-left pt-8 lg:pt-0 max-w-full">
+        <div className="order-1 lg:order-2 flex flex-col items-center lg:items-start text-center lg:text-left pt-16 md:pt-32 lg:pt-0 max-w-full">
           <div className="relative inline-block mb-10 md:mb-14 px-4 lg:px-0 max-w-full">
             <h1 className="font-cinzel text-[clamp(2.4rem,8vw,6.5rem)] font-black leading-[0.85] tracking-[0.01em] text-[#F8F4EE] block z-10 animate-fade-up [animation-delay:500ms] w-full text-center lg:text-left">
               LAISHA ALEXANDRA

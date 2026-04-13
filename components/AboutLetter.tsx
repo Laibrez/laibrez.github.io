@@ -78,28 +78,28 @@ export default function AboutLetter() {
                    </h2>
                 </div>
 
-                 {/* Article Content: Two-Column Spread */}
-                 <div className="flex flex-col lg:flex-row gap-8 lg:gap-14">
-                    
-                    {/* Portrait Side */}
-                    <div className="w-full lg:w-[300px] shrink-0 order-1">
-                        <div className="relative h-[400px] lg:h-[450px] w-full border border-[#d4c9b8]/80 shadow-md group overflow-hidden">
+                  {/* Article Content: Two-Column Spread */}
+                  <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 items-start">
+                     
+                     {/* Portrait Side */}
+                     <div className="w-full lg:w-[220px] shrink-0 order-1">
+                        <div className="relative h-[320px] lg:h-[380px] w-full border border-[#d4c9b8]/80 shadow-md group overflow-hidden">
                            <Image 
                               src="/laisha_2.jpg" 
                               alt="Laisha Alexandra Portrait" 
                               fill 
                               className="object-cover grayscale-[0.1] group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-[1.03]"
-                             priority
-                          />
-                          <div className="absolute inset-0 bg-[#6B0F1A]/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                       </div>
-                       <div className="mt-4 opacity-30 text-[0.45rem] vogue-label tracking-widest text-center">
-                          Archival Plate // 02-B
-                       </div>
-                    </div>
+                              priority
+                           />
+                           <div className="absolute inset-0 bg-[#6B0F1A]/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                        </div>
+                        <div className="mt-4 opacity-30 text-[0.4rem] vogue-label tracking-widest text-center">
+                           Archival Plate // 02-B
+                        </div>
+                     </div>
 
-                    {/* Narrative Side */}
-                    <div className="flex-1 space-y-10 order-2">
+                     {/* Narrative Side */}
+                     <div className="flex-1 space-y-8 order-2">
                        <div className="space-y-10">
                           <p className="font-cormorant text-xl md:text-2xl font-bold italic text-[#6B0F1A] leading-relaxed border-l-2 border-[#6B0F1A]/20 pl-8">
                             "Architecting digital experiences with clinical precision and a designer&apos;s intent."
