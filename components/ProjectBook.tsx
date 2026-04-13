@@ -10,17 +10,17 @@ const projects = [
     thumb: '/oddstesting.png',
     tags: ['Full Stack'],
     languages: ['React', 'Node.js', 'PostgreSQL', 'Docker'],
-    desc: `High-performance creative testing infrastructures for SeriouslyHallie studios.`,
+    desc: `Design, creation, and building of high-performance creative testing infrastructures for SeriouslyHallie studios.`,
     links: [{ label: 'Live Site', url: 'https://odd.shstesting.com' }],
     num: '01'
   },
   {
     name: 'Bdside La',
-    role: 'Creative Tech w/ Hallie',
+    role: 'SeriouslyHallie Studios',
     thumb: '/bsidela.png',
     tags: ['Next.js', 'Creative Direction'],
     languages: ['Next.js', 'Framer Motion', 'GSAP', 'Three.js'],
-    desc: `A digital showroom for high-fidelity typography and creative movement with Hallie.`,
+    desc: `Design and building of a digital showroom for high-fidelity typography and creative movement.`,
     links: [{ label: 'Live Site', url: 'https://bsidela.com' }],
     num: '02'
   },
