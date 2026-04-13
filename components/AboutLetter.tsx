@@ -143,7 +143,6 @@ export default function AboutLetter() {
                    </div>
                 </div>
              </div>
-          </div>
         )}
 
       </div>
