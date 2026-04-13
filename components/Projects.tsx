@@ -5,105 +5,6 @@ import Image from 'next/image';
 
 const projects = [
   {
-    name: 'FIU SURF',
-    role: 'Director of Technology',
-    thumb: '/fiusurfss.png',
-    tags: ['React', 'Tailwind', 'E-commerce'],
-    languages: ['TypeScript', 'Next.js', 'PostgreSQL', 'Framer Motion'],
-    desc: `Led the digital transformation of FIU Surf Club, building a high-performance e-commerce and community platform. Developed custom event registration workflows and member management systems.`,
-    fullDesc: `As the Director of Technology, I architected a modern digital home for Florida International University's surf community. The platform features a fluid, responsive UI designed to evoke surf culture while maintaining rigorous technical standards. I implemented secure payment gateways for merchandise, automated email notifications for club events, and a robust backend for member database management. The project served as a bridge between creative community vibes and production-grade software engineering.`,
-    links: [{ label: 'Live Site', url: 'https://fiusurf.com' }],
-    num: '01'
-  },
-  {
-    name: 'ALPFA FIU',
-    role: 'Developer',
-    thumb: '/alpfass.png',
-    tags: ['WordPress', 'Community Platform'],
-    languages: ['PHP', 'JavaScript', 'SQL', 'Elementor'],
-    desc: `Architected the professional digital presence for the largest ALPFA student chapter in the U.S., supporting 600+ active members.`,
-    fullDesc: `Working with ALPFA FIU, I optimized a large-scale community platform to handle high traffic and complex member interactions. My work focused on performance optimization, custom plugin integration, and a data-driven approach to member engagement tracking. I ensured the platform remained accessible and professionally aligned with the national organization's brand while delivering a unique local experience for FIU students.`,
-    links: [{ label: 'Live Site', url: 'https://alpfafiu.org' }],
-    num: '02'
-  },
-  {
-    name: 'LifeQuest',
-    role: 'ShellHacks 2025',
-    thumb: '/LifeQuest.png',
-    tags: ['AI', 'Product Development'],
-    languages: ['Python', 'OpenAI API', 'React', 'FastAPI'],
-    desc: `AI-powered gamified life coach developed during Florida's largest hackathon. Focused on behavioral transformation through AI.`,
-    fullDesc: `LifeQuest uses advanced LLMs to turn mundane daily tasks into a gamified RPG experience. I was responsible for the AI logic layer, integrating OpenAI's GPT-4o to analyze user goals and generate dynamic "missions." The system features a real-time reactive frontend and a FastAPI backend designed to scale under hackathon-level pressure. LifeQuest represents the intersection of productivity tools and interactive entertainment.`,
-    links: [{ label: 'Devpost', url: 'https://devpost.com/software/lifequest-17u34t' }],
-    num: '03'
-  },
-  {
-    name: 'CASTIQ',
-    role: 'Co-Founder',
-    thumb: '/Castiq.png',
-    tags: ['Flutter', 'Marketplace'],
-    languages: ['Dart', 'Firebase', 'Go', 'GCP'],
-    desc: `Professional marketplace platform for high-end modeling and creative sectors, currently in private development.`,
-    fullDesc: `Castiq is an ambitious venture aimed at digitizing the talent discovery process. As a co-founder, I led the mobile-first architecture using Flutter, ensuring a unified experience across iOS and Android. The backend relies on Firebase for real-time messaging and GCP for secure asset hosting. We focus on "high-fidelity" interactions, creating a premium feel that matches the luxury industry we serve.`,
-    links: [{ label: 'Live', url: 'https://castiq-d85d4.web.app/' }],
-    num: '04'
-  },
-  {
-    name: 'VibeRdy.xyz',
-    role: 'Hackathon Project',
-    thumb: '/VibeRdy.png',
-    tags: ['Python', 'AWS', 'Automation'],
-    languages: ['Python', 'AWS Lambda', 'Selenium', 'InfluxDB'],
-    desc: `Performance-driven automation server providing deep website insights and quality metrics in under 180 seconds.`,
-    fullDesc: `VibeRdy was built to solve the bottleneck of slow manual testing. By leveraging AWS Lambda for parallel processing and Selenium for browser automation, we created a tool that can run cross-browser suites and return performance analytics in record time. I developed the core automation engine and the data visualization layer that interprets InfluxDB metrics for the end user.`,
-    links: [{ label: 'Live Site', url: 'https://viberdy.xyz/' }],
-    num: '05'
-  },
-  {
-    name: 'RunwAI',
-    role: 'AI Stylist',
-    thumb: '/runwai.png',
-    tags: ['Python', 'React', 'AI Integration'],
-    languages: ['Python', 'PyTorch', 'Next.js', 'Stable Diffusion'],
-    desc: `Generative AI platform that serves as a personal stylist, curating outfits based on user-specific aesthetic profiles.`,
-    fullDesc: `RunwAI utilizes Stable Diffusion and custom-trained LoRAs to generate realistic fashion previews for users. I implemented the integration between the generative engine and a fluid Next.js frontend, allowing users to "try on" clothes digitally. The project focuses on the future of e-commerce where personalization is driven by generative algorithms.`,
-    links: [{ label: 'GitHub', url: 'https://github.com/Laibrez/outfit-ai' }],
-    num: '06'
-  },
-  {
-    name: 'Friend Finder',
-    role: 'Hackathon 2nd Place',
-    thumb: '/friendfinder.png',
-    tags: ['Social Impact', 'Community'],
-    languages: ['React Native', 'Node.js', 'Express', 'Google Maps API'],
-    desc: `A community-building tool designed to combat social isolation through hyper-local event discovery.`,
-    fullDesc: `Securing 2nd place at the EmpowHer Hackathon, Friend Finder uses the Google Maps API to show users community events and potential social connections in their immediate vicinity. I focused on the real-time geolocation tracking and the matching algorithm that pairs users based on shared interests and proximity. It is a tool for social good built with a modern mobile stack.`,
-    links: [{ label: 'Devpost', url: 'https://devpost.com/software/friendfinder-ev8h0w' }],
-    num: '07'
-  },
-  {
-    name: 'MedicBridges',
-    role: 'Philanthropy Fellow',
-    thumb: '/medicbridge.png',
-    tags: ['Healthcare Access'],
-    languages: ['React', 'Sanity.io', 'Tailwind CSS', 'GraphQL'],
-    desc: `Centralizing healthcare resources by mapping and analyzing low-cost clinical access across the United States.`,
-    fullDesc: `MedicBridges is a mission-driven platform designed to close healthcare gaps. Working as a Philanthropy Fellow, I developed a performant digital directory using Sanity.io as a headless CMS and React for the frontend. The system allows clinic administrators to update their data in real-time while providing users with a seamless, accessible interface for finding care. We used GraphQL to efficiently query complex geographic and clinical data.`,
-    links: [{ label: 'Live Site', url: 'https://www.medicbridges.com/' }],
-    num: '08'
-  },
-  {
-    name: 'GreenBee',
-    role: 'Payout Platform',
-    thumb: '/greenbee.png',
-    tags: ['Compliance', 'API'],
-    languages: ['TypeScript', 'Supabase', 'Stripe API', 'Next.js'],
-    desc: `Automated compliance and payout infrastructure for creator marketplaces, handling international tax and fund flows.`,
-    fullDesc: `GreenBee solves the "unsexy" parts of creator marketplaces: tax forms, identity verification, and cross-border payouts. I built the Stripe Connect integration and the automated W-9 collection workflow using Supabase Edge Functions. The goal was to create a "set-and-forget" infrastructure that allows creative founders to focus on their users while the technical backend handles global compliance.`,
-    links: [{ label: 'Live', url: 'https://gcaztiq.vercel.app/' }],
-    num: '09'
-  },
-  {
     name: 'Odd Jobber',
     role: 'SeriouslyHallie Studios',
     thumb: '/oddstesting.png',
@@ -112,7 +13,7 @@ const projects = [
     desc: `High-performance creative testing infrastructures integrated for SeriouslyHallie studios to optimize marketing funnels.`,
     fullDesc: `At Odd Jobber, I developed micro-services for high-velocity creative testing with SeriouslyHallie studios. We built an environment where new landing pages and ad-variants could be deployed and tracked in minutes. I utilized Docker for consistent deployment environments and Node.js for the tracking API that aggregates user behavior data into our PostgreSQL analytics engine.`,
     links: [{ label: 'Live Site', url: 'https://odd.shstesting.com' }],
-    num: '10'
+    num: '01'
   },
   {
     name: 'Bdside La',
@@ -123,6 +24,105 @@ const projects = [
     desc: `A digital showroom for high-fidelity typography and fluid interaction, created with Hallie.`,
     fullDesc: `Bdside La is a visual-first project with Hallie where I pushed the boundaries of browser performance. Using GSAP and Framer Motion, I created a layout that feels "liquid" as the user interacts with it. Every transition is architected to feel intentional, echoing the precision of the high-fashion industry. It demonstrates my ability to merge technical execution with high-level creative direction.`,
     links: [{ label: 'Live Site', url: 'https://bsidela.com' }],
+    num: '02'
+  },
+  {
+    name: 'FIU SURF',
+    role: 'Director of Technology',
+    thumb: '/fiusurfss.png',
+    tags: ['React', 'Tailwind', 'E-commerce'],
+    languages: ['TypeScript', 'Next.js', 'PostgreSQL', 'Framer Motion'],
+    desc: `Led the digital transformation of FIU Surf Club, building a high-performance e-commerce and community platform. Developed custom event registration workflows and member management systems.`,
+    fullDesc: `As the Director of Technology, I architected a modern digital home for Florida International University's surf community. The platform features a fluid, responsive UI designed to evoke surf culture while maintaining rigorous technical standards. I implemented secure payment gateways for merchandise, automated email notifications for club events, and a robust backend for member database management. The project served as a bridge between creative community vibes and production-grade software engineering.`,
+    links: [{ label: 'Live Site', url: 'https://fiusurf.com' }],
+    num: '03'
+  },
+  {
+    name: 'ALPFA FIU',
+    role: 'Developer',
+    thumb: '/alpfass.png',
+    tags: ['WordPress', 'Community Platform'],
+    languages: ['PHP', 'JavaScript', 'SQL', 'Elementor'],
+    desc: `Architected the professional digital presence for the largest ALPFA student chapter in the U.S., supporting 600+ active members.`,
+    fullDesc: `Working with ALPFA FIU, I optimized a large-scale community platform to handle high traffic and complex member interactions. My work focused on performance optimization, custom plugin integration, and a data-driven approach to member engagement tracking. I ensured the platform remained accessible and professionally aligned with the national organization's brand while delivering a unique local experience for FIU students.`,
+    links: [{ label: 'Live Site', url: 'https://alpfafiu.org' }],
+    num: '04'
+  },
+  {
+    name: 'LifeQuest',
+    role: 'ShellHacks 2025',
+    thumb: '/LifeQuest.png',
+    tags: ['AI', 'Product Development'],
+    languages: ['Python', 'OpenAI API', 'React', 'FastAPI'],
+    desc: `AI-powered gamified life coach developed during Florida's largest hackathon. Focused on behavioral transformation through AI.`,
+    fullDesc: `LifeQuest uses advanced LLMs to turn mundane daily tasks into a gamified RPG experience. I was responsible for the AI logic layer, integrating OpenAI's GPT-4o to analyze user goals and generate dynamic "missions." The system features a real-time reactive frontend and a FastAPI backend designed to scale under hackathon-level pressure. LifeQuest represents the intersection of productivity tools and interactive entertainment.`,
+    links: [{ label: 'Devpost', url: 'https://devpost.com/software/lifequest-17u34t' }],
+    num: '05'
+  },
+  {
+    name: 'CASTIQ',
+    role: 'Co-Founder',
+    thumb: '/Castiq.png',
+    tags: ['Flutter', 'Marketplace'],
+    languages: ['Dart', 'Firebase', 'Go', 'GCP'],
+    desc: `Professional marketplace platform for high-end modeling and creative sectors, currently in private development.`,
+    fullDesc: `Castiq is an ambitious venture aimed at digitizing the talent discovery process. As a co-founder, I led the mobile-first architecture using Flutter, ensuring a unified experience across iOS and Android. The backend relies on Firebase for real-time messaging and GCP for secure asset hosting. We focus on "high-fidelity" interactions, creating a premium feel that matches the luxury industry we serve.`,
+    links: [{ label: 'Live', url: 'https://castiq-d85d4.web.app/' }],
+    num: '06'
+  },
+  {
+    name: 'VibeRdy.xyz',
+    role: 'Hackathon Project',
+    thumb: '/VibeRdy.png',
+    tags: ['Python', 'AWS', 'Automation'],
+    languages: ['Python', 'AWS Lambda', 'Selenium', 'InfluxDB'],
+    desc: `Performance-driven automation server providing deep website insights and quality metrics in under 180 seconds.`,
+    fullDesc: `VibeRdy was built to solve the bottleneck of slow manual testing. By leveraging AWS Lambda for parallel processing and Selenium for browser automation, we created a tool that can run cross-browser suites and return performance analytics in record time. I developed the core automation engine and the data visualization layer that interprets InfluxDB metrics for the end user.`,
+    links: [{ label: 'Live Site', url: 'https://viberdy.xyz/' }],
+    num: '07'
+  },
+  {
+    name: 'RunwAI',
+    role: 'AI Stylist',
+    thumb: '/runwai.png',
+    tags: ['Python', 'React', 'AI Integration'],
+    languages: ['Python', 'PyTorch', 'Next.js', 'Stable Diffusion'],
+    desc: `Generative AI platform that serves as a personal stylist, curating outfits based on user-specific aesthetic profiles.`,
+    fullDesc: `RunwAI utilizes Stable Diffusion and custom-trained LoRAs to generate realistic fashion previews for users. I implemented the integration between the generative engine and a fluid Next.js frontend, allowing users to "try on" clothes digitally. The project focuses on the future of e-commerce where personalization is driven by generative algorithms.`,
+    links: [{ label: 'GitHub', url: 'https://github.com/Laibrez/outfit-ai' }],
+    num: '08'
+  },
+  {
+    name: 'Friend Finder',
+    role: 'Hackathon 2nd Place',
+    thumb: '/friendfinder.png',
+    tags: ['Social Impact', 'Community'],
+    languages: ['React Native', 'Node.js', 'Express', 'Google Maps API'],
+    desc: `A community-building tool designed to combat social isolation through hyper-local event discovery.`,
+    fullDesc: `Securing 2nd place at the EmpowHer Hackathon, Friend Finder uses the Google Maps API to show users community events and potential social connections in their immediate vicinity. I focused on the real-time geolocation tracking and the matching algorithm that pairs users based on shared interests and proximity. It is a tool for social good built with a modern mobile stack.`,
+    links: [{ label: 'Devpost', url: 'https://devpost.com/software/friendfinder-ev8h0w' }],
+    num: '09'
+  },
+  {
+    name: 'MedicBridges',
+    role: 'Philanthropy Fellow',
+    thumb: '/medicbridge.png',
+    tags: ['Healthcare Access'],
+    languages: ['React', 'Sanity.io', 'Tailwind CSS', 'GraphQL'],
+    desc: `Centralizing healthcare resources by mapping and analyzing low-cost clinical access across the United States.`,
+    fullDesc: `MedicBridges is a mission-driven platform designed to close healthcare gaps. Working as a Philanthropy Fellow, I developed a performant digital directory using Sanity.io as a headless CMS and React for the frontend. The system allows clinic administrators to update their data in real-time while providing users with a seamless, accessible interface for finding care. We used GraphQL to efficiently query complex geographic and clinical data.`,
+    links: [{ label: 'Live Site', url: 'https://www.medicbridges.com/' }],
+    num: '10'
+  },
+  {
+    name: 'GreenBee',
+    role: 'Payout Platform',
+    thumb: '/greenbee.png',
+    tags: ['Compliance', 'API'],
+    languages: ['TypeScript', 'Supabase', 'Stripe API', 'Next.js'],
+    desc: `Automated compliance and payout infrastructure for creator marketplaces, handling international tax and fund flows.`,
+    fullDesc: `GreenBee solves the "unsexy" parts of creator marketplaces: tax forms, identity verification, and cross-border payouts. I built the Stripe Connect integration and the automated W-9 collection workflow using Supabase Edge Functions. The goal was to create a "set-and-forget" infrastructure that allows creative founders to focus on their users while the technical backend handles global compliance.`,
+    links: [{ label: 'Live', url: 'https://gcaztiq.vercel.app/' }],
     num: '11'
   }
 ];

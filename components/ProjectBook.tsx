@@ -5,96 +5,6 @@ import Image from 'next/image';
 
 const projects = [
   {
-    name: 'FIU SURF',
-    role: 'Director of Technology',
-    thumb: '/fiusurfss.png',
-    tags: ['React', 'Tailwind', 'E-commerce'],
-    languages: ['TypeScript', 'Next.js', 'PostgreSQL', 'Framer Motion'],
-    desc: 'Led the digital transformation of FIU Surf Club, building a high-performance e-commerce platform.',
-    links: [{ label: 'Live Site', url: 'https://fiusurf.com' }],
-    num: '01'
-  },
-  {
-    name: 'ALPFA FIU',
-    role: 'Developer',
-    thumb: '/alpfass.png',
-    tags: ['WordPress', 'Community Platform'],
-    languages: ['PHP', 'JavaScript', 'SQL', 'Elementor'],
-    desc: 'Architected the professional digital presence for the largest ALPFA student chapter in the U.S.',
-    links: [{ label: 'Live Site', url: 'https://alpfafiu.org' }],
-    num: '02'
-  },
-  {
-    name: 'LifeQuest',
-    role: 'ShellHacks 2025',
-    thumb: '/LifeQuest.png',
-    tags: ['AI', 'Product Development'],
-    languages: ['Python', 'OpenAI API', 'React', 'FastAPI'],
-    desc: 'AI-powered gamified life coach developed during Florida\'s largest hackathon.',
-    links: [{ label: 'Devpost', url: 'https://devpost.com/software/lifequest-17u34t' }],
-    num: '03'
-  },
-  {
-    name: 'CASTIQ',
-    role: 'Co-Founder',
-    thumb: '/Castiq.png',
-    tags: ['Flutter', 'Marketplace'],
-    languages: ['Dart', 'Firebase', 'Go', 'GCP'],
-    desc: 'Professional marketplace platform for high-end modeling and creative sectors.',
-    links: [{ label: 'Live', url: 'https://castiq-d85d4.web.app/' }],
-    num: '04'
-  },
-  {
-    name: 'VibeRdy.xyz',
-    role: 'Hackathon Project',
-    thumb: '/VibeRdy.png',
-    tags: ['Python', 'AWS', 'Automation'],
-    languages: ['Python', 'AWS Lambda', 'Selenium', 'InfluxDB'],
-    desc: 'Performance-driven automation server providing deep website insights and quality metrics.',
-    links: [{ label: 'Live Site', url: 'https://viberdy.xyz/' }],
-    num: '05'
-  },
-  {
-    name: 'RunwAI',
-    role: 'AI Stylist',
-    thumb: '/runwai.png',
-    tags: ['Python', 'React', 'AI Integration'],
-    languages: ['Python', 'PyTorch', 'Next.js', 'Stable Diffusion'],
-    desc: 'Generative AI platform serving as a personal stylist using custom-aesthetic profiles.',
-    links: [{ label: 'GitHub', url: 'https://github.com/Laibrez/outfit-ai' }],
-    num: '06'
-  },
-  {
-    name: 'Friend Finder',
-    role: 'Hackathon 2nd Place',
-    thumb: '/friendfinder.png',
-    tags: ['Social Impact', 'Community'],
-    languages: ['React Native', 'Node.js', 'Express', 'Google Maps API'],
-    desc: 'A community-building tool designed to combat social isolation through event discovery.',
-    links: [{ label: 'Devpost', url: 'https://devpost.com/software/friendfinder-ev8h0w' }],
-    num: '07'
-  },
-  {
-    name: 'MedicBridges',
-    role: 'Philanthropy Fellow',
-    thumb: '/medicbridge.png',
-    tags: ['Healthcare Access'],
-    languages: ['React', 'Sanity.io', 'Tailwind CSS', 'GraphQL'],
-    desc: `Centralizing healthcare resources by mapping lower-cost clinical access across the U.S.`,
-    links: [{ label: 'Live Site', url: 'https://www.medicbridges.com/' }],
-    num: '08'
-  },
-  {
-    name: 'GreenBee',
-    role: 'Payout Platform',
-    thumb: '/greenbee.png',
-    tags: ['Compliance', 'API'],
-    languages: ['TypeScript', 'Supabase', 'Stripe API', 'Next.js'],
-    desc: 'Automated compliance and payout infrastructure for creator marketplaces.',
-    links: [{ label: 'Live', url: 'https://gcaztiq.vercel.app/' }],
-    num: '09'
-  },
-  {
     name: 'Odd Jobber',
     role: 'SeriouslyHallie Studios',
     thumb: '/oddstesting.png',
@@ -102,7 +12,7 @@ const projects = [
     languages: ['React', 'Node.js', 'PostgreSQL', 'Docker'],
     desc: `High-performance creative testing infrastructures for SeriouslyHallie studios.`,
     links: [{ label: 'Live Site', url: 'https://odd.shstesting.com' }],
-    num: '10'
+    num: '01'
   },
   {
     name: 'Bdside La',
@@ -112,6 +22,96 @@ const projects = [
     languages: ['Next.js', 'Framer Motion', 'GSAP', 'Three.js'],
     desc: `A digital showroom for high-fidelity typography and creative movement with Hallie.`,
     links: [{ label: 'Live Site', url: 'https://bsidela.com' }],
+    num: '02'
+  },
+  {
+    name: 'FIU SURF',
+    role: 'Director of Technology',
+    thumb: '/fiusurfss.png',
+    tags: ['React', 'Tailwind', 'E-commerce'],
+    languages: ['TypeScript', 'Next.js', 'PostgreSQL', 'Framer Motion'],
+    desc: 'Led the digital transformation of FIU Surf Club, building a high-performance e-commerce platform.',
+    links: [{ label: 'Live Site', url: 'https://fiusurf.com' }],
+    num: '03'
+  },
+  {
+    name: 'ALPFA FIU',
+    role: 'Developer',
+    thumb: '/alpfass.png',
+    tags: ['WordPress', 'Community Platform'],
+    languages: ['PHP', 'JavaScript', 'SQL', 'Elementor'],
+    desc: 'Architected the professional digital presence for the largest ALPFA student chapter in the U.S.',
+    links: [{ label: 'Live Site', url: 'https://alpfafiu.org' }],
+    num: '04'
+  },
+  {
+    name: 'LifeQuest',
+    role: 'ShellHacks 2025',
+    thumb: '/LifeQuest.png',
+    tags: ['AI', 'Product Development'],
+    languages: ['Python', 'OpenAI API', 'React', 'FastAPI'],
+    desc: 'AI-powered gamified life coach developed during Florida\'s largest hackathon.',
+    links: [{ label: 'Devpost', url: 'https://devpost.com/software/lifequest-17u34t' }],
+    num: '05'
+  },
+  {
+    name: 'CASTIQ',
+    role: 'Co-Founder',
+    thumb: '/Castiq.png',
+    tags: ['Flutter', 'Marketplace'],
+    languages: ['Dart', 'Firebase', 'Go', 'GCP'],
+    desc: 'Professional marketplace platform for high-end modeling and creative sectors.',
+    links: [{ label: 'Live', url: 'https://castiq-d85d4.web.app/' }],
+    num: '06'
+  },
+  {
+    name: 'VibeRdy.xyz',
+    role: 'Hackathon Project',
+    thumb: '/VibeRdy.png',
+    tags: ['Python', 'AWS', 'Automation'],
+    languages: ['Python', 'AWS Lambda', 'Selenium', 'InfluxDB'],
+    desc: 'Performance-driven automation server providing deep website insights and quality metrics.',
+    links: [{ label: 'Live Site', url: 'https://viberdy.xyz/' }],
+    num: '07'
+  },
+  {
+    name: 'RunwAI',
+    role: 'AI Stylist',
+    thumb: '/runwai.png',
+    tags: ['Python', 'React', 'AI Integration'],
+    languages: ['Python', 'PyTorch', 'Next.js', 'Stable Diffusion'],
+    desc: 'Generative AI platform serving as a personal stylist using custom-aesthetic profiles.',
+    links: [{ label: 'GitHub', url: 'https://github.com/Laibrez/outfit-ai' }],
+    num: '08'
+  },
+  {
+    name: 'Friend Finder',
+    role: 'Hackathon 2nd Place',
+    thumb: '/friendfinder.png',
+    tags: ['Social Impact', 'Community'],
+    languages: ['React Native', 'Node.js', 'Express', 'Google Maps API'],
+    desc: 'A community-building tool designed to combat social isolation through event discovery.',
+    links: [{ label: 'Devpost', url: 'https://devpost.com/software/friendfinder-ev8h0w' }],
+    num: '09'
+  },
+  {
+    name: 'MedicBridges',
+    role: 'Philanthropy Fellow',
+    thumb: '/medicbridge.png',
+    tags: ['Healthcare Access'],
+    languages: ['React', 'Sanity.io', 'Tailwind CSS', 'GraphQL'],
+    desc: `Centralizing healthcare resources by mapping lower-cost clinical access across the U.S.`,
+    links: [{ label: 'Live Site', url: 'https://www.medicbridges.com/' }],
+    num: '10'
+  },
+  {
+    name: 'GreenBee',
+    role: 'Payout Platform',
+    thumb: '/greenbee.png',
+    tags: ['Compliance', 'API'],
+    languages: ['TypeScript', 'Supabase', 'Stripe API', 'Next.js'],
+    desc: 'Automated compliance and payout infrastructure for creator marketplaces.',
+    links: [{ label: 'Live', url: 'https://gcaztiq.vercel.app/' }],
     num: '11'
   }
 ];
