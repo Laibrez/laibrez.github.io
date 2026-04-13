@@ -317,8 +317,8 @@ export default function ProjectBook() {
               href="/projects"
               className="btn-archive-premium flex flex-col items-center group transition-all duration-700"
             >
-              <span className="vogue-label text-[0.8rem] lg:text-[1rem] tracking-[0.4em] lg:tracking-[0.6em] font-black mb-2 transition-colors duration-500">
-                EXPLORE HIGH-DENSITY GRID ARCHIVE
+              <span className="vogue-label text-[0.8rem] lg:text-[1rem] tracking-[0.4em] lg:tracking-[0.6em] font-black mb-2 transition-colors duration-500 text-center">
+                CLICK HERE TO EXPLORE HIGH-DENSITY GRID ARCHIVE
               </span>
               <span className="font-cormorant text-lg lg:text-xl italic text-[#FFD700]/50 group-hover:text-[#FFD700] transition-colors duration-700">
                 For a pure technical overview
