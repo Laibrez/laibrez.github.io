@@ -5,6 +5,7 @@ import Image from 'next/image';
 
 export default function ResumeSection() {
   const [showFull, setShowFull] = useState(false);
+  const [showLang, setShowLang] = useState(false);
 
   return (
     <section id="full-resume" className="bg-[#6B0F1A] py-16 md:py-24 px-6 md:px-14 flex flex-col items-center relative overflow-hidden">
@@ -30,13 +31,44 @@ export default function ResumeSection() {
           >
             {showFull ? 'REDACT ARCHIVE' : 'OPEN FULL DOSSIER'}
           </button>
-          <a
-            href="/ResumeEng.pdf"
-            target="_blank"
-            className="vogue-label text-[0.85rem] text-[#BAFF39] border-[1px] border-[#BAFF39] px-12 py-5 hover:bg-[#BAFF39] hover:text-[#1a0405] transition-all duration-500 hover:-translate-y-2 active:scale-95 shadow-xl"
-          >
-            DOWNLOAD PDF
-          </a>
+          
+          <div className="relative">
+            <button
+              onClick={() => setShowLang(!showLang)}
+              className="vogue-label text-[0.85rem] text-[#BAFF39] border-[1px] border-[#BAFF39] px-12 py-5 hover:bg-[#BAFF39] hover:text-[#1a0405] transition-all duration-500 hover:-translate-y-2 active:scale-95 shadow-xl flex items-center gap-4"
+            >
+              DOWNLOAD PDF
+              <svg 
+                className={`w-4 h-4 transition-transform duration-500 ${showLang ? 'rotate-180' : ''}`} 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            
+            {showLang && (
+              <div className="absolute top-full left-0 right-0 mt-4 bg-[#1a0405] border border-[#BAFF39]/30 shadow-3xl z-[500] animate-fade-up overflow-hidden">
+                <a
+                  href="/ResumeEng.pdf"
+                  target="_blank"
+                  className="block vogue-label text-[0.7rem] text-[#BAFF39] px-6 py-4 hover:bg-[#BAFF39] hover:text-[#1a0405] transition-all border-b border-[#BAFF39]/10"
+                  onClick={() => setShowLang(false)}
+                >
+                  ENGLISH VERSION
+                </a>
+                <a
+                  href="/resumeSpanish.pdf"
+                  target="_blank"
+                  className="block vogue-label text-[0.7rem] text-[#BAFF39] px-6 py-4 hover:bg-[#BAFF39] hover:text-[#1a0405] transition-all"
+                  onClick={() => setShowLang(false)}
+                >
+                  VERSIÓN ESPAÑOL
+                </a>
+              </div>
+            )}
+          </div>
         </div>
 
         {showFull && (
