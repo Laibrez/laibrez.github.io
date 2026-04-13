@@ -17,7 +17,7 @@ export default function HeroEditorial() {
             <h1 className="font-cinzel text-[clamp(2.4rem,8vw,6.5rem)] font-black leading-[0.85] tracking-[0.01em] text-[#F8F4EE] block z-10 animate-fade-up [animation-delay:500ms] w-full text-center lg:text-left">
               LAISHA ALEXANDRA
             </h1>
-            <span className="font-great-vibes text-[clamp(2.8rem,9vw,6rem)] font-normal leading-none text-[#BAFF39] absolute -bottom-[1em] lg:-bottom-[0.8em] right-1/2 lg:right-0 translate-x-1/2 lg:translate-x-0 lg:-right-4 xl:-right-12 z-20 whitespace-nowrap drop-shadow-[0_0_80px_rgba(186,255,57,0.5)] animate-fade-up [animation-delay:800ms] scale-100 md:scale-110">
+            <span className="font-great-vibes text-[clamp(2.8rem,9vw,6rem)] font-normal leading-none text-[#BAFF39] absolute -bottom-[1.4em] lg:-bottom-[1.1em] right-1/2 lg:right-0 translate-x-1/2 lg:translate-x-0 lg:-right-4 xl:-right-12 z-20 whitespace-nowrap drop-shadow-[0_0_80px_rgba(186,255,57,0.5)] animate-fade-up [animation-delay:800ms] scale-100 md:scale-110">
               Bravo Juárez
             </span>
           </div>
