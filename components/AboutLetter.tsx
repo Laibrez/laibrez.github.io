@@ -83,12 +83,12 @@ export default function AboutLetter() {
                     
                     {/* Portrait Side */}
                     <div className="w-full lg:w-[300px] shrink-0 order-1">
-                       <div className="relative h-[400px] lg:h-[450px] w-full border border-[#d4c9b8]/80 shadow-md group overflow-hidden">
-                          <Image 
-                             src="/Laisha_2.jpg" 
-                             alt="Laisha Alexandra Portrait" 
-                             fill 
-                             className="object-cover grayscale-[0.1] group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-[1.03]"
+                        <div className="relative h-[400px] lg:h-[450px] w-full border border-[#d4c9b8]/80 shadow-md group overflow-hidden">
+                           <Image 
+                              src="/laisha_2.jpg" 
+                              alt="Laisha Alexandra Portrait" 
+                              fill 
+                              className="object-cover grayscale-[0.1] group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-[1.03]"
                              priority
                           />
                           <div className="absolute inset-0 bg-[#6B0F1A]/5 opacity-0 group-hover:opacity-100 transition-opacity" />
