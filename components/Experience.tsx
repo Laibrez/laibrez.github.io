@@ -28,7 +28,7 @@ const experiences: Experience[] = [
     id: 2,
     position: 'Freelance Web Developer & Creative',
     company: 'SeriouslyHallie Studios',
-    dateRange: '2024 – Present',
+    dateRange: '2025 – Present',
     location: 'Miami, FL',
     description: [
       'Contributing to web development, branding, and design for high-end creative projects',
@@ -118,9 +118,9 @@ export default function Experience() {
                       <div className="w-12 h-[2px] bg-[#BAFF39] mt-3" />
                     </div>
 
-                    <div className="vogue-label text-[0.65rem] text-[#9a8e7e] mb-8 flex flex-wrap gap-4 uppercase tracking-[0.2em]">
+                    <div className="vogue-label text-[0.65rem] text-[#9a8e7e] mt-4 mb-10 flex flex-wrap gap-2 uppercase tracking-[0.2em]">
                        <span>{exp.dateRange}</span>
-                       <span className="opacity-30">|</span>
+                       <span className="opacity-40 px-1">|</span>
                        <span>{exp.location}</span>
                     </div>
 
