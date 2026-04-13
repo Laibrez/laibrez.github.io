@@ -78,12 +78,12 @@ export default function AboutLetter() {
                    </h2>
                 </div>
 
-                  {/* Article Content: Two-Column Spread */}
-                  <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 items-start">
+                  {/* Article Content: Magazine-Style Wrap */}
+                  <div className="block relative">
                      
-                     {/* Portrait Side */}
-                     <div className="w-full lg:w-[220px] shrink-0 order-1">
-                        <div className="relative h-[320px] lg:h-[380px] w-full border border-[#d4c9b8]/80 shadow-md group overflow-hidden">
+                     {/* Portrait Plate - Floated for magazine wrap */}
+                     <div className="float-none lg:float-left w-full lg:w-[220px] lg:mr-12 lg:mb-8 mb-10 order-1 relative group">
+                        <div className="relative h-[320px] lg:h-[380px] w-full border border-[#d4c9b8]/80 shadow-md overflow-hidden bg-[#FAF6EE]">
                            <Image 
                               src="/laisha_2.jpg" 
                               alt="Laisha Alexandra Portrait" 
@@ -98,36 +98,39 @@ export default function AboutLetter() {
                         </div>
                      </div>
 
-                     {/* Narrative Side */}
-                     <div className="flex-1 space-y-8 order-2">
-                       <div className="space-y-10">
-                          <p className="font-cormorant text-xl md:text-2xl font-bold italic text-[#6B0F1A] leading-relaxed border-l-2 border-[#6B0F1A]/20 pl-8">
-                            "Architecting digital experiences with clinical precision and a designer&apos;s intent."
-                          </p>
+                     {/* Narrative Flow */}
+                     <div className="space-y-8">
+                        <div className="space-y-10">
+                           <p className="font-cormorant text-xl md:text-2xl font-bold italic text-[#6B0F1A] leading-relaxed border-l-2 border-[#6B0F1A]/20 pl-8">
+                             "Architecting digital experiences with clinical precision and a designer&apos;s intent."
+                           </p>
 
-                   <div className="font-cormorant text-lg text-[#3D2508] leading-relaxed font-bold space-y-6">
-                      <p className="first-letter:float-left first-letter:text-7xl first-letter:font-black first-letter:font-cinzel first-letter:text-[#6B0F1A] first-letter:leading-[0.8] first-letter:mr-4 first-letter:mt-1 first-letter:drop-shadow-[3px_3px_0_rgba(186,255,57,0.3)]">
-                        I&apos;m a software engineer and FIU graduate, bridging business leadership and technical innovation. 
-                        My journey began in the healthcare industry, where I co-founded clinical laboratories in Mexico City. 
-                        Managing teams and driving digital growth taught me that innovation is about the architecture of trust.
-                      </p>
-                      <p>
-                        Today, I specialize in building user-centric applications using React and Next.js, 
-                        focusing on high-quality solutions that balance high-fashion aesthetics with production-ready stability.
-                      </p>
-                   </div>
+                           <div className="font-cormorant text-lg text-[#3D2508] leading-relaxed font-bold space-y-6">
+                              <p className="first-letter:float-left first-letter:text-7xl first-letter:font-black first-letter:font-cinzel first-letter:text-[#6B0F1A] first-letter:leading-[0.8] first-letter:mr-4 first-letter:mt-1 first-letter:drop-shadow-[3px_3px_0_rgba(186,255,57,0.3)]">
+                                I&apos;m a software engineer and FIU graduate, bridging business leadership and technical innovation. 
+                                My journey began in the healthcare industry, where I co-founded clinical laboratories in Mexico City. 
+                                Managing teams and driving digital growth taught me that innovation is about the architecture of trust.
+                              </p>
+                              <p>
+                                Today, I specialize in building user-centric applications using React and Next.js, 
+                                focusing on high-quality solutions that balance high-fashion aesthetics with production-ready stability.
+                              </p>
+                           </div>
 
-                          <div className="border border-[#d4c9b8]/60 p-8 bg-[#FAF6EE]/30 relative">
-                             <span className="vogue-label text-[0.5rem] text-[#6B0F1A] block mb-4 tracking-widest uppercase">Specifications</span>
-                             <div className="flex flex-wrap gap-2">
-                                {skills.map(skill => (
-                                  <span key={skill} className="vogue-label text-[0.5rem] text-[#6B0F1A] px-3 py-1 border border-[#6B0F1A]/10 bg-white/50">{skill}</span>
-                                ))}
-                             </div>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
+                           <div className="clear-both pt-4 lg:pt-0">
+                              <div className="border border-[#d4c9b8]/60 p-8 bg-[#FAF6EE]/30 relative">
+                                 <span className="vogue-label text-[0.5rem] text-[#6B0F1A] block mb-4 tracking-widest uppercase">Specifications</span>
+                                 <div className="flex flex-wrap gap-2">
+                                    {skills.map(skill => (
+                                      <span key={skill} className="vogue-label text-[0.5rem] text-[#6B0F1A] px-3 py-1 border border-[#6B0F1A]/10 bg-white/50">{skill}</span>
+                                    ))}
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div className="clear-both" />
+                  </div>
 
                    <div className="flex justify-between items-end pt-12 border-t border-[#d4c9b8]/40">
                       <div className="flex flex-col gap-1">
