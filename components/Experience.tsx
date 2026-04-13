@@ -118,9 +118,9 @@ export default function Experience() {
                       <div className="w-12 h-[2px] bg-[#BAFF39] mt-3" />
                     </div>
 
-                    <div className="vogue-label text-[0.65rem] text-[#9a8e7e] mt-4 mb-10 flex flex-wrap gap-2 uppercase tracking-[0.2em]">
+                    <div className="vogue-label text-[0.7rem] text-[#1a0405] font-black mt-4 mb-10 flex flex-wrap gap-2 uppercase tracking-[0.3em]">
                        <span>{exp.dateRange}</span>
-                       <span className="opacity-40 px-1">|</span>
+                       <span className="opacity-40 px-1 font-normal">|</span>
                        <span>{exp.location}</span>
                     </div>
 
