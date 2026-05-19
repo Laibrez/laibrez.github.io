@@ -81,7 +81,7 @@ const projects: Project[] = [
     name: 'Mexalab Project Manager',
     technologies: ['Project Management', 'Web Development'],
     description: 'Comprehensive project management platform designed to streamline workflows and enhance team collaboration.',
-    liveUrl: 'https://mexalab.netlify.app/',
+    liveUrl: 'https://laboratoriosmexalab.com/',
     coverImage: '/mexalab.png',
   },
 ];

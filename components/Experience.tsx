@@ -58,9 +58,9 @@ const experiences: Experience[] = [
     description: [
       'Co-led the launch of a second clinical laboratory',
       'Built and managed a 15+ member team',
-      'Handled architecture and deployment of the mexalab.com digital presence',
+      'Handled architecture and deployment of the laboratoriosmexalab.com digital presence',
     ],
-    link: 'https://mexalab.netlify.app/',
+    link: 'https://laboratoriosmexalab.com/',
   },
   {
     id: 5,
