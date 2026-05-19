@@ -32,9 +32,9 @@ const experiences: Experience[] = [
       'Co-led the launch of a second clinical laboratory',
       'Built and managed a 15+ member team',
       'Handled permits, HR, and legal processes',
-      'Developed mexalab.com using HTML, CSS, and JavaScript',
+      'Developed laboratoriosmexalab.com using HTML, CSS, and JavaScript',
     ],
-    link: 'https://mexalab.netlify.app/',
+    link: 'https://laboratoriosmexalab.com/',
   },
   {
     id: 3,
