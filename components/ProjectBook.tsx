@@ -105,10 +105,10 @@ const projects = [
     num: '10'
   },
   {
-    name: 'GreenBee',
-    role: 'Payout Platform',
+    name: 'Rollio',
+    role: 'Creators Payout',
     thumb: '/greenbee.png',
-    tags: ['Compliance', 'API'],
+    tags: ['Fintech', 'Compliance'],
     languages: ['TypeScript', 'Supabase', 'Stripe API', 'Next.js'],
     desc: 'Automated compliance and payout infrastructure for creator marketplaces.',
     links: [{ label: 'Live', url: 'https://gcaztiq.vercel.app/' }],

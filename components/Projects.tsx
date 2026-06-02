@@ -11,7 +11,12 @@ const projects = [
     tags: ['Full Stack'],
     languages: ['React', 'Node.js', 'PostgreSQL', 'Docker'],
     desc: `Design, creation, and building of high-performance creative testing infrastructures integrated for SeriouslyHallie studios to optimize marketing funnels.`,
-    fullDesc: `At Odd Jobber, I developed micro-services for high-velocity creative testing with SeriouslyHallie studios. We built an environment where new landing pages and ad-variants could be deployed and tracked in minutes. I utilized Docker for consistent deployment environments and Node.js for the tracking API that aggregates user behavior data into our PostgreSQL analytics engine. The workflow encompassed the full design, creation, and building of these technical assets.`,
+    caseStudy: {
+      problem: `Marketing funnels at SeriouslyHallie studios lacked a high-velocity environment for testing ad-variants and landing pages efficiently.`,
+      role: `Lead Developer, architecting micro-services for rapid deployment of creative testing environments.`,
+      solution: `Built a full-stack testing infrastructure using Docker for consistent deployments and Node.js for a robust tracking API, aggregating behavior data into a PostgreSQL analytics engine.`,
+      impact: `Enabled the deployment and tracking of new creative variants in minutes, significantly accelerating marketing iteration cycles.`
+    },
     links: [{ label: 'Live Site', url: 'https://odd.shstesting.com' }],
     num: '01'
   },
@@ -22,7 +27,12 @@ const projects = [
     tags: ['Next.js', 'Creative Direction'],
     languages: ['Next.js', 'Framer Motion', 'GSAP', 'Three.js'],
     desc: `Design and building of a digital showroom for high-fidelity typography and fluid interaction, created with Hallie.`,
-    fullDesc: `Bdside La is a visual-first project with SeriouslyHallie Studios where I pushed the boundaries of browser performance. Using GSAP and Framer Motion, I created a layout that feels "liquid" as the user interacts with it. Every transition is architected to feel intentional, echoing the precision of the high-fashion industry. It demonstrates my ability to merge technical execution with high-level design and building processes.`,
+    caseStudy: {
+      problem: `Needed a digital showroom that matched the precision and fluid aesthetics of the high-fashion industry without compromising browser performance.`,
+      role: `Creative Technologist & Frontend Developer, pushing the boundaries of web animation and layout fluidity.`,
+      solution: `Architected a "liquid" layout using GSAP and Framer Motion, merging technical execution with high-level design to create an immersive, visual-first experience.`,
+      impact: `Delivered a production-ready, high-fidelity showroom that serves as a benchmark for creative interaction in the studio's portfolio.`
+    },
     links: [{ label: 'Live Site', url: 'https://bsidela.com' }],
     num: '02'
   },
@@ -32,8 +42,13 @@ const projects = [
     thumb: '/fiusurfss.png',
     tags: ['React', 'Tailwind', 'E-commerce'],
     languages: ['TypeScript', 'Next.js', 'PostgreSQL', 'Framer Motion'],
-    desc: `Led the digital transformation of FIU Surf Club, building a high-performance e-commerce and community platform. Developed custom event registration workflows and member management systems.`,
-    fullDesc: `As the Director of Technology, I architected a modern digital home for Florida International University's surf community. The platform features a fluid, responsive UI designed to evoke surf culture while maintaining rigorous technical standards. I implemented secure payment gateways for merchandise, automated email notifications for club events, and a robust backend for member database management. The project served as a bridge between creative community vibes and production-grade software engineering.`,
+    desc: `Led the digital transformation of FIU Surf Club, building a high-performance e-commerce and community platform.`,
+    caseStudy: {
+      problem: `The FIU Surf Club lacked a centralized digital home for its growing community to manage events, memberships, and merchandise.`,
+      role: `Director of Technology, leading the development and deployment of the entire digital platform.`,
+      solution: `Architected a modern, responsive UI with React and Tailwind CSS. Integrated secure e-commerce gateways, automated event notifications, and a robust PostgreSQL backend for member management.`,
+      impact: `Scaled the platform to support 1,000+ concurrent users, seamlessly bridging surf culture with production-grade software engineering.`
+    },
     links: [{ label: 'Live Site', url: 'https://fiusurf.com' }],
     num: '03'
   },
@@ -44,7 +59,12 @@ const projects = [
     tags: ['WordPress', 'Community Platform'],
     languages: ['PHP', 'JavaScript', 'SQL', 'Elementor'],
     desc: `Architected the professional digital presence for the largest ALPFA student chapter in the U.S., supporting 600+ active members.`,
-    fullDesc: `Working with ALPFA FIU, I optimized a large-scale community platform to handle high traffic and complex member interactions. My work focused on performance optimization, custom plugin integration, and a data-driven approach to member engagement tracking. I ensured the platform remained accessible and professionally aligned with the national organization's brand while delivering a unique local experience for FIU students.`,
+    caseStudy: {
+      problem: `The largest ALPFA student chapter in the U.S. required a scalable platform to manage high traffic, events, and complex member interactions.`,
+      role: `Lead Web Developer, focusing on platform optimization, custom plugin integration, and member engagement tracking.`,
+      solution: `Optimized a WordPress-based community architecture, integrating custom systems for restricted content, membership databases, and sponsor showcases.`,
+      impact: `Successfully supported a growing base of 600+ active members while maintaining national brand alignment and high accessibility standards.`
+    },
     links: [{ label: 'Live Site', url: 'https://alpfafiu.org' }],
     num: '04'
   },
@@ -55,7 +75,12 @@ const projects = [
     tags: ['AI', 'Product Development'],
     languages: ['Python', 'OpenAI API', 'React', 'FastAPI'],
     desc: `AI-powered gamified life coach developed during Florida's largest hackathon. Focused on behavioral transformation through AI.`,
-    fullDesc: `LifeQuest uses advanced LLMs to turn mundane daily tasks into a gamified RPG experience. I was responsible for the AI logic layer, integrating OpenAI's GPT-4o to analyze user goals and generate dynamic "missions." The system features a real-time reactive frontend and a FastAPI backend designed to scale under hackathon-level pressure. LifeQuest represents the intersection of productivity tools and interactive entertainment.`,
+    caseStudy: {
+      problem: `Traditional productivity tools lack the engagement necessary for long-term behavioral transformation.`,
+      role: `AI Logic Lead & Backend Developer, responsible for real-time task orchestration and LLM integration.`,
+      solution: `Developed an RPG-style gamified life coach using OpenAI's GPT-4o to analyze goals and generate dynamic missions, supported by a highly scalable FastAPI backend.`,
+      impact: `Successfully delivered a real-time reactive prototype under intense hackathon pressure, proving the viability of AI in interactive productivity.`
+    },
     links: [{ label: 'Devpost', url: 'https://devpost.com/software/lifequest-17u34t' }],
     num: '05'
   },
@@ -66,7 +91,12 @@ const projects = [
     tags: ['Flutter', 'Marketplace'],
     languages: ['Dart', 'Firebase', 'Go', 'GCP'],
     desc: `Professional marketplace platform for high-end modeling and creative sectors, currently in private development.`,
-    fullDesc: `Castiq is an ambitious venture aimed at digitizing the talent discovery process. As a co-founder, I led the mobile-first architecture using Flutter, ensuring a unified experience across iOS and Android. The backend relies on Firebase for real-time messaging and GCP for secure asset hosting. We focus on "high-fidelity" interactions, creating a premium feel that matches the luxury industry we serve.`,
+    caseStudy: {
+      problem: `The talent discovery process in the high-end modeling and creative sectors is fragmented and lacks a unified digital marketplace.`,
+      role: `Co-Founder & Lead Architect, driving both business strategy and full-stack technical execution.`,
+      solution: `Built a mobile-first marketplace using Flutter for cross-platform consistency, Firebase for real-time messaging, and GCP for secure asset management.`,
+      impact: `Established a high-fidelity foundation for a premium industry tool, successfully managing team integration and strategic partnerships.`
+    },
     links: [{ label: 'Live', url: 'https://castiq-d85d4.web.app/' }],
     num: '06'
   },
@@ -77,7 +107,12 @@ const projects = [
     tags: ['Python', 'AWS', 'Automation'],
     languages: ['Python', 'AWS Lambda', 'Selenium', 'InfluxDB'],
     desc: `Performance-driven automation server providing deep website insights and quality metrics in under 180 seconds.`,
-    fullDesc: `VibeRdy was built to solve the bottleneck of slow manual testing. By leveraging AWS Lambda for parallel processing and Selenium for browser automation, we created a tool that can run cross-browser suites and return performance analytics in record time. I developed the core automation engine and the data visualization layer that interprets InfluxDB metrics for the end user.`,
+    caseStudy: {
+      problem: `Manual website performance testing is a severe bottleneck, slowing down deployment pipelines.`,
+      role: `Backend Automation Engineer, developing the core testing engine and metric pipelines.`,
+      solution: `Created a parallel processing tool using AWS Lambda and Selenium to run cross-browser suites instantly, storing and interpreting metrics via InfluxDB.`,
+      impact: `Achieved the ability to deliver deep, actionable website insights and quality metrics in under 3 minutes.`
+    },
     links: [{ label: 'Live Site', url: 'https://viberdy.xyz/' }],
     num: '07'
   },
@@ -88,7 +123,12 @@ const projects = [
     tags: ['Python', 'React', 'AI Integration'],
     languages: ['Python', 'PyTorch', 'Next.js', 'Stable Diffusion'],
     desc: `Generative AI platform that serves as a personal stylist, curating outfits based on user-specific aesthetic profiles.`,
-    fullDesc: `RunwAI utilizes Stable Diffusion and custom-trained LoRAs to generate realistic fashion previews for users. I implemented the integration between the generative engine and a fluid Next.js frontend, allowing users to "try on" clothes digitally. The project focuses on the future of e-commerce where personalization is driven by generative algorithms.`,
+    caseStudy: {
+      problem: `E-commerce fashion lacks hyper-personalized, visual "try-on" experiences tailored to individual aesthetic profiles.`,
+      role: `Project Lead & Full Stack Developer, coordinating a team of 12+ members over a 3-month development cycle.`,
+      solution: `Integrated Stable Diffusion and custom-trained LoRAs with a Next.js frontend to generate realistic, personalized fashion previews.`,
+      impact: `Successfully delivered an AI-driven personal stylist MVP, demonstrating the future of generative personalization in e-commerce.`
+    },
     links: [{ label: 'GitHub', url: 'https://github.com/Laibrez/outfit-ai' }],
     num: '08'
   },
@@ -99,7 +139,12 @@ const projects = [
     tags: ['Social Impact', 'Community'],
     languages: ['React Native', 'Node.js', 'Express', 'Google Maps API'],
     desc: `A community-building tool designed to combat social isolation through hyper-local event discovery.`,
-    fullDesc: `Securing 2nd place at the EmpowHer Hackathon, Friend Finder uses the Google Maps API to show users community events and potential social connections in their immediate vicinity. I focused on the real-time geolocation tracking and the matching algorithm that pairs users based on shared interests and proximity. It is a tool for social good built with a modern mobile stack.`,
+    caseStudy: {
+      problem: `International and commuter students frequently experience severe social isolation and struggle to find relevant local communities.`,
+      role: `Mobile Developer & Product Strategist, conducting user problem analysis based on interviews.`,
+      solution: `Built a mobile app utilizing the Google Maps API for real-time geolocation tracking and a custom matching algorithm for pairing users by proximity and interest.`,
+      impact: `Secured 2nd Place at the EmpowHer Hackathon for addressing a critical social gap with a scalable mobile solution.`
+    },
     links: [{ label: 'Devpost', url: 'https://devpost.com/software/friendfinder-ev8h0w' }],
     num: '09'
   },
@@ -110,18 +155,28 @@ const projects = [
     tags: ['Healthcare Access'],
     languages: ['React', 'Sanity.io', 'Tailwind CSS', 'GraphQL'],
     desc: `Centralizing healthcare resources by mapping and analyzing low-cost clinical access across the United States.`,
-    fullDesc: `MedicBridges is a mission-driven platform designed to close healthcare gaps. Working as a Philanthropy Fellow, I developed a performant digital directory using Sanity.io as a headless CMS and React for the frontend. The system allows clinic administrators to update their data in real-time while providing users with a seamless, accessible interface for finding care. We used GraphQL to efficiently query complex geographic and clinical data.`,
+    caseStudy: {
+      problem: `Unequal access to affordable healthcare services for vulnerable and low-income populations in the U.S.`,
+      role: `Product Lead & Philanthropy Fellow (Representing FIU), managing user research, MVP definition, and stakeholder coordination.`,
+      solution: `Developed a performant digital directory using Sanity.io (headless CMS), React, and GraphQL to centralize free and low-cost clinic data, allowing real-time administrative updates.`,
+      impact: `Won a $25,000 grant from the Ford Philanthropy Fellowship (Social Innovation Award Winners), mapping critical healthcare access for low-income demographics.`
+    },
     links: [{ label: 'Live Site', url: 'https://www.medicbridges.com/' }],
     num: '10'
   },
   {
-    name: 'GreenBee',
-    role: 'Payout Platform',
+    name: 'Rollio Payments',
+    role: 'Creators Payout',
     thumb: '/greenbee.png',
-    tags: ['Compliance', 'API'],
+    tags: ['Fintech', 'Compliance'],
     languages: ['TypeScript', 'Supabase', 'Stripe API', 'Next.js'],
     desc: `Automated compliance and payout infrastructure for creator marketplaces, handling international tax and fund flows.`,
-    fullDesc: `GreenBee solves the "unsexy" parts of creator marketplaces: tax forms, identity verification, and cross-border payouts. I built the Stripe Connect integration and the automated W-9 collection workflow using Supabase Edge Functions. The goal was to create a "set-and-forget" infrastructure that allows creative founders to focus on their users while the technical backend handles global compliance.`,
+    caseStudy: {
+      problem: `Content creators and marketplaces face immense friction, delays, and complexity when managing cross-border payouts and regulatory compliance.`,
+      role: `Product Manager & Lead Developer, designing payment flows, API integrations, and low-friction onboarding strategies.`,
+      solution: `Architected a claim-based payout flow using Stripe Connect and Supabase Edge Functions. Built automated W-9 collection workflows and social performance tracking APIs.`,
+      impact: `Reduced failed transactions and optimized compliance efficiency, creating a seamless "set-and-forget" infrastructure for creative founders.`
+    },
     links: [{ label: 'Live', url: 'https://gcaztiq.vercel.app/' }],
     num: '11'
   }
@@ -245,11 +300,46 @@ export default function Projects() {
                     "{selectedProject.desc}"
                  </p>
 
-                 <div className="space-y-10 font-cormorant text-xl text-[#3D2508] leading-relaxed font-bold">
-                    <p className="first-letter:float-left first-letter:text-[6.5rem] first-letter:font-black first-letter:font-cinzel first-letter:text-[#6B0F1A] first-letter:leading-[0.8] first-letter:mr-6 first-letter:mt-2 first-letter:drop-shadow-[5px_5px_0_rgba(186,255,57,0.3)]">
-                       {selectedProject.fullDesc}
-                    </p>
-                 </div>
+                 {selectedProject.caseStudy ? (
+                   <div className="space-y-12 text-[#3D2508]">
+                     {/* The Problem */}
+                     <div>
+                       <h4 className="vogue-label text-[0.8rem] text-[#6B0F1A] tracking-[0.3em] uppercase mb-4 border-b border-[#d4c9b8] pb-2">The Problem / Challenge</h4>
+                       <p className="font-cormorant text-xl leading-relaxed font-bold">
+                         <span className="float-left text-[4.5rem] font-black font-cinzel text-[#6B0F1A] leading-[0.8] mr-4 mt-1 drop-shadow-[3px_3px_0_rgba(186,255,57,0.3)]">
+                           {selectedProject.caseStudy.problem.charAt(0)}
+                         </span>
+                         {selectedProject.caseStudy.problem.slice(1)}
+                       </p>
+                     </div>
+
+                     {/* My Role */}
+                     <div>
+                       <h4 className="vogue-label text-[0.8rem] text-[#6B0F1A] tracking-[0.3em] uppercase mb-4 border-b border-[#d4c9b8] pb-2">Role & Contribution</h4>
+                       <p className="font-cormorant text-xl leading-relaxed font-bold">{selectedProject.caseStudy.role}</p>
+                     </div>
+
+                     {/* The Solution */}
+                     <div>
+                       <h4 className="vogue-label text-[0.8rem] text-[#6B0F1A] tracking-[0.3em] uppercase mb-4 border-b border-[#d4c9b8] pb-2">The Solution</h4>
+                       <p className="font-cormorant text-xl leading-relaxed font-bold">{selectedProject.caseStudy.solution}</p>
+                     </div>
+
+                     {/* Impact & Results */}
+                     <div>
+                       <h4 className="vogue-label text-[0.8rem] text-[#6B0F1A] tracking-[0.3em] uppercase mb-4 border-b border-[#d4c9b8] pb-2">Impact & Results</h4>
+                       <div className="bg-[#BAFF39]/10 border-l-[3px] border-[#BAFF39] p-6 shadow-sm">
+                         <p className="font-cormorant text-xl font-bold leading-relaxed">{selectedProject.caseStudy.impact}</p>
+                       </div>
+                     </div>
+                   </div>
+                 ) : (
+                   <div className="space-y-10 font-cormorant text-xl text-[#3D2508] leading-relaxed font-bold">
+                      <p className="first-letter:float-left first-letter:text-[6.5rem] first-letter:font-black first-letter:font-cinzel first-letter:text-[#6B0F1A] first-letter:leading-[0.8] first-letter:mr-6 first-letter:mt-2 first-letter:drop-shadow-[5px_5px_0_rgba(186,255,57,0.3)]">
+                         {selectedProject.desc}
+                      </p>
+                   </div>
+                 )}
 
                  {/* Tech Stack Segment */}
                  <div className="mt-16 pt-10 border-t border-[#d4c9b8] space-y-8">
