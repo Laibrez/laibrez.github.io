@@ -140,7 +140,7 @@ export default function ProjectBook() {
   };
 
   return (
-    <section id="featured-book" className="min-h-screen bg-[#3A0610] pt-16 pb-32 px-6 md:px-14 relative transition-all duration-1000 overflow-hidden">
+    <section id="projects" className="min-h-screen bg-[#3A0610] pt-16 pb-32 px-6 md:px-14 relative transition-all duration-1000 overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-[0.5px] bg-[#BAFF39]/10" />
 
       <div className="text-center mb-24 animate-fade-up">
